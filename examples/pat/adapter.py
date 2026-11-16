@@ -1,5 +1,6 @@
 """Use a lesson recalled by PAT to propose one affine operation to BRACE."""
 from hashlib import sha256
+import json
 from string import ascii_lowercase
 
 from amem import EpisodeHooks, Memory, NumpyEmbeddingIndex
@@ -47,11 +48,23 @@ class PATProposer:
         operation = lesson["operation"]
         operand = (view.snapshot.add, view.snapshot.multiply)[view.step]
         a, b = (1, operand) if operation == "add" else (operand, 0)
-        result = a * view.before + b
-        raw = encoded({
+        payload = {
             "id": f"pat-{view.step}", "run": ticket.run, "snapshot": ticket.snapshot,
             "step": view.step, "parent": view.parent, "a": a, "b": b,
-            "witness": [a * x + b for x in range(-2, 3)], "result": result,
-        })
-        self.proposals[sha256(raw).hexdigest()] = (lesson["word"], operation, operand, result)
+            "witness": [a * x + b for x in range(-2, 3)], "result": a * view.before + b,
+        }
+        return self._reply(ticket, payload, (lesson["word"], operation, operand))
+
+    def with_result(self, ticket, view, previous, result):
+        """Reissue this step's draft with a revised claim and current run bindings."""
+        payload = json.loads(previous)
+        if (payload["snapshot"], payload["step"]) != (ticket.snapshot, view.step):
+            raise ValueError("The previous draft belongs to another request or step")
+        description = self.proposals[sha256(previous).hexdigest()][:3]
+        payload.update(run=ticket.run, parent=view.parent, result=result)
+        return self._reply(ticket, payload, description)
+
+    def _reply(self, ticket, payload, description):
+        raw = encoded(payload)
+        self.proposals[sha256(raw).hexdigest()] = (*description, payload["result"])
         return Reply(ticket.ticket_id, (Candidate(raw),))
