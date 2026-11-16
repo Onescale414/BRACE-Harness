@@ -4,7 +4,7 @@ BRACE checks two-step integer instructions. A proposer supplies candidate operat
 
 ## Run the harness
 
-From this directory, use Python 3.12 or later. The examples run offline using the standard library.
+From this directory, use Python 3.12 or later. The built-in demo and tests run offline using the standard library.
 
 ```sh
 python -B demo.py --json
@@ -29,6 +29,19 @@ Return `Reply(ticket.ticket_id, (Candidate(encoded(payload)),))` to submit one c
 | `witness`, `result` | Send a list of the five outputs of `a*x+b` for inputs `[-2, -1, 0, 1, 2]`, in that order. Send the output for `x = view.before` as `result`. |
 
 Candidate IDs accept 1–64 ASCII letters, digits, underscores, periods, or hyphens. Coefficients, witness outputs, and results must be integers with absolute value at most `10**15`. The returned outcome exposes `outcome.status`, `outcome.value`, and `outcome.receipts`. Each receipt has a `step`, `verdict`, and `value`. A successful two-step run has status `checked` and a checked receipt for each step.
+
+## Try PAT as a proposer
+
+Download and unzip [BRACE-Harness](https://github.com/Onescale414/BRACE-Harness/archive/refs/heads/main.zip) and [PAT](https://github.com/Onescale414/PAT/archive/refs/heads/main.zip) into the same parent directory. From inside `BRACE-Harness-main`, run these commands with Python 3.12 or later. If your PAT directory has another name, pass its path to `--pat`.
+
+```sh
+python -m pip install "numpy>=1.24"
+python -B examples/pat/demo.py --pat ../PAT-main
+```
+
+PAT stores three labeled words in memory. In the first case it recalls “multiplying” as multiplication and BRACE releases **4**. In the second case that word was deliberately labeled addition. At an input of 2, both adding 2 and multiplying by 2 give 4. BRACE returns `different-operation` and withholds the answer. On one retry, the adapter excludes addition only at the rejected step. PAT recalls “doubling,” BRACE rechecks both steps and releases **4**. The original lesson is still available afterward.
+
+The example submits one candidate per step. The correct case spends two checks and the repaired case spends four, including the repeated first step. After NumPy and both repositories are available, the example runs offline. [Adapter](examples/pat/adapter.py) · [Runnable example](examples/pat/demo.py)
 
 ## Research examples
 
