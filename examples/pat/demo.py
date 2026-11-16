@@ -1,4 +1,4 @@
-"""Show a checked PAT proposal and one retry for each of two BRACE rejection reasons."""
+"""Show how PAT proposals fare with a single retry per two-step BRACE request."""
 import argparse
 import json
 from pathlib import Path
@@ -8,11 +8,29 @@ import sys
 SOURCE = b"Start with 1. Add 1, then multiply by 2."
 
 
-def run_case(label, multiply_lesson, *, misreport=False):
+def verify_run(outcome, expected_steps):
+    expected = expected_steps if expected_steps[0] == "checked" else expected_steps[:1]
+    observed = [r.verdict for r in outcome.receipts]
+    if observed != expected or outcome.terminal is None:
+        raise RuntimeError(f"Expected {expected}, got {observed} ({outcome.status})")
+    if len(observed) == 2 and outcome.receipts[1].parent != outcome.receipts[0].receipt_id:
+        raise RuntimeError("Step two must use the first checked receipt from this run")
+    terminal = ("checked", 4, "publish") if observed[-1] == "checked" else (
+        f"no-checked-proposal-step-{len(observed)}", None, "withhold"
+    )
+    if (outcome.status, outcome.value, outcome.terminal.decision) != terminal:
+        raise RuntimeError(f"Unexpected terminal decision: {outcome.terminal}")
+
+
+def run_case(label, multiply_lesson, *, misreport=False, wrong_first=False):
     from adapter import PATProposer
     from harness import run_bound
 
-    pat = PATProposer([("adding", "add"), ("multiplying", multiply_lesson), ("doubling", "multiply")])
+    lessons = [("adding", "multiply" if wrong_first else "add"),
+               ("multiplying", multiply_lesson), ("doubling", "multiply")]
+    if wrong_first:
+        lessons.append(("sum", "add"))
+    pat = PATProposer(lessons)
 
     def run(title, proposer):
         outcome = run_bound(SOURCE, proposer, checks_per_step=2)
@@ -26,45 +44,46 @@ def run_case(label, multiply_lesson, *, misreport=False):
             print(f"  Withheld ({outcome.status})")
         return outcome
 
-    def initial(ticket, view):
+    def ordinary(ticket, view):
         reply = pat.propose(ticket, view)
         if misreport and view.step == 1:
             draft = reply.candidates[0].payload
             return pat.with_result(ticket, view, draft, json.loads(draft)["result"] + 1)
         return reply
 
-    first = run(label, initial)
-    final = first
-    checked = ["checked", "checked"]
-    observed = [r.verdict for r in first.receipts]
-    if observed and observed[-1] in ("different-operation", "wrong-result"):
-        rejected = first.receipts[-1]
-        original_choice = pat.proposals[rejected.candidate][:3]
-        draft = dict(first.payloads)[rejected.candidate]
+    first = run(label, ordinary)
+    expected = ["different-operation" if wrong_first else "checked", "checked"]
+    if multiply_lesson != "multiply":
+        expected[1] = "different-operation"
+    elif misreport:
+        expected[1] = "wrong-result"
+    verify_run(first, expected)
+    if first.status == "checked":
+        return
 
-        def retry(ticket, view):
-            if view.step != rejected.step:
-                return pat.propose(ticket, view)
-            if rejected.verdict == "different-operation":
-                return pat.propose(ticket, view, exclude=original_choice[1])
-            previous = json.loads(draft)
-            result = previous["a"] * view.before + previous["b"]
-            return pat.with_result(ticket, view, draft, result)
+    rejected = first.receipts[-1]
+    original_choice = pat.proposals[rejected.candidate][:3]
+    draft = dict(first.payloads)[rejected.candidate]
 
-        final = run("  Retry (same request)", retry)
-    expected = checked if multiply_lesson == "multiply" else ["checked", "different-operation"]
-    if misreport:
-        expected = ["checked", "wrong-result"]
-    if observed != expected or (first is not final and first.value is not None):
-        raise RuntimeError(f"Unexpected initial result: {first.status}, {observed}")
-    if [r.verdict for r in final.receipts] != checked or final.value != 4 or final.status != "checked":
-        raise RuntimeError(f"Expected a checked 4, got {final.status} with {final.value}")
-    if first is not final:
-        original = pat.recall("multiply")
-        if (original["word"], original["operation"]) != ("multiplying", multiply_lesson):
-            raise RuntimeError("The temporary retry changed the original recall")
-    if misreport:
-        repaired = final.receipts[-1].candidate
+    def retry(ticket, view):
+        if view.step != rejected.step:
+            return ordinary(ticket, view)
+        if rejected.verdict == "different-operation":
+            return pat.propose(ticket, view, exclude=original_choice[1])
+        previous = json.loads(draft)
+        result = previous["a"] * view.before + previous["b"]
+        return pat.with_result(ticket, view, draft, result)
+
+    final = run("  Retry (same request)", retry)
+    expected[rejected.step] = "checked"
+    verify_run(final, expected)
+    original = pat.recall(("add", "multiply")[rejected.step])
+    if (original["word"], original["operation"]) != original_choice[:2]:
+        raise RuntimeError("The temporary retry changed the original recall")
+    if final.terminal.decision == "withhold":
+        print("  Retry spent. No final answer released.")
+    if rejected.verdict == "wrong-result":
+        repaired = final.receipts[rejected.step].candidate
         before = json.loads(draft)
         after = json.loads(dict(final.payloads)[repaired])
         # A new run and a rechecked first step give the retry fresh run and parent IDs.
@@ -87,6 +106,7 @@ def main():
     run_case("Correct lesson", "multiply")
     run_case("Mislabeled lesson", "add")
     run_case("Correct operation, deliberately wrong result", "multiply", misreport=True)
+    run_case("Two faults, one retry", "multiply", wrong_first=True, misreport=True)
 
 
 if __name__ == "__main__":

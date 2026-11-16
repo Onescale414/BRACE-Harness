@@ -39,11 +39,13 @@ python -m pip install "numpy>=1.24"
 python -B examples/pat/demo.py --pat ../PAT-main
 ```
 
-PAT stores three labeled words in memory. In the first case it recalls “multiplying” as multiplication and BRACE releases **4**. In the second case that word was deliberately labeled addition. At an input of 2, both adding 2 and multiplying by 2 give 4. BRACE returns `different-operation` and withholds the answer. On one retry, the adapter excludes addition only at the rejected step. PAT recalls “doubling,” BRACE rechecks both steps and releases **4**. The original lesson is still available afterward.
+Each case starts with its own in-memory PAT lessons. In the first case PAT recalls “multiplying” as multiplication and BRACE releases **4**. In the second case that word was deliberately labeled addition. At an input of 2, both adding 2 and multiplying by 2 give 4. BRACE returns `different-operation` and withholds the answer. On one retry, the adapter excludes addition only at the rejected step. PAT recalls “doubling,” BRACE rechecks both steps and releases **4**. The original lesson is still available afterward.
 
 In the third case PAT recalls multiplication correctly, and the demo deliberately changes the reported result from **4** to **5**. BRACE returns `wrong-result` and withholds the answer. On one retry, the adapter takes the rejected draft and recalculates `2 × 2` from its original coefficients and the checked input. BRACE releases **4**. The demo compares both submitted drafts and verifies that the lesson, operation, operand and five witness values match. The new run has its own run ID and first-step receipt.
 
-The example submits one candidate per step. The correct case spends two checks. Each repaired case spends four, including the repeated first step. After NumPy and both repositories are available, the example runs offline. [Adapter](examples/pat/adapter.py) · [Runnable example](examples/pat/demo.py)
+The fourth case gives the whole request one retry. PAT recalls “adding” as multiplication, so step one proposes `1 × 1 = 1`. BRACE returns `different-operation` and stops before step two. On retry, PAT recalls an alternative lesson, “sum,” and BRACE checks `1 + 1 = 2`. Step two now runs for the first time. It proposes multiplication but reports **5** for `2 × 2`. BRACE returns `wrong-result`. The retry is spent, so the final answer is withheld.
+
+The example submits one candidate per step. The correct case spends two checks, each single-fault case spends four, and the two-fault case spends three. After NumPy and both repositories are available, the example runs offline. [Adapter](examples/pat/adapter.py) · [Runnable example](examples/pat/demo.py)
 
 ## Research examples
 
