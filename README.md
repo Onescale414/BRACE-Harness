@@ -1,6 +1,8 @@
 # BRACE
 
-BRACE checks two-step integer instructions. A proposer supplies candidate operations. The host checks each operation against the instruction, tests it on five witness values, and records its verdict. The second operation must refer to the accepted first step.
+At an input of 2, `2 + 2` and `2 × 2` both give **4**. In the PAT example, a mislabeled lesson proposes addition when the instruction calls for multiplication. A check on the final number alone would pass. BRACE records `different-operation` and withholds the answer. [Run the PAT example](#try-pat-as-a-proposer)
+
+BRACE can evaluate these two-step integer instructions directly. A separate proposer lets you test what happens when a suggested step is wrong and whether one retry can repair it. BRACE checks each proposed operation against the instruction and five witness values. The second step must cite the receipt for the accepted first step.
 
 ## Run the harness
 
