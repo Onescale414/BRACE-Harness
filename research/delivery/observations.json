@@ -1,0 +1,2654 @@
+{
+  "sourceSHA256": {
+    "fifo": "4625ab32dbf2bd510cc62c9879cdffad22bbdcf738de11f29c7ceebfb17235da",
+    "actor": "6394b2102fda9d63a0d31e53d0ee3878931395872cdad0c7cd51e575df440c59",
+    "delivery": "3739b4358c3cadf3435b4784f2c7259d30f9aea12fc5df2767a56424b830fbd0",
+    "handoff": "de630a80d4d1c44d8ae531eaa1d99efb03b4323bd6219abaf3c1c69b4124e3c1"
+  },
+  "researchSHA256": {
+    "wordings": "f4d76cad32730bba1c1576d2d245f365ffa6797a9099c13783d1d5490d4caf7d",
+    "answerKey": "a7c024c0333445f4b476b4b5ab0980cc7c6f2a7b5b0b2fa36a95287fc7ceaf03",
+    "frozenTrialOutput": "90d74989441d0cb1822fb1f6586faba6ddacc55f0613174ee2993ef3ee6f1563",
+    "wiremockEvidence": "25371295c05109df2c4343367e6c7ad168eb8c785b38b1147933c2ff4916a731"
+  },
+  "fixtures": {
+    "conn-a": {
+      "mixed_matches": false,
+      "delay_ms": 125,
+      "status": 404
+    },
+    "conn-b": {
+      "mixed_matches": true,
+      "delay_ms": 125,
+      "status": 200
+    }
+  },
+  "cases": [
+    {
+      "id": "dv-01",
+      "wording": "Could you tell me whether GET /Harbor/ledger matches this mapping? Having told me the result, check the delay setting yourself.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-11",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-02",
+      "wording": "I'd like the delay setting first. With that number back in my hands, please find out whether GET /Harbor/ledger matches.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-05",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-03",
+      "wording": "Send me the match result for GET /Harbor/ledger. When I get your answer, come back with the delay setting as well.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-08",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-04",
+      "wording": "Put the configured wait in your reply to me. After you show it to me, the check on whether GET /Harbor/ledger matches is yours to do.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-03",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-05",
+      "wording": "I'd like the delay setting first. With that number back in my hands, I'll find out whether GET /Harbor/ledger matches.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-05",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-06",
+      "wording": "Send me the match result for GET /Harbor/ledger. When I get your answer, I'll come back and ask you what delay is set.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-08",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-07",
+      "wording": "Let me know if GET /Harbor/ledger hits the route. After your verdict appears here, I'm the one who checks the mapping's delay.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-09",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-08",
+      "wording": "Send me the configured delay. When I get it, go on and tell me whether GET /Harbor/ledger hits the route.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-02",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": true,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-09",
+      "wording": "Put the configured wait in your reply to me. After you show it to me, the check on whether GET /Harbor/ledger matches is mine to do.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-03",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-10",
+      "wording": "Show me the mapping's delay. After you send it to me, will you check whether GET /Harbor/ledger matches?",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-16",
+      "category": "third_party",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-11",
+      "wording": "I'd like both answers. Start with whether GET /Harbor/ledger matches, then tell me the configured delay.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-13",
+      "category": "direct_order",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-12",
+      "wording": "Does GET /Harbor/ledger match the route? Once you've given me the verdict, I'll look up the configured wait.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-07",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-13",
+      "wording": "Tell me what delay the mapping specifies. Once you've given me the number, check whether GET /Harbor/ledger matches.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-01",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-14",
+      "wording": "For GET /Harbor/ledger I have two possible questions: does it match, and what delay is configured? I want just one answer. Answer the match question.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-18",
+      "category": "unclear_scope",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": true,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-15",
+      "wording": "Send me the configured delay. When I get it, I'll ask you in a new message whether GET /Harbor/ledger hits the route.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-02",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-16",
+      "wording": "Get me the configured delay for this mapping. GET /Harbor/ledger is just the example printed beside it.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-14",
+      "category": "literal_and_verb",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-17",
+      "wording": "Get me the configured delay for this mapping. Then get me a verdict on whether GET /Harbor/ledger matches it.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-14",
+      "category": "literal_and_verb",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-18",
+      "wording": "For GET /Harbor/ledger I have two possible questions: does it match, and what delay is configured? I want just one answer. Ask me which one before starting.",
+      "fixture": "conn-b",
+      "expected": [],
+      "clarify": true,
+      "primary": false,
+      "pair": "pair-18",
+      "category": "unclear_scope",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": true,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-19",
+      "wording": "Show me the mapping's delay. After you send it to me, Rosa will check whether GET /Harbor/ledger matches.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-16",
+      "category": "third_party",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-20",
+      "wording": "Does GET /Harbor/ledger match the route? Once you've given me the verdict, look up the configured wait for me.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-07",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-21",
+      "wording": "What wait is set on the mapping? When your answer reaches me, follow up with whether GET /Harbor/ledger will match.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-04",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-22",
+      "wording": "What wait is set on the mapping? When your answer reaches me, wait for me to ask if GET /Harbor/ledger will match.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-04",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-23",
+      "wording": "Does GET /Harbor/ledger hit? After you reply, look up the configured delay. On second thought, drop the delay lookup.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-17",
+      "category": "cancel_return",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-24",
+      "wording": "Tell me whether GET /Harbor/ledger matches. Go on to the configured delay when you send me the match verdict.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-15",
+      "category": "future_human_message",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-25",
+      "wording": "Please give me a yes or no on whether GET /Harbor/ledger matches. Once the verdict is in front of me, leave the delay setting for my next request.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-12",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-26",
+      "wording": "Give me the configured delay. After you've sent the figure, I'll raise the question of whether GET /Harbor/ledger matches in my next message.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-06",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-27",
+      "wording": "Could you tell me whether GET /Harbor/ledger matches this mapping? Having heard the result from you, I'll check the delay setting myself.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-11",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-28",
+      "wording": "Please give me a yes or no on whether GET /Harbor/ledger matches. Once the verdict is in front of me, follow it up with the delay setting.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-12",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": true,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-29",
+      "wording": "Tell me whether GET /Harbor/ledger matches. Go on to the configured delay when I send you the words 'match noted'.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-15",
+      "category": "future_human_message",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-30",
+      "wording": "Does GET /Harbor/ledger hit? After you reply, look up the configured delay. On second thought, put the delay in a separate reply.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-17",
+      "category": "cancel_return",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-31",
+      "wording": "First show me whether GET /Harbor/ledger matches. A message from me after I see that answer will be your cue to report the configured delay.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-10",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-32",
+      "wording": "Let me know if GET /Harbor/ledger hits the route. After your verdict appears here, you're the one who checks the mapping's delay.",
+      "fixture": "conn-a",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-09",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-33",
+      "wording": "Tell me what delay the mapping specifies. Once you've given me the number, I'll check whether GET /Harbor/ledger matches.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-01",
+      "category": "who_checks",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "id": "dv-34",
+      "wording": "First show me whether GET /Harbor/ledger matches. Your message showing me that answer will be your cue to report the configured delay.",
+      "fixture": "conn-b",
+      "expected": [
+        "mixed_matches",
+        "delay_ms"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-10",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            },
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 1,
+              "grantRequested": false
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-35",
+      "wording": "Give me the configured delay. After you've sent the figure, take up the question of whether GET /Harbor/ledger matches in your next message.",
+      "fixture": "conn-b",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": true,
+      "pair": "pair-06",
+      "category": "next_request",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            }
+          ],
+          "observations": []
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": true,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": true,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dv-36",
+      "wording": "I'd like both answers. Start with the configured delay, then tell me whether GET /Harbor/ledger matches.",
+      "fixture": "conn-a",
+      "expected": [
+        "delay_ms",
+        "mixed_matches"
+      ],
+      "clarify": false,
+      "primary": false,
+      "pair": "pair-13",
+      "category": "direct_order",
+      "outcomes": {
+        "fifo": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "actor": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        },
+        "delivery": {
+          "clarify": false,
+          "answers": [
+            {
+              "question": "delay_ms",
+              "value": 125,
+              "checksUsed": 0,
+              "grantRequested": false
+            },
+            {
+              "question": "mixed_matches",
+              "value": false,
+              "checksUsed": 1,
+              "grantRequested": true
+            }
+          ],
+          "observations": [
+            {
+              "probe": "mixed_get",
+              "value": false,
+              "beforeAnswer": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

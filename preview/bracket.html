@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Two marks, two possible motions · BRACE</title>
+<style>
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#182730;background:#f5f4ef;--ink:#182730;--muted:#50606a;--line:#d8ded9;--rotate:#255aca;--mirror:#a24a13}
+*{box-sizing:border-box}body{margin:0}main{max-width:1050px;margin:auto;padding:clamp(24px,5vw,68px) clamp(16px,4vw,44px)}
+header p{margin:0;color:var(--muted);line-height:1.55;max-width:72ch}h1{font-size:clamp(32px,5vw,56px);line-height:1.07;letter-spacing:-.045em;margin:14px 0}small{font-weight:650;color:var(--muted)}
+.controls{display:flex;gap:22px 42px;flex-wrap:wrap;align-items:end;margin:28px 0 18px}fieldset{margin:0;padding:0;border:0}legend{margin-bottom:6px;padding:0;font-weight:600;font-size:13px}
+button{font:inherit;color:var(--ink);padding:8px 13px;border:1px solid #9ca9ab;background:#fff;border-radius:5px;cursor:pointer}button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:white}button:focus-visible{outline:3px solid #376aba;outline-offset:2px}
+.panel{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}.status{margin:0;padding:16px 20px;border-bottom:1px solid var(--line);font-weight:600}
+svg{display:block;width:100%;height:auto;background:#fdfdfb}svg text{font:600 15px Inter,"Segoe UI",Arial,sans-serif;fill:var(--ink)}svg .plot-label{font-size:13px}
+.rotation{color:var(--rotate)}.mirror{color:var(--mirror)}.rotation,.mirror{transition:opacity .16s linear}.muted{opacity:.24}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;padding:12px 20px;font-size:13px;border-top:1px solid var(--line);color:var(--muted)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}.fact{padding:16px 18px;border:1px solid var(--line);border-radius:9px;background:#fff}.fact span,.fact strong{display:block}.fact strong{font-size:20px;margin:5px 0}.fact span{font-size:14px;color:var(--muted);line-height:1.45}
+details{margin-top:18px;color:var(--muted);font-size:14px;line-height:1.6;overflow-wrap:anywhere}summary{cursor:pointer;font-weight:600;color:var(--ink)}code{font: .92em ui-monospace,monospace}
+@media(max-width:540px){.facts{grid-template-columns:1fr;gap:8px}.controls{gap:14px}.status{font-size:14px}svg text{font-size:18px}svg .plot-label{font-size:16px}}
+</style>
+<main>
+<header><small>BRACE · Recorded geometry experiment</small><h1>Two marks, two possible motions</h1>
+<p>Two rigid brackets put their first two marks in exactly the same places. Reveal a third mark off that line to see which motion predicts the arm tip after undo.</p></header>
+<section class="controls" aria-label="Replay controls">
+<fieldset><legend>Recorded cart</legend><button data-cart="0" aria-pressed="true">Cart 1</button> <button data-cart="1" aria-pressed="false">Cart 2</button></fieldset>
+<fieldset><legend>Visible observations</legend><button data-stage="2" aria-pressed="true">Two marks</button> <button data-stage="3" aria-pressed="false">Reveal third mark</button></fieldset>
+</section>
+<section class="panel" aria-label="Observed bracket geometry">
+<p class="status" id="status" aria-live="polite"></p>
+<svg viewBox="0 0 760 245" role="img" aria-labelledby="plotTitle plotDesc"><title id="plotTitle">Conditional tip positions</title><desc id="plotDesc"></desc>
+<defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#e8edea" stroke-width="1"/></pattern></defs>
+<rect width="760" height="245" fill="url(#grid)"/><g id="plot"></g></svg>
+<div class="legend"><span>● Observed mark</span><span>◇ Predicted third mark</span><span>◎ Predicted arm tip</span></div>
+</section>
+<section class="facts" aria-label="Candidate outcomes"><div class="fact"><small class="rotation">Rotation</small><strong id="rotate-tip"></strong><span id="rotate-note"></span></div><div class="fact"><small class="mirror">Mirror</small><strong id="mirror-tip"></strong><span id="mirror-note"></span></div></section>
+<details><summary>Measurements and assumptions</summary><p id="measure"></p><p>Positions are in drawing units, with positive y downward. Both hypotheses preserve distances in a rigid plane. Only the arm joint is undone. The cart and bracket retain their poses. The replay computes each prediction from the starting marks and compares it with the selected cart’s archived third reading.</p><p>Evidence pair <code>p759f4f6647f833</code> · <span id="source"></span></p></details>
+</main>
+<script type="application/json" id="measurements">
+{"before":[[169,169],[151,169]],"firstTwo":[[166,172],[166,154]],"beforeThird":[164,165],"beforeTip":[169,121],"pair":"p759f4f6647f833","carts":[{"id":"p490e07fd871a7b","third":[170,167],"actual":[214,172]},{"id":"peffbee1d6dce14","third":[162,167],"actual":[118,172]}]}
+</script>
+<script>
+"use strict";
+const d=JSON.parse(document.querySelector("#measurements").textContent);
+const subtract=(a,b)=>a.map((v,i)=>v-b[i]);
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1];
+const cross=(a,b)=>a[0]*b[1]-a[1]*b[0];
+const equal=(a,b)=>a.every((v,i)=>v===b[i]);
+const fmt=p=>"("+p.join(", ")+")";
+const pos=p=>[380+6*(p[0]-166),42+6*(p[1]-148)];
+const ns="http://www.w3.org/2000/svg";
+const plot=document.querySelector("#plot");
+let cart=0,stage=2;
+
+function predict(point, sign){
+  const [a,b]=d.before,[A,B]=d.firstTwo,u=subtract(b,a),v=subtract(B,A),w=subtract(point,a);
+  const n=dot(u,u),along=dot(w,u),normal=sign*cross(u,w);
+  if(!n || n!==dot(v,v)) throw Error("Invalid observed separation");
+  const numerators=[along*v[0]-normal*v[1],along*v[1]+normal*v[0]];
+  if(numerators.some(p=>!Number.isSafeInteger(p) || p%n!==0)) throw Error("Expected integral fixture result");
+  return numerators.map((p,i)=>A[i]+p/n);
+}
+function node(name,attrs,parent=plot,content){
+  const e=document.createElementNS(ns,name);
+  for(const [k,v] of Object.entries(attrs)) e.setAttribute(k,v);
+  if(content!==undefined) e.textContent=content;
+  parent.append(e); return e;
+}
+function observed(point,label,dx,dy){
+  const [x,y]=pos(point);
+  node("circle",{cx:x,cy:y,r:5,fill:"#182730",stroke:"#fff","stroke-width":1.5});
+  node("text",{x:x+dx,y:y+dy,"text-anchor":"middle",class:"plot-label"},plot,label);
+}
+function draw(){
+  const truth=d.carts[cart], a=pos(d.firstTwo[0]),b=pos(d.firstTwo[1]);
+  const motions=[{name:"Rotation",sign:1,style:"rotation",prefix:"rotate"},{name:"Mirror",sign:-1,style:"mirror",prefix:"mirror"}];
+  plot.replaceChildren();
+  let selected=null;
+  for(const h of motions){
+    const tip=predict(d.beforeTip,h.sign),third=predict(d.beforeThird,h.sign),matches=equal(third,truth.third);
+    const active=stage===3 && matches;
+    if(active){selected=h.name; if(!equal(tip,truth.actual)) throw Error("Stored undo disagrees");}
+    const [tx,ty]=pos(tip),[x,y]=pos(third);
+    const g=node("g",{class:h.style+(stage===3 && !matches?" muted":"")});
+    node("path",{d:`M${b.join(" ")} L${x} ${y} L${a.join(" ")} Z`,fill:"currentColor",opacity:".16"},g);
+    node("line",{x1:a[0],y1:a[1],x2:tx,y2:ty,stroke:"currentColor","stroke-width":2,"stroke-dasharray":active?"none":"5 4"},g);
+    node("path",{d:`M${x} ${y-6}l6 6 -6 6 -6 -6z`,fill:"white",stroke:"currentColor","stroke-width":2},g);
+    node("circle",{cx:tx,cy:ty,r:8,fill:"white",stroke:"currentColor","stroke-width":2.5},g);
+    node("circle",{cx:tx,cy:ty,r:2.7,fill:"currentColor"},g);
+    node("text",{x:tx,y:ty+28,"text-anchor":"middle"},g,h.name+" tip");
+    document.querySelector("#"+h.prefix+"-tip").textContent=fmt(tip);
+    document.querySelector("#"+h.prefix+"-note").textContent=stage===2?"Predicted third mark "+fmt(third):active?"Third mark matches. Recorded undo "+fmt(truth.actual)+".":"Third mark differs from the reading.";
+  }
+  node("line",{x1:a[0],y1:a[1],x2:b[0],y2:b[1],stroke:"#182730","stroke-width":2.3});
+  observed(d.firstTwo[0],"M1",0,23); observed(d.firstTwo[1],"M2",0,-12);
+  if(stage===3) observed(truth.third,"M3",truth.third[0]>166?17:-17,-8);
+  const msg=stage===2?"Both motions fit the two observed marks.":selected+" fits the third mark. The tip matches the recorded undo.";
+  document.querySelector("#status").textContent=msg;
+  document.querySelector("#plotDesc").textContent=msg+" Rotation predicts "+fmt(predict(d.beforeTip,1))+"; mirror predicts "+fmt(predict(d.beforeTip,-1))+".";
+  document.querySelector("#measure").textContent="Observed M1 "+fmt(d.firstTwo[0])+" and M2 "+fmt(d.firstTwo[1])+"."+ (stage===3?" Observed M3 "+fmt(truth.third)+".":" M3 awaits a reading.");
+  document.querySelector("#source").textContent="Cart "+(cart+1)+" · "+truth.id;
+  for(const button of document.querySelectorAll("[data-cart]")) button.setAttribute("aria-pressed",String(Number(button.dataset.cart)===cart));
+  for(const button of document.querySelectorAll("[data-stage]")) button.setAttribute("aria-pressed",String(Number(button.dataset.stage)===stage));
+}
+document.querySelectorAll("[data-cart]").forEach(b=>b.addEventListener("click",()=>{cart=Number(b.dataset.cart);draw();}));
+document.querySelectorAll("[data-stage]").forEach(b=>b.addEventListener("click",()=>{stage=Number(b.dataset.stage);draw();}));
+draw();
+</script>
+</html>
