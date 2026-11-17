@@ -59,6 +59,8 @@ When two possible rules predicted 55 and 58 for the same proposed experiment, BR
 
 On 24 fresh worlds the reader could request one previously unmeasured control setting. It repaired all four stable exceptions and kept all 168 previously supported predictions. Its eight errors came from assuming that a single measured offset would transfer to new starting numbers at an unstable setting. [Missing-setting trial and replay](missing-settings.md)
 
+With one more reading at the same setting, doubling the starting input and taking the next integer tied on the 25 fresh worlds where both obtained distinct numeric readings. Each made 69 correct and 31 wrong predictions. Both recovered the affine cases, while nonlinear effects exposed the limits of a two-point line fit. Doubling also skipped zero and out-of-range inputs more often. [Doubling comparison and preserved evidence](scale-probes.md)
+
 ## Reproduce
 
 From the repository root with Python 3.12 or later. The commands run offline using the standard library. Add `--world m42` to the first to see both guesses and the confirmed meanings, or `--world w01` for the first context trial's probe trace.

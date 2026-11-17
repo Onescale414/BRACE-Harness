@@ -47,6 +47,8 @@ The frozen trial supplied the eight settings as the scope of the questions. In a
 
 A fresh fixed-seed test omitted every possible setting in turn and tried three outcomes for each omission. The reader named the gap **24/24** times, labeled **8/8** stable exceptions and **8/8** confirmations in its supported labeling range, and withheld at the gap on **8/8** unavailable readings. It replayed all **336** old readings. Across **192** fresh questions it gave **184 correct, zero wrong, eight withheld**. These follow-up cases used stable effects at each setting. The input-dependent stress cases in the main trial still apply. [Schema-only diagnostic](missing_setting_schema_controls.py)
 
+A subsequent trial supplied one additional reading at the same setting to test doubling the input against the next integer. It preserved the earlier evidence and exposed nonlinear failures of the two-point fit. [Scale probe comparison](scale-probes.md)
+
 ## Reproduce
 
 From the repository root with Python 3.12 or later:

@@ -1,0 +1,9429 @@
+{
+  "case_sha256": "3dfc23e3c7a09f06205d5a7ac1cac63d63b604eb41bcb06c5dc57e8d9775b584",
+  "summary": {
+    "by_kind": {
+      "double": {
+        "unavailable": {
+          "requests": 5,
+          "readings": 0,
+          "fits": 0,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "out_of_bounds": 2,
+          "correct": 0,
+          "wrong": 0,
+          "held": 32,
+          "duplicate_probe": 1,
+          "unavailable": 5
+        },
+        "quadratic": {
+          "requests": 5,
+          "readings": 5,
+          "fits": 5,
+          "offset_changed": 5,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "duplicate_probe": 1,
+          "correct": 0,
+          "wrong": 20,
+          "held": 12,
+          "fitted": 5,
+          "out_of_bounds": 2
+        },
+        "local_exception": {
+          "requests": 5,
+          "readings": 5,
+          "fits": 5,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "fitted": 5,
+          "correct": 15,
+          "wrong": 5,
+          "held": 12,
+          "out_of_bounds": 2,
+          "duplicate_probe": 1
+        },
+        "additive": {
+          "requests": 5,
+          "readings": 5,
+          "fits": 5,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "out_of_bounds": 2,
+          "correct": 20,
+          "wrong": 0,
+          "held": 12,
+          "fitted": 5,
+          "duplicate_probe": 1
+        },
+        "threshold": {
+          "requests": 5,
+          "readings": 5,
+          "fits": 5,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "out_of_bounds": 2,
+          "correct": 14,
+          "wrong": 6,
+          "held": 12,
+          "fitted": 5,
+          "duplicate_probe": 1
+        },
+        "affine": {
+          "requests": 5,
+          "readings": 5,
+          "fits": 5,
+          "offset_changed": 5,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "duplicate_probe": 1,
+          "correct": 20,
+          "wrong": 0,
+          "held": 12,
+          "fitted": 5,
+          "out_of_bounds": 2
+        }
+      },
+      "next": {
+        "unavailable": {
+          "requests": 8,
+          "readings": 0,
+          "fits": 0,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "unavailable": 8,
+          "correct": 0,
+          "wrong": 0,
+          "held": 32
+        },
+        "quadratic": {
+          "requests": 8,
+          "readings": 8,
+          "fits": 8,
+          "offset_changed": 8,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "fitted": 8,
+          "correct": 0,
+          "wrong": 32,
+          "held": 0
+        },
+        "local_exception": {
+          "requests": 8,
+          "readings": 8,
+          "fits": 8,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "fitted": 8,
+          "correct": 24,
+          "wrong": 8,
+          "held": 0
+        },
+        "additive": {
+          "requests": 8,
+          "readings": 8,
+          "fits": 8,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "fitted": 8,
+          "correct": 32,
+          "wrong": 0,
+          "held": 0
+        },
+        "threshold": {
+          "requests": 8,
+          "readings": 8,
+          "fits": 8,
+          "offset_changed": 0,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "fitted": 8,
+          "correct": 21,
+          "wrong": 11,
+          "held": 0
+        },
+        "affine": {
+          "requests": 8,
+          "readings": 8,
+          "fits": 8,
+          "offset_changed": 8,
+          "preserved": 56,
+          "replays": 120,
+          "worlds": 8,
+          "fitted": 8,
+          "correct": 32,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    "totals": {
+      "double": {
+        "requests": 30,
+        "readings": 25,
+        "fits": 25,
+        "offset_changed": 10,
+        "preserved": 336,
+        "replays": 720,
+        "worlds": 48,
+        "out_of_bounds": 12,
+        "correct": 69,
+        "wrong": 31,
+        "held": 92,
+        "duplicate_probe": 6,
+        "fitted": 25,
+        "unavailable": 5
+      },
+      "next": {
+        "requests": 48,
+        "readings": 40,
+        "fits": 40,
+        "offset_changed": 16,
+        "preserved": 336,
+        "replays": 720,
+        "worlds": 48,
+        "unavailable": 8,
+        "correct": 109,
+        "wrong": 51,
+        "held": 32,
+        "fitted": 40
+      }
+    },
+    "both_readings_available": {
+      "worlds": 25,
+      "target": {
+        "double": {
+          "correct": 69,
+          "wrong": 31,
+          "held": 0
+        },
+        "next": {
+          "correct": 69,
+          "wrong": 31,
+          "held": 0
+        }
+      }
+    }
+  },
+  "details": [
+    {
+      "id": "1bde833619ae",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -80,
+        "y": 167
+      },
+      "proposed_x": -160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -40,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          -19,
+          1
+        ],
+        null,
+        [
+          45,
+          1
+        ],
+        null,
+        null,
+        [
+          -24,
+          1
+        ],
+        null,
+        [
+          109,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "1bde833619ae",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -80,
+        "y": 167
+      },
+      "proposed_x": -79,
+      "request": {
+        "verb": "v88920",
+        "x": -79,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -40,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          -19,
+          1
+        ],
+        null,
+        [
+          45,
+          1
+        ],
+        null,
+        null,
+        [
+          -24,
+          1
+        ],
+        null,
+        [
+          109,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "2fd758246fb8",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 0,
+        "y": -1
+      },
+      "proposed_x": 0,
+      "request": null,
+      "observed": null,
+      "status": "duplicate_probe",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        null,
+        [
+          -117,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        null,
+        [
+          -93,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          -84,
+          1
+        ],
+        [
+          100,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "2fd758246fb8",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 0,
+        "y": -1
+      },
+      "proposed_x": 1,
+      "request": {
+        "verb": "v57933",
+        "x": 1,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -2,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -1,
+        1
+      ],
+      "intercept": [
+        -1,
+        1
+      ],
+      "predictions": [
+        [
+          -83,
+          1
+        ],
+        [
+          24,
+          1
+        ],
+        [
+          -117,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -16,
+          1
+        ],
+        [
+          -93,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          -84,
+          1
+        ],
+        [
+          100,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          64,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "195e579c849e",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 9
+      },
+      "proposed_x": 6,
+      "request": {
+        "verb": "v72241",
+        "x": 6,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 12,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        6,
+        1
+      ],
+      "predictions": [
+        [
+          126,
+          1
+        ],
+        [
+          -59,
+          1
+        ],
+        [
+          -107,
+          1
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          95,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -128,
+          1
+        ],
+        [
+          -110,
+          1
+        ],
+        [
+          56,
+          1
+        ],
+        [
+          108,
+          1
+        ],
+        [
+          -91,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "195e579c849e",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 9
+      },
+      "proposed_x": 4,
+      "request": {
+        "verb": "v72241",
+        "x": 4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 10,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        6,
+        1
+      ],
+      "predictions": [
+        [
+          126,
+          1
+        ],
+        [
+          -59,
+          1
+        ],
+        [
+          -107,
+          1
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          95,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -128,
+          1
+        ],
+        [
+          -110,
+          1
+        ],
+        [
+          56,
+          1
+        ],
+        [
+          108,
+          1
+        ],
+        [
+          -91,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "f44ab4d335c7",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -80,
+        "y": -81
+      },
+      "proposed_x": -160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        [
+          -29,
+          1
+        ],
+        [
+          68,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        null,
+        [
+          -51,
+          1
+        ],
+        [
+          -31,
+          1
+        ],
+        null,
+        [
+          65,
+          1
+        ],
+        null,
+        [
+          1,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "f44ab4d335c7",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -80,
+        "y": -81
+      },
+      "proposed_x": -79,
+      "request": {
+        "verb": "v96969",
+        "x": -79,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -80,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -1,
+        1
+      ],
+      "predictions": [
+        [
+          85,
+          1
+        ],
+        [
+          -29,
+          1
+        ],
+        [
+          68,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          -51,
+          1
+        ],
+        [
+          -31,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          65,
+          1
+        ],
+        [
+          -8,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "560870f0ef53",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 80,
+        "y": 86
+      },
+      "proposed_x": 160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        [
+          -113,
+          1
+        ],
+        null,
+        [
+          16,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          -77,
+          1
+        ],
+        null,
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "560870f0ef53",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 80,
+        "y": 86
+      },
+      "proposed_x": 81,
+      "request": {
+        "verb": "v38370",
+        "x": 81,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 87,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        6,
+        1
+      ],
+      "predictions": [
+        [
+          84,
+          1
+        ],
+        [
+          -113,
+          1
+        ],
+        [
+          -58,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          -77,
+          1
+        ],
+        [
+          -8,
+          1
+        ],
+        [
+          -70,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "368a2ab1c4da",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -80,
+        "y": -89
+      },
+      "proposed_x": -160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          1,
+          1
+        ],
+        [
+          -51,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        null,
+        null,
+        [
+          -137,
+          1
+        ],
+        [
+          86,
+          1
+        ],
+        null,
+        [
+          -39,
+          1
+        ],
+        [
+          -127,
+          1
+        ],
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "368a2ab1c4da",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -80,
+        "y": -89
+      },
+      "proposed_x": -79,
+      "request": {
+        "verb": "v63109",
+        "x": -79,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": -88,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          1,
+          1
+        ],
+        [
+          -51,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          -24,
+          1
+        ],
+        [
+          -80,
+          1
+        ],
+        [
+          -137,
+          1
+        ],
+        [
+          86,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -39,
+          1
+        ],
+        [
+          -127,
+          1
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 2,
+        "wrong": 2,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 9,
+        "wrong": 2,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 2,
+          "wrong": 2,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7e988a3c01b6",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 1,
+        "y": -7
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v56982",
+        "x": 2,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -10,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        -4,
+        1
+      ],
+      "predictions": [
+        [
+          51,
+          1
+        ],
+        [
+          -23,
+          1
+        ],
+        [
+          -226,
+          1
+        ],
+        [
+          65,
+          1
+        ],
+        [
+          215,
+          1
+        ],
+        [
+          69,
+          1
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          -124,
+          1
+        ],
+        [
+          78,
+          1
+        ],
+        [
+          121,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7e988a3c01b6",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 1,
+        "y": -7
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v56982",
+        "x": 2,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -10,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        -4,
+        1
+      ],
+      "predictions": [
+        [
+          51,
+          1
+        ],
+        [
+          -23,
+          1
+        ],
+        [
+          -226,
+          1
+        ],
+        [
+          65,
+          1
+        ],
+        [
+          215,
+          1
+        ],
+        [
+          69,
+          1
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          -124,
+          1
+        ],
+        [
+          78,
+          1
+        ],
+        [
+          121,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "0ddbc81effc7",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 80,
+        "y": 88
+      },
+      "proposed_x": 160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -83,
+          1
+        ],
+        null,
+        [
+          -54,
+          1
+        ],
+        [
+          117,
+          1
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          82,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        null,
+        [
+          -54,
+          1
+        ],
+        null,
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "0ddbc81effc7",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 80,
+        "y": 88
+      },
+      "proposed_x": 81,
+      "request": {
+        "verb": "v16909",
+        "x": 81,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 89,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        8,
+        1
+      ],
+      "predictions": [
+        [
+          -83,
+          1
+        ],
+        [
+          65,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          117,
+          1
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          82,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          -24,
+          1
+        ],
+        [
+          -84,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "27f71280a645",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 3,
+        "y": -4
+      },
+      "proposed_x": 6,
+      "request": {
+        "verb": "v89041",
+        "x": 6,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": -1,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -7,
+        1
+      ],
+      "predictions": [
+        [
+          -126,
+          1
+        ],
+        [
+          51,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          -55,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        [
+          -111,
+          1
+        ],
+        [
+          105,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          -12,
+          1
+        ],
+        [
+          -55,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "27f71280a645",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 3,
+        "y": -4
+      },
+      "proposed_x": 4,
+      "request": {
+        "verb": "v89041",
+        "x": 4,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": -3,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -7,
+        1
+      ],
+      "predictions": [
+        [
+          -126,
+          1
+        ],
+        [
+          51,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          -55,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        [
+          -111,
+          1
+        ],
+        [
+          105,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          -12,
+          1
+        ],
+        [
+          -55,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "ea2d947ae160",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": 16
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v80384",
+        "x": 2,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 17,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        15,
+        1
+      ],
+      "predictions": [
+        [
+          -52,
+          1
+        ],
+        [
+          -80,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          -103,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          106,
+          1
+        ],
+        [
+          121,
+          1
+        ],
+        [
+          49,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "ea2d947ae160",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": 16
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v80384",
+        "x": 2,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 17,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        15,
+        1
+      ],
+      "predictions": [
+        [
+          -52,
+          1
+        ],
+        [
+          -80,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          -103,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          106,
+          1
+        ],
+        [
+          121,
+          1
+        ],
+        [
+          49,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "ffabb4dc2f05",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 0,
+        "y": 8
+      },
+      "proposed_x": 0,
+      "request": null,
+      "observed": null,
+      "status": "duplicate_probe",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          52,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        null,
+        [
+          101,
+          1
+        ],
+        null,
+        [
+          -118,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        null,
+        [
+          -35,
+          1
+        ],
+        null,
+        [
+          -49,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "ffabb4dc2f05",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 0,
+        "y": 8
+      },
+      "proposed_x": 1,
+      "request": {
+        "verb": "v75801",
+        "x": 1,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          52,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        null,
+        [
+          101,
+          1
+        ],
+        null,
+        [
+          -118,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        null,
+        [
+          -35,
+          1
+        ],
+        null,
+        [
+          -49,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "77e7e6c67187",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 80,
+        "y": -12799
+      },
+      "proposed_x": 160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -44,
+          1
+        ],
+        null,
+        [
+          58,
+          1
+        ],
+        null,
+        null,
+        [
+          3,
+          1
+        ],
+        [
+          -107,
+          1
+        ],
+        null,
+        [
+          -38,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          78,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "77e7e6c67187",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 80,
+        "y": -12799
+      },
+      "proposed_x": 81,
+      "request": {
+        "verb": "v12302",
+        "x": 81,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": -13121,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -322,
+        1
+      ],
+      "intercept": [
+        12961,
+        1
+      ],
+      "predictions": [
+        [
+          -44,
+          1
+        ],
+        [
+          47093,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          15215,
+          1
+        ],
+        [
+          -22459,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          -107,
+          1
+        ],
+        [
+          2013,
+          1
+        ],
+        [
+          -38,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          78,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "111065c3844f",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 3,
+        "y": -6
+      },
+      "proposed_x": 6,
+      "request": {
+        "verb": "v61754",
+        "x": 6,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": -3,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          62,
+          1
+        ],
+        [
+          -101,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -125,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          -39,
+          1
+        ],
+        [
+          -91,
+          1
+        ],
+        [
+          -69,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          -6,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "111065c3844f",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 3,
+        "y": -6
+      },
+      "proposed_x": 4,
+      "request": {
+        "verb": "v61754",
+        "x": 4,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": -5,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          62,
+          1
+        ],
+        [
+          -101,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -125,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          -39,
+          1
+        ],
+        [
+          -91,
+          1
+        ],
+        [
+          -69,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          -6,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "07fa6d7f5f12",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": 7
+      },
+      "proposed_x": 0,
+      "request": null,
+      "observed": null,
+      "status": "duplicate_probe",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          109,
+          1
+        ],
+        null,
+        [
+          48,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          104,
+          1
+        ],
+        null,
+        [
+          -24,
+          1
+        ],
+        [
+          -53,
+          1
+        ],
+        null,
+        null,
+        [
+          -10,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "07fa6d7f5f12",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": 7
+      },
+      "proposed_x": 1,
+      "request": {
+        "verb": "v09470",
+        "x": 1,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 5,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -2,
+        1
+      ],
+      "intercept": [
+        7,
+        1
+      ],
+      "predictions": [
+        [
+          109,
+          1
+        ],
+        [
+          245,
+          1
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          104,
+          1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          -24,
+          1
+        ],
+        [
+          -53,
+          1
+        ],
+        [
+          -55,
+          1
+        ],
+        [
+          -107,
+          1
+        ],
+        [
+          -10,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "d5287103037e",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 0,
+        "y": -9
+      },
+      "proposed_x": 0,
+      "request": null,
+      "observed": null,
+      "status": "duplicate_probe",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -70,
+          1
+        ],
+        [
+          -111,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        null,
+        null,
+        null,
+        null,
+        [
+          67,
+          1
+        ],
+        [
+          -57,
+          1
+        ],
+        [
+          -8,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "d5287103037e",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 0,
+        "y": -9
+      },
+      "proposed_x": 1,
+      "request": {
+        "verb": "v07616",
+        "x": 1,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": -8,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          -70,
+          1
+        ],
+        [
+          -111,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        [
+          -64,
+          1
+        ],
+        [
+          26,
+          1
+        ],
+        [
+          -38,
+          1
+        ],
+        [
+          90,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          -57,
+          1
+        ],
+        [
+          -8,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "d2cdc50217fa",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 17,
+        "y": 589
+      },
+      "proposed_x": 34,
+      "request": {
+        "verb": "v33850",
+        "x": 34,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 2323,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        102,
+        1
+      ],
+      "intercept": [
+        -1145,
+        1
+      ],
+      "predictions": [
+        [
+          30,
+          1
+        ],
+        [
+          -119,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          116,
+          1
+        ],
+        [
+          2833,
+          1
+        ],
+        [
+          -1961,
+          1
+        ],
+        [
+          -16,
+          1
+        ],
+        [
+          98,
+          1
+        ],
+        [
+          -7163,
+          1
+        ],
+        [
+          -31,
+          1
+        ],
+        [
+          9055,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "d2cdc50217fa",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 17,
+        "y": 589
+      },
+      "proposed_x": 18,
+      "request": {
+        "verb": "v33850",
+        "x": 18,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 659,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        70,
+        1
+      ],
+      "intercept": [
+        -601,
+        1
+      ],
+      "predictions": [
+        [
+          30,
+          1
+        ],
+        [
+          -119,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          116,
+          1
+        ],
+        [
+          2129,
+          1
+        ],
+        [
+          -1161,
+          1
+        ],
+        [
+          -16,
+          1
+        ],
+        [
+          98,
+          1
+        ],
+        [
+          -4731,
+          1
+        ],
+        [
+          -31,
+          1
+        ],
+        [
+          6399,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "70824650b30d",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 17,
+        "y": 79
+      },
+      "proposed_x": 34,
+      "request": {
+        "verb": "v78930",
+        "x": 34,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 147,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        4,
+        1
+      ],
+      "intercept": [
+        11,
+        1
+      ],
+      "predictions": [
+        [
+          58,
+          1
+        ],
+        [
+          -110,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          -72,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          -25,
+          1
+        ],
+        [
+          -106,
+          1
+        ],
+        [
+          483,
+          1
+        ],
+        [
+          115,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          -409,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 0,
+          "held": 0
+        },
+        "inside_span": {
+          "correct": 1,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "70824650b30d",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 17,
+        "y": 79
+      },
+      "proposed_x": 18,
+      "request": {
+        "verb": "v78930",
+        "x": 18,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 83,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        4,
+        1
+      ],
+      "intercept": [
+        11,
+        1
+      ],
+      "predictions": [
+        [
+          58,
+          1
+        ],
+        [
+          -110,
+          1
+        ],
+        [
+          -47,
+          1
+        ],
+        [
+          -72,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          -25,
+          1
+        ],
+        [
+          -106,
+          1
+        ],
+        [
+          483,
+          1
+        ],
+        [
+          115,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          -409,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "99c2fe552e71",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -7,
+        "y": 21
+      },
+      "proposed_x": -14,
+      "request": {
+        "verb": "v97836",
+        "x": -14,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          101,
+          1
+        ],
+        null,
+        [
+          -86,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        null,
+        null,
+        null,
+        [
+          55,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        [
+          100,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "99c2fe552e71",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -7,
+        "y": 21
+      },
+      "proposed_x": -6,
+      "request": {
+        "verb": "v97836",
+        "x": -6,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          101,
+          1
+        ],
+        null,
+        [
+          -86,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        null,
+        null,
+        null,
+        [
+          55,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        [
+          100,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "11bf72f159dc",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -80,
+        "y": -72
+      },
+      "proposed_x": -160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        [
+          -36,
+          1
+        ],
+        [
+          -28,
+          1
+        ],
+        null,
+        [
+          63,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        null,
+        [
+          80,
+          1
+        ],
+        null,
+        [
+          -42,
+          1
+        ],
+        [
+          101,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "11bf72f159dc",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -80,
+        "y": -72
+      },
+      "proposed_x": -79,
+      "request": {
+        "verb": "v52168",
+        "x": -79,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": -71,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        8,
+        1
+      ],
+      "predictions": [
+        [
+          103,
+          1
+        ],
+        [
+          -36,
+          1
+        ],
+        [
+          -28,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          -14,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          -42,
+          1
+        ],
+        [
+          101,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "8268eab9bbd3",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": 1
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v47527",
+        "x": 2,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 2,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        0,
+        1
+      ],
+      "predictions": [
+        [
+          -101,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          81,
+          1
+        ],
+        [
+          -77,
+          1
+        ],
+        [
+          78,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          -121,
+          1
+        ],
+        [
+          -26,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          -38,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "8268eab9bbd3",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": 1
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v47527",
+        "x": 2,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 2,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        0,
+        1
+      ],
+      "predictions": [
+        [
+          -101,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          81,
+          1
+        ],
+        [
+          -77,
+          1
+        ],
+        [
+          78,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          -121,
+          1
+        ],
+        [
+          -26,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          -38,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "6267b61342dd",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 17,
+        "y": 7
+      },
+      "proposed_x": 34,
+      "request": {
+        "verb": "v14686",
+        "x": 34,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 24,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -10,
+        1
+      ],
+      "predictions": [
+        [
+          30,
+          1
+        ],
+        [
+          -15,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          -19,
+          1
+        ],
+        [
+          124,
+          1
+        ],
+        [
+          -120,
+          1
+        ],
+        [
+          71,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 2,
+        "wrong": 2,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 9,
+        "wrong": 2,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 2,
+          "wrong": 2,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "6267b61342dd",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 17,
+        "y": 7
+      },
+      "proposed_x": 18,
+      "request": {
+        "verb": "v14686",
+        "x": 18,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 8,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -10,
+        1
+      ],
+      "predictions": [
+        [
+          30,
+          1
+        ],
+        [
+          -15,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          -19,
+          1
+        ],
+        [
+          124,
+          1
+        ],
+        [
+          -120,
+          1
+        ],
+        [
+          71,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 2,
+        "wrong": 2,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 9,
+        "wrong": 2,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 2,
+          "wrong": 2,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "8d239e9e98a1",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": -80,
+        "y": 153
+      },
+      "proposed_x": -160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -46,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        null,
+        [
+          118,
+          1
+        ],
+        [
+          -62,
+          1
+        ],
+        null,
+        null,
+        null,
+        [
+          91,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          69,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "8d239e9e98a1",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": -80,
+        "y": 153
+      },
+      "proposed_x": -79,
+      "request": {
+        "verb": "v98628",
+        "x": -79,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": 151,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -2,
+        1
+      ],
+      "intercept": [
+        -7,
+        1
+      ],
+      "predictions": [
+        [
+          -46,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          -17,
+          1
+        ],
+        [
+          118,
+          1
+        ],
+        [
+          -62,
+          1
+        ],
+        [
+          203,
+          1
+        ],
+        [
+          -117,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          91,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          69,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "d7a75e376c51",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -2,
+        "y": -1
+      },
+      "proposed_x": -4,
+      "request": {
+        "verb": "v51572",
+        "x": -4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -3,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        1,
+        1
+      ],
+      "predictions": [
+        [
+          -92,
+          1
+        ],
+        [
+          -73,
+          1
+        ],
+        [
+          86,
+          1
+        ],
+        [
+          46,
+          1
+        ],
+        [
+          -30,
+          1
+        ],
+        [
+          85,
+          1
+        ],
+        [
+          50,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          -27,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          86,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "d7a75e376c51",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -2,
+        "y": -1
+      },
+      "proposed_x": -1,
+      "request": {
+        "verb": "v51572",
+        "x": -1,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 0,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        1,
+        1
+      ],
+      "predictions": [
+        [
+          -92,
+          1
+        ],
+        [
+          -73,
+          1
+        ],
+        [
+          86,
+          1
+        ],
+        [
+          46,
+          1
+        ],
+        [
+          -30,
+          1
+        ],
+        [
+          85,
+          1
+        ],
+        [
+          50,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          -27,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          86,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "977da50fcdc4",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 0,
+        "y": 5
+      },
+      "proposed_x": 0,
+      "request": null,
+      "observed": null,
+      "status": "duplicate_probe",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -48,
+          1
+        ],
+        [
+          135,
+          1
+        ],
+        null,
+        [
+          -50,
+          1
+        ],
+        null,
+        [
+          85,
+          1
+        ],
+        null,
+        [
+          -58,
+          1
+        ],
+        null,
+        [
+          58,
+          1
+        ],
+        [
+          112,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "977da50fcdc4",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 0,
+        "y": 5
+      },
+      "proposed_x": 1,
+      "request": {
+        "verb": "v23939",
+        "x": 1,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 6,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        5,
+        1
+      ],
+      "predictions": [
+        [
+          -48,
+          1
+        ],
+        [
+          135,
+          1
+        ],
+        [
+          -93,
+          1
+        ],
+        [
+          -50,
+          1
+        ],
+        [
+          124,
+          1
+        ],
+        [
+          85,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          -58,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          112,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "8afe87ce6831",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 80,
+        "y": 91
+      },
+      "proposed_x": 160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          131,
+          1
+        ],
+        [
+          -31,
+          1
+        ],
+        [
+          -10,
+          1
+        ],
+        [
+          -40,
+          1
+        ],
+        null,
+        [
+          53,
+          1
+        ],
+        [
+          91,
+          1
+        ],
+        null,
+        [
+          -84,
+          1
+        ],
+        null,
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "8afe87ce6831",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 80,
+        "y": 91
+      },
+      "proposed_x": 81,
+      "request": {
+        "verb": "v17267",
+        "x": 81,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 92,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        11,
+        1
+      ],
+      "predictions": [
+        [
+          131,
+          1
+        ],
+        [
+          -31,
+          1
+        ],
+        [
+          -10,
+          1
+        ],
+        [
+          -40,
+          1
+        ],
+        [
+          -24,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          91,
+          1
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          -84,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          123,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 2,
+        "wrong": 2,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 9,
+        "wrong": 2,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 2,
+          "wrong": 2,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "0446c64c0bf1",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 80,
+        "y": 73
+      },
+      "proposed_x": 160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        [
+          50,
+          1
+        ],
+        [
+          64,
+          1
+        ],
+        [
+          -57,
+          1
+        ],
+        null,
+        null,
+        [
+          76,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        null,
+        [
+          129,
+          1
+        ],
+        [
+          -37,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "0446c64c0bf1",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 80,
+        "y": 73
+      },
+      "proposed_x": 81,
+      "request": {
+        "verb": "v60885",
+        "x": 81,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        [
+          50,
+          1
+        ],
+        [
+          64,
+          1
+        ],
+        [
+          -57,
+          1
+        ],
+        null,
+        null,
+        [
+          76,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        null,
+        [
+          129,
+          1
+        ],
+        [
+          -37,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "190c07a571e0",
+      "kind": "threshold",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": -7,
+        "y": -21
+      },
+      "proposed_x": -14,
+      "request": {
+        "verb": "v12520",
+        "x": -14,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": -28,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -14,
+        1
+      ],
+      "predictions": [
+        [
+          -82,
+          1
+        ],
+        [
+          86,
+          1
+        ],
+        [
+          110,
+          1
+        ],
+        [
+          46,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          -34,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -20,
+          1
+        ],
+        [
+          -72,
+          1
+        ],
+        [
+          -12,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "190c07a571e0",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": -7,
+        "y": -21
+      },
+      "proposed_x": -6,
+      "request": {
+        "verb": "v12520",
+        "x": -6,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": -20,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -14,
+        1
+      ],
+      "predictions": [
+        [
+          -82,
+          1
+        ],
+        [
+          86,
+          1
+        ],
+        [
+          110,
+          1
+        ],
+        [
+          46,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          -34,
+          1
+        ],
+        [
+          -54,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -20,
+          1
+        ],
+        [
+          -72,
+          1
+        ],
+        [
+          -12,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "507c110656da",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -2,
+        "y": -10
+      },
+      "proposed_x": -4,
+      "request": {
+        "verb": "v93770",
+        "x": -4,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -36,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        13,
+        1
+      ],
+      "intercept": [
+        16,
+        1
+      ],
+      "predictions": [
+        [
+          -101,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          -15,
+          1
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          -413,
+          1
+        ],
+        [
+          66,
+          1
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          497,
+          1
+        ],
+        [
+          1303,
+          1
+        ],
+        [
+          -1310,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "507c110656da",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -2,
+        "y": -10
+      },
+      "proposed_x": -1,
+      "request": {
+        "verb": "v93770",
+        "x": -1,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -3,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        7,
+        1
+      ],
+      "intercept": [
+        4,
+        1
+      ],
+      "predictions": [
+        [
+          -101,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          -15,
+          1
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          -227,
+          1
+        ],
+        [
+          66,
+          1
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          697,
+          1
+        ],
+        [
+          -710,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "d1ce0c1b42bc",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 17,
+        "y": 19
+      },
+      "proposed_x": 34,
+      "request": {
+        "verb": "v74763",
+        "x": 34,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -108,
+          1
+        ],
+        null,
+        null,
+        [
+          7,
+          1
+        ],
+        [
+          -46,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        null,
+        [
+          -105,
+          1
+        ],
+        [
+          -71,
+          1
+        ],
+        null,
+        [
+          -56,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "d1ce0c1b42bc",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 17,
+        "y": 19
+      },
+      "proposed_x": 18,
+      "request": {
+        "verb": "v74763",
+        "x": 18,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -108,
+          1
+        ],
+        null,
+        null,
+        [
+          7,
+          1
+        ],
+        [
+          -46,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        null,
+        [
+          -105,
+          1
+        ],
+        [
+          -71,
+          1
+        ],
+        null,
+        [
+          -56,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "43c1f236c150",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": 0
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v00334",
+        "x": 2,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": 1,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -1,
+        1
+      ],
+      "predictions": [
+        [
+          95,
+          1
+        ],
+        [
+          -57,
+          1
+        ],
+        [
+          -9,
+          1
+        ],
+        [
+          -41,
+          1
+        ],
+        [
+          90,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          -62,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          97,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          51,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "43c1f236c150",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": 0
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v00334",
+        "x": 2,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": 1,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -1,
+        1
+      ],
+      "predictions": [
+        [
+          95,
+          1
+        ],
+        [
+          -57,
+          1
+        ],
+        [
+          -9,
+          1
+        ],
+        [
+          -41,
+          1
+        ],
+        [
+          90,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          -62,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          97,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          51,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "3da8fec7e0ce",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": -12
+      },
+      "proposed_x": 6,
+      "request": {
+        "verb": "v48921",
+        "x": 6,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": -45,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -11,
+        1
+      ],
+      "intercept": [
+        21,
+        1
+      ],
+      "predictions": [
+        [
+          -56,
+          1
+        ],
+        [
+          -18,
+          1
+        ],
+        [
+          -110,
+          1
+        ],
+        [
+          -991,
+          1
+        ],
+        [
+          -117,
+          1
+        ],
+        [
+          -177,
+          1
+        ],
+        [
+          -85,
+          1
+        ],
+        [
+          -64,
+          1
+        ],
+        [
+          934,
+          1
+        ],
+        [
+          72,
+          1
+        ],
+        [
+          153,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "3da8fec7e0ce",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": -12
+      },
+      "proposed_x": 4,
+      "request": {
+        "verb": "v48921",
+        "x": 4,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": -21,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -9,
+        1
+      ],
+      "intercept": [
+        15,
+        1
+      ],
+      "predictions": [
+        [
+          -56,
+          1
+        ],
+        [
+          -18,
+          1
+        ],
+        [
+          -110,
+          1
+        ],
+        [
+          -813,
+          1
+        ],
+        [
+          -117,
+          1
+        ],
+        [
+          -147,
+          1
+        ],
+        [
+          -85,
+          1
+        ],
+        [
+          -64,
+          1
+        ],
+        [
+          762,
+          1
+        ],
+        [
+          72,
+          1
+        ],
+        [
+          123,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "a0d48f87fd1b",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 1,
+        "y": 4
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v30235",
+        "x": 2,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          45,
+          1
+        ],
+        [
+          -61,
+          1
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          106,
+          1
+        ],
+        null,
+        [
+          74,
+          1
+        ],
+        null,
+        null,
+        [
+          48,
+          1
+        ],
+        null,
+        [
+          17,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "a0d48f87fd1b",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 1,
+        "y": 4
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v30235",
+        "x": 2,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          45,
+          1
+        ],
+        [
+          -61,
+          1
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          106,
+          1
+        ],
+        null,
+        [
+          74,
+          1
+        ],
+        null,
+        null,
+        [
+          48,
+          1
+        ],
+        null,
+        [
+          17,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "218cb35060f1",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -2,
+        "y": -3
+      },
+      "proposed_x": -4,
+      "request": {
+        "verb": "v75132",
+        "x": -4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -5,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -1,
+        1
+      ],
+      "predictions": [
+        [
+          113,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          -63,
+          1
+        ],
+        [
+          -17,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          -27,
+          1
+        ],
+        [
+          85,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "218cb35060f1",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -2,
+        "y": -3
+      },
+      "proposed_x": -1,
+      "request": {
+        "verb": "v75132",
+        "x": -1,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -2,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -1,
+        1
+      ],
+      "predictions": [
+        [
+          113,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          -63,
+          1
+        ],
+        [
+          -17,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          -27,
+          1
+        ],
+        [
+          85,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "3b95be61998a",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -7,
+        "y": 51
+      },
+      "proposed_x": -14,
+      "request": {
+        "verb": "v31381",
+        "x": -14,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 191,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -20,
+        1
+      ],
+      "intercept": [
+        -89,
+        1
+      ],
+      "predictions": [
+        [
+          -1649,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          -112,
+          1
+        ],
+        [
+          -849,
+          1
+        ],
+        [
+          -22,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          -68,
+          1
+        ],
+        [
+          -79,
+          1
+        ],
+        [
+          491,
+          1
+        ],
+        [
+          -70,
+          1
+        ],
+        [
+          1211,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "3b95be61998a",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -7,
+        "y": 51
+      },
+      "proposed_x": -6,
+      "request": {
+        "verb": "v31381",
+        "x": -6,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 39,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -12,
+        1
+      ],
+      "intercept": [
+        -33,
+        1
+      ],
+      "predictions": [
+        [
+          -969,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          -112,
+          1
+        ],
+        [
+          -489,
+          1
+        ],
+        [
+          -22,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          -68,
+          1
+        ],
+        [
+          -79,
+          1
+        ],
+        [
+          315,
+          1
+        ],
+        [
+          -70,
+          1
+        ],
+        [
+          747,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "ed27e4bf312f",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 80,
+        "y": -246
+      },
+      "proposed_x": 160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -104,
+          1
+        ],
+        null,
+        null,
+        null,
+        [
+          -97,
+          1
+        ],
+        [
+          -103,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          123,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          -89,
+          1
+        ],
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "ed27e4bf312f",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 80,
+        "y": -246
+      },
+      "proposed_x": 81,
+      "request": {
+        "verb": "v68248",
+        "x": 81,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": -249,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        -6,
+        1
+      ],
+      "predictions": [
+        [
+          -104,
+          1
+        ],
+        [
+          -228,
+          1
+        ],
+        [
+          87,
+          1
+        ],
+        [
+          -99,
+          1
+        ],
+        [
+          -97,
+          1
+        ],
+        [
+          -103,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          123,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          -89,
+          1
+        ],
+        [
+          123,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "35548126232a",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 17,
+        "y": 8
+      },
+      "proposed_x": 34,
+      "request": {
+        "verb": "v13178",
+        "x": 34,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 25,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          -117,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          -96,
+          1
+        ],
+        [
+          98,
+          1
+        ],
+        [
+          -46,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          -41,
+          1
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          95,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 0,
+          "held": 0
+        },
+        "inside_span": {
+          "correct": 1,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "35548126232a",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 17,
+        "y": 8
+      },
+      "proposed_x": 18,
+      "request": {
+        "verb": "v13178",
+        "x": 18,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 9,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          -117,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          -96,
+          1
+        ],
+        [
+          98,
+          1
+        ],
+        [
+          -46,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          -41,
+          1
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          95,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "c98e604bbe17",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -7,
+        "y": -13
+      },
+      "proposed_x": -14,
+      "request": {
+        "verb": "v48925",
+        "x": -14,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": -20,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -6,
+        1
+      ],
+      "predictions": [
+        [
+          -36,
+          1
+        ],
+        [
+          -24,
+          1
+        ],
+        [
+          -68,
+          1
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          124,
+          1
+        ],
+        [
+          24,
+          1
+        ],
+        [
+          -44,
+          1
+        ],
+        [
+          118,
+          1
+        ],
+        [
+          56,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "c98e604bbe17",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -7,
+        "y": -13
+      },
+      "proposed_x": -6,
+      "request": {
+        "verb": "v48925",
+        "x": -6,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": -12,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -6,
+        1
+      ],
+      "predictions": [
+        [
+          -36,
+          1
+        ],
+        [
+          -24,
+          1
+        ],
+        [
+          -68,
+          1
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          124,
+          1
+        ],
+        [
+          24,
+          1
+        ],
+        [
+          -44,
+          1
+        ],
+        [
+          118,
+          1
+        ],
+        [
+          56,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7363e4d91df1",
+      "kind": "additive",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": -7,
+        "y": -16
+      },
+      "proposed_x": -14,
+      "request": {
+        "verb": "v03329",
+        "x": -14,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": -23,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          102,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -42,
+          1
+        ],
+        [
+          -121,
+          1
+        ],
+        [
+          -123,
+          1
+        ],
+        [
+          -48,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          117,
+          1
+        ],
+        [
+          98,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          60,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7363e4d91df1",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": -7,
+        "y": -16
+      },
+      "proposed_x": -6,
+      "request": {
+        "verb": "v03329",
+        "x": -6,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": -15,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -9,
+        1
+      ],
+      "predictions": [
+        [
+          102,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -42,
+          1
+        ],
+        [
+          -121,
+          1
+        ],
+        [
+          -123,
+          1
+        ],
+        [
+          -48,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          117,
+          1
+        ],
+        [
+          98,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          60,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "bf1b7a182af0",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": 8
+      },
+      "proposed_x": 6,
+      "request": {
+        "verb": "v69964",
+        "x": 6,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        null,
+        [
+          47,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          99,
+          1
+        ],
+        [
+          -20,
+          1
+        ],
+        [
+          -30,
+          1
+        ],
+        null,
+        [
+          42,
+          1
+        ],
+        null,
+        [
+          96,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "bf1b7a182af0",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": 8
+      },
+      "proposed_x": 4,
+      "request": {
+        "verb": "v69964",
+        "x": 4,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        null,
+        null,
+        [
+          47,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          99,
+          1
+        ],
+        [
+          -20,
+          1
+        ],
+        [
+          -30,
+          1
+        ],
+        null,
+        [
+          42,
+          1
+        ],
+        null,
+        [
+          96,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "389634533009",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -7,
+        "y": -3
+      },
+      "proposed_x": -14,
+      "request": {
+        "verb": "v35689",
+        "x": -14,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 4,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -1,
+        1
+      ],
+      "intercept": [
+        -10,
+        1
+      ],
+      "predictions": [
+        [
+          -92,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          -30,
+          1
+        ],
+        [
+          -86,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -125,
+          1
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          18,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "389634533009",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -7,
+        "y": -3
+      },
+      "proposed_x": -6,
+      "request": {
+        "verb": "v35689",
+        "x": -6,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": -4,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -1,
+        1
+      ],
+      "intercept": [
+        -10,
+        1
+      ],
+      "predictions": [
+        [
+          -92,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          -30,
+          1
+        ],
+        [
+          -86,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -125,
+          1
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          18,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "1435091588ae",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": 7
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v39434",
+        "x": 2,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 10,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        3,
+        1
+      ],
+      "intercept": [
+        4,
+        1
+      ],
+      "predictions": [
+        [
+          -176,
+          1
+        ],
+        [
+          71,
+          1
+        ],
+        [
+          340,
+          1
+        ],
+        [
+          -89,
+          1
+        ],
+        [
+          -102,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          100,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          -35,
+          1
+        ],
+        [
+          94,
+          1
+        ],
+        [
+          -105,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "1435091588ae",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": 7
+      },
+      "proposed_x": 2,
+      "request": {
+        "verb": "v39434",
+        "x": 2,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 10,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        3,
+        1
+      ],
+      "intercept": [
+        4,
+        1
+      ],
+      "predictions": [
+        [
+          -176,
+          1
+        ],
+        [
+          71,
+          1
+        ],
+        [
+          340,
+          1
+        ],
+        [
+          -89,
+          1
+        ],
+        [
+          -102,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          100,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          -35,
+          1
+        ],
+        [
+          94,
+          1
+        ],
+        [
+          -105,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "2ac8ecb6bf92",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 17,
+        "y": 24
+      },
+      "proposed_x": 34,
+      "request": {
+        "verb": "v67051",
+        "x": 34,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 41,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        7,
+        1
+      ],
+      "predictions": [
+        [
+          84,
+          1
+        ],
+        [
+          -77,
+          1
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          -97,
+          1
+        ],
+        [
+          78,
+          1
+        ],
+        [
+          62,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          -11,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          102,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 2,
+          "wrong": 1,
+          "held": 0
+        },
+        "inside_span": {
+          "correct": 1,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "2ac8ecb6bf92",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 17,
+        "y": 24
+      },
+      "proposed_x": 18,
+      "request": {
+        "verb": "v67051",
+        "x": 18,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 25,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        7,
+        1
+      ],
+      "predictions": [
+        [
+          84,
+          1
+        ],
+        [
+          -77,
+          1
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          -97,
+          1
+        ],
+        [
+          78,
+          1
+        ],
+        [
+          62,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          -11,
+          1
+        ],
+        [
+          -33,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          102,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "78f0c5df3cc5",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -2,
+        "y": -4
+      },
+      "proposed_x": -4,
+      "request": {
+        "verb": "v84626",
+        "x": -4,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -6,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -2,
+        1
+      ],
+      "predictions": [
+        [
+          95,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          112,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          -63,
+          1
+        ],
+        [
+          -119,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -99,
+          1
+        ],
+        [
+          -61,
+          1
+        ],
+        [
+          -114,
+          1
+        ],
+        [
+          114,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "78f0c5df3cc5",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -2,
+        "y": -4
+      },
+      "proposed_x": -1,
+      "request": {
+        "verb": "v84626",
+        "x": -1,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -3,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -2,
+        1
+      ],
+      "predictions": [
+        [
+          95,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          112,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          -63,
+          1
+        ],
+        [
+          -119,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -99,
+          1
+        ],
+        [
+          -61,
+          1
+        ],
+        [
+          -114,
+          1
+        ],
+        [
+          114,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "51c9f0c33aa3",
+      "kind": "unavailable",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -2,
+        "y": 3
+      },
+      "proposed_x": -4,
+      "request": {
+        "verb": "v55505",
+        "x": -4,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          39,
+          1
+        ],
+        [
+          94,
+          1
+        ],
+        [
+          -86,
+          1
+        ],
+        [
+          -79,
+          1
+        ],
+        null,
+        null,
+        [
+          20,
+          1
+        ],
+        [
+          -123,
+          1
+        ],
+        [
+          -99,
+          1
+        ],
+        null,
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "51c9f0c33aa3",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -2,
+        "y": 3
+      },
+      "proposed_x": -1,
+      "request": {
+        "verb": "v55505",
+        "x": -1,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "status": "unavailable",
+      "requests": 1,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          39,
+          1
+        ],
+        [
+          94,
+          1
+        ],
+        [
+          -86,
+          1
+        ],
+        [
+          -79,
+          1
+        ],
+        null,
+        null,
+        [
+          20,
+          1
+        ],
+        [
+          -123,
+          1
+        ],
+        [
+          -99,
+          1
+        ],
+        null,
+        null
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "3ef4b7816168",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -2,
+        "y": 14
+      },
+      "proposed_x": -4,
+      "request": {
+        "verb": "v10594",
+        "x": -4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 20,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        8,
+        1
+      ],
+      "predictions": [
+        [
+          -111,
+          1
+        ],
+        [
+          107,
+          1
+        ],
+        [
+          134,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          317,
+          1
+        ],
+        [
+          -106,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          -214,
+          1
+        ],
+        [
+          60,
+          1
+        ],
+        [
+          -43,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "3ef4b7816168",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -2,
+        "y": 14
+      },
+      "proposed_x": -1,
+      "request": {
+        "verb": "v10594",
+        "x": -1,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 11,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        8,
+        1
+      ],
+      "predictions": [
+        [
+          -111,
+          1
+        ],
+        [
+          107,
+          1
+        ],
+        [
+          134,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          317,
+          1
+        ],
+        [
+          -106,
+          1
+        ],
+        [
+          -109,
+          1
+        ],
+        [
+          -214,
+          1
+        ],
+        [
+          60,
+          1
+        ],
+        [
+          -43,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "5089924423b6",
+      "kind": "quadratic",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -80,
+        "y": 12953
+      },
+      "proposed_x": -160,
+      "request": null,
+      "observed": null,
+      "status": "out_of_bounds",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          -19,
+          1
+        ],
+        [
+          -115,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          -41,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        null,
+        null,
+        null,
+        null,
+        [
+          -70,
+          1
+        ],
+        [
+          -98,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "5089924423b6",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -80,
+        "y": 12953
+      },
+      "proposed_x": -79,
+      "request": {
+        "verb": "v23820",
+        "x": -79,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 12633,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -320,
+        1
+      ],
+      "intercept": [
+        -12647,
+        1
+      ],
+      "predictions": [
+        [
+          -19,
+          1
+        ],
+        [
+          -115,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          -41,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          -21607,
+          1
+        ],
+        [
+          -4647,
+          1
+        ],
+        [
+          -37927,
+          1
+        ],
+        [
+          3353,
+          1
+        ],
+        [
+          -70,
+          1
+        ],
+        [
+          -98,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 4,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 0,
+          "wrong": 4,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7d35637f368f",
+      "kind": "affine",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": -2
+      },
+      "proposed_x": 6,
+      "request": {
+        "verb": "v04949",
+        "x": 6,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -11,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        7,
+        1
+      ],
+      "predictions": [
+        [
+          -179,
+          1
+        ],
+        [
+          90,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          -66,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          107,
+          1
+        ],
+        [
+          157,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          115,
+          1
+        ],
+        [
+          -37,
+          1
+        ],
+        [
+          -71,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7d35637f368f",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": -2
+      },
+      "proposed_x": 4,
+      "request": {
+        "verb": "v04949",
+        "x": 4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -5,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 1,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        -3,
+        1
+      ],
+      "intercept": [
+        7,
+        1
+      ],
+      "predictions": [
+        [
+          -179,
+          1
+        ],
+        [
+          90,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          -66,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          107,
+          1
+        ],
+        [
+          157,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          115,
+          1
+        ],
+        [
+          -37,
+          1
+        ],
+        [
+          -71,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 11,
+        "wrong": 0,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 4,
+          "wrong": 0,
+          "held": 0
+        }
+      }
+    },
+    {
+      "id": "7f138463e863",
+      "kind": "local_exception",
+      "policy": "double",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 0,
+        "y": -5
+      },
+      "proposed_x": 0,
+      "request": null,
+      "observed": null,
+      "status": "duplicate_probe",
+      "requests": 0,
+      "readings": 0,
+      "fits": 0,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": null,
+      "intercept": null,
+      "predictions": [
+        [
+          96,
+          1
+        ],
+        [
+          -49,
+          1
+        ],
+        [
+          -92,
+          1
+        ],
+        [
+          26,
+          1
+        ],
+        null,
+        [
+          106,
+          1
+        ],
+        null,
+        null,
+        null,
+        [
+          64,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "all_endpoints": {
+        "correct": 7,
+        "wrong": 0,
+        "held": 4
+      },
+      "regions": {
+        "unfitted": {
+          "correct": 0,
+          "wrong": 0,
+          "held": 4
+        }
+      }
+    },
+    {
+      "id": "7f138463e863",
+      "kind": "local_exception",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 0,
+        "y": -5
+      },
+      "proposed_x": 1,
+      "request": {
+        "verb": "v63152",
+        "x": 1,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": -4,
+      "status": "fitted",
+      "requests": 1,
+      "readings": 1,
+      "fits": 1,
+      "offset_changed": 0,
+      "preserved": 7,
+      "replays": 15,
+      "slope": [
+        1,
+        1
+      ],
+      "intercept": [
+        -5,
+        1
+      ],
+      "predictions": [
+        [
+          96,
+          1
+        ],
+        [
+          -49,
+          1
+        ],
+        [
+          -92,
+          1
+        ],
+        [
+          26,
+          1
+        ],
+        [
+          -49,
+          1
+        ],
+        [
+          106,
+          1
+        ],
+        [
+          -19,
+          1
+        ],
+        [
+          -28,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          64,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "target": {
+        "correct": 3,
+        "wrong": 1,
+        "held": 0
+      },
+      "all_endpoints": {
+        "correct": 10,
+        "wrong": 1,
+        "held": 0
+      },
+      "regions": {
+        "outside_span": {
+          "correct": 3,
+          "wrong": 1,
+          "held": 0
+        }
+      }
+    }
+  ]
+}
