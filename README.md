@@ -1,10 +1,17 @@
 # BRACE
 
-BRACE tests when a tool has enough evidence to act on a proposal and when it should ask the caller first. The arithmetic demo checks proposed steps. A separate experiment checks proposed repairs to an API mapping under a two-check budget. [Try the connector example](research/connector-clarification/README.md)
+BRACE is a small Python harness for developers who need to check the steps an AI or another program proposes. Give it a supported instruction and a proposer. It returns a checked result or a reason it stopped, with a receipt for each step it checked.
 
 At an input of 2, `2 + 2` and `2 × 2` both give **4**. In the PAT example, a mislabeled lesson proposes addition when the instruction calls for multiplication. A check on the final number alone would pass. BRACE records `different-operation` and withholds the answer. [Run the PAT example](#try-pat-as-a-proposer)
 
-BRACE can evaluate these two-step integer instructions directly. A separate proposer lets you test what happens when a suggested step is wrong and whether one retry can repair it. BRACE checks each proposed operation against the instruction and five witness values. The second step must cite the receipt for the accepted first step.
+## Where BRACE fits
+
+- **Require a check before using an answer.** Route the task through `run_bound` and let the host application release the value only when `outcome.status == "checked"`. The application must own that release path. The proposer adapter runs as trusted Python code.
+- **Offer a check when an AI asks for one.** Expose the same call as a tool. The caller can inspect the receipts, revise a rejected step and submit it again under the host's retry policy. Skipping the call produces no BRACE verdict.
+
+The runnable harness supports adding an integer and then multiplying by an integer. It can do the arithmetic directly. Plugging in your own proposer lets you measure which steps it gets wrong and whether a retry helps. BRACE checks the operation and five witness values, and the second step must cite the receipt for the accepted first step. A new task type needs its own contract and checker.
+
+The connector experiment asks whether the caller requested the action that passed the technical check. Its offline replay includes a valid patch preview for a request the caller explicitly excluded. You can reproduce the failure and inspect the evidence. [Try the connector replay](research/connector-clarification/README.md)
 
 ## Run the harness
 
