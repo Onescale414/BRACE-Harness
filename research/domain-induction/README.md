@@ -53,6 +53,10 @@ For each of the two learned partitions, a second verb showed a new effect on one
 
 Both clean transfers passed at every budget. With an unrestricted single-cell exception, the remaining unobserved cell can always disagree. The global-reuse policy withheld the entire candidate on contradiction. At full coverage that discarded 96 individually answerable endpoints. An exploratory fallback retained the measured local effects after a contradiction. With the same full evidence it answered **112/112** correctly, matching local lookup. At three extra readings it answered 88 correctly and still released six wrong predictions where an exception had escaped detection. At that budget, releasing only measured cells returned 70 correct answers with zero wrong releases.
 
+## Asking for one extra observation
+
+When two possible rules predicted 55 and 58 for the same proposed experiment, BRACE asked the instrument and observed 58. The repair predicted all eight fresh endpoints in that world. Four matched exception worlds exposed the limit of this strategy. A separate local fallback increased correct answers from 84 to 100 with 16 new readings across 24 worlds and withheld 92. [One-reading trial, sensor costs and counterexamples](observations.md)
+
 ## Reproduce
 
 From the repository root with Python 3.12 or later. The commands run offline using the standard library. Add `--world m42` to the first to see both guesses and the confirmed meanings, or `--world w01` for the first context trial's probe trace.

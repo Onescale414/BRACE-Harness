@@ -1,0 +1,402 @@
+{
+  "one_read": {
+    "no_grant": {
+      "identifiable": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      },
+      "irreducible": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 4,
+        "ambiguous": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 0,
+        "local_wrong": 0,
+        "local_held": 32
+      },
+      "exception": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      },
+      "partial": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 8,
+        "local_wrong": 0,
+        "local_held": 24
+      },
+      "restricted": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      },
+      "outside": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      }
+    },
+    "first": {
+      "identifiable": {
+        "reads": 4,
+        "unique": 2,
+        "contradicted": 0,
+        "ambiguous": 2,
+        "right": 16,
+        "wrong": 0,
+        "held": 16,
+        "local_right": 18,
+        "local_wrong": 0,
+        "local_held": 14
+      },
+      "irreducible": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 4,
+        "ambiguous": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 0,
+        "local_wrong": 0,
+        "local_held": 32
+      },
+      "exception": {
+        "reads": 4,
+        "unique": 2,
+        "contradicted": 0,
+        "ambiguous": 2,
+        "right": 14,
+        "wrong": 2,
+        "held": 16,
+        "local_right": 18,
+        "local_wrong": 0,
+        "local_held": 14
+      },
+      "partial": {
+        "reads": 4,
+        "unique": 1,
+        "contradicted": 0,
+        "ambiguous": 3,
+        "right": 8,
+        "wrong": 0,
+        "held": 24,
+        "local_right": 11,
+        "local_wrong": 0,
+        "local_held": 21
+      },
+      "restricted": {
+        "reads": 4,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      },
+      "outside": {
+        "reads": 4,
+        "unique": 0,
+        "contradicted": 1,
+        "ambiguous": 3,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 12,
+        "local_wrong": 0,
+        "local_held": 20
+      }
+    },
+    "first_informative": {
+      "identifiable": {
+        "reads": 4,
+        "unique": 4,
+        "contradicted": 0,
+        "ambiguous": 0,
+        "right": 32,
+        "wrong": 0,
+        "held": 0,
+        "local_right": 20,
+        "local_wrong": 0,
+        "local_held": 12
+      },
+      "irreducible": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 4,
+        "ambiguous": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 0,
+        "local_wrong": 0,
+        "local_held": 32
+      },
+      "exception": {
+        "reads": 4,
+        "unique": 4,
+        "contradicted": 0,
+        "ambiguous": 0,
+        "right": 28,
+        "wrong": 4,
+        "held": 0,
+        "local_right": 20,
+        "local_wrong": 0,
+        "local_held": 12
+      },
+      "partial": {
+        "reads": 4,
+        "unique": 1,
+        "contradicted": 0,
+        "ambiguous": 3,
+        "right": 8,
+        "wrong": 0,
+        "held": 24,
+        "local_right": 12,
+        "local_wrong": 0,
+        "local_held": 20
+      },
+      "restricted": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      },
+      "outside": {
+        "reads": 4,
+        "unique": 0,
+        "contradicted": 4,
+        "ambiguous": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 0,
+        "local_wrong": 0,
+        "local_held": 32
+      }
+    },
+    "selected": {
+      "identifiable": {
+        "reads": 4,
+        "unique": 4,
+        "contradicted": 0,
+        "ambiguous": 0,
+        "right": 32,
+        "wrong": 0,
+        "held": 0,
+        "local_right": 20,
+        "local_wrong": 0,
+        "local_held": 12
+      },
+      "irreducible": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 4,
+        "ambiguous": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 0,
+        "local_wrong": 0,
+        "local_held": 32
+      },
+      "exception": {
+        "reads": 4,
+        "unique": 4,
+        "contradicted": 0,
+        "ambiguous": 0,
+        "right": 28,
+        "wrong": 4,
+        "held": 0,
+        "local_right": 20,
+        "local_wrong": 0,
+        "local_held": 12
+      },
+      "partial": {
+        "reads": 4,
+        "unique": 1,
+        "contradicted": 0,
+        "ambiguous": 3,
+        "right": 8,
+        "wrong": 0,
+        "held": 24,
+        "local_right": 12,
+        "local_wrong": 0,
+        "local_held": 20
+      },
+      "restricted": {
+        "reads": 0,
+        "unique": 0,
+        "contradicted": 0,
+        "ambiguous": 4,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 16,
+        "local_wrong": 0,
+        "local_held": 16
+      },
+      "outside": {
+        "reads": 4,
+        "unique": 0,
+        "contradicted": 4,
+        "ambiguous": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 32,
+        "local_right": 0,
+        "local_wrong": 0,
+        "local_held": 32
+      }
+    }
+  },
+  "one_field": {
+    "first": {
+      "unresolved": {
+        "requests": 6,
+        "fits": 0,
+        "confirmed": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 36,
+        "archived_cells": 0,
+        "fit_rereads": 48,
+        "validation_reads": 0,
+        "query_reads": 0
+      },
+      "unique": {
+        "requests": 6,
+        "fits": 1,
+        "confirmed": 1,
+        "right": 6,
+        "wrong": 0,
+        "held": 30,
+        "archived_cells": 0,
+        "fit_rereads": 48,
+        "validation_reads": 6,
+        "query_reads": 6
+      },
+      "unavailable": {
+        "requests": 6,
+        "fits": 0,
+        "confirmed": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 36,
+        "archived_cells": 0,
+        "fit_rereads": 48,
+        "validation_reads": 0,
+        "query_reads": 0
+      },
+      "decoy": {
+        "requests": 6,
+        "fits": 2,
+        "confirmed": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 36,
+        "archived_cells": 0,
+        "fit_rereads": 48,
+        "validation_reads": 12,
+        "query_reads": 0
+      }
+    },
+    "selected": {
+      "unresolved": {
+        "requests": 0,
+        "fits": 0,
+        "confirmed": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 36,
+        "archived_cells": 144,
+        "fit_rereads": 0,
+        "validation_reads": 0,
+        "query_reads": 0
+      },
+      "unique": {
+        "requests": 6,
+        "fits": 6,
+        "confirmed": 6,
+        "right": 36,
+        "wrong": 0,
+        "held": 0,
+        "archived_cells": 144,
+        "fit_rereads": 48,
+        "validation_reads": 36,
+        "query_reads": 36
+      },
+      "unavailable": {
+        "requests": 0,
+        "fits": 0,
+        "confirmed": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 36,
+        "archived_cells": 144,
+        "fit_rereads": 0,
+        "validation_reads": 0,
+        "query_reads": 0
+      },
+      "decoy": {
+        "requests": 6,
+        "fits": 6,
+        "confirmed": 0,
+        "right": 0,
+        "wrong": 0,
+        "held": 36,
+        "archived_cells": 144,
+        "fit_rereads": 48,
+        "validation_reads": 36,
+        "query_reads": 0
+      }
+    }
+  }
+}

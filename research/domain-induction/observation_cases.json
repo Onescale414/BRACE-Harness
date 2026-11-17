@@ -1,0 +1,4962 @@
+[
+  {
+    "id": "cgxxmdn",
+    "kind": "identifiable",
+    "keys": [
+      "hv3",
+      "q6s",
+      "xr8"
+    ],
+    "fit": [
+      {
+        "x": -15,
+        "y": -17,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -15,
+        "y": -14,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -15,
+        "y": -14,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -15,
+        "y": -17,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 26,
+        "y": 27,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 57,
+        "y": 58,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -57,
+        "y": -56,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 32,
+        "y": 30,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -34,
+        "y": -36,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": 23,
+        "y": 21,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 1
+        }
+      },
+      {
+        "x": 54,
+        "y": 52,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 43,
+        "y": 44,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -29,
+        "y": -28,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -89,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -13,
+        "y": -15,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -80,
+        "y": -79,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 39,
+        "y": 37,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -38,
+        "y": -40,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ecmddq3",
+    "kind": "irreducible",
+    "keys": [
+      "3ty",
+      "nj3",
+      "gqu"
+    ],
+    "fit": [
+      {
+        "x": -12,
+        "y": -13,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 1,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -12,
+        "y": -13,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 1,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -12,
+        "y": -14,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 0,
+          "gqu": 0
+        }
+      },
+      {
+        "x": -12,
+        "y": -13,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 0,
+          "gqu": 0
+        }
+      },
+      {
+        "x": -12,
+        "y": -14,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 0,
+          "gqu": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -90,
+        "y": -92,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 0,
+          "gqu": 0
+        }
+      },
+      {
+        "x": -47,
+        "y": -49,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 0,
+          "gqu": 1
+        }
+      },
+      {
+        "x": 79,
+        "y": 78,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 1,
+          "gqu": 0
+        }
+      },
+      {
+        "x": 68,
+        "y": 66,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 0,
+          "gqu": 0
+        }
+      },
+      {
+        "x": -29,
+        "y": -31,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 0,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -65,
+        "y": -66,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 1,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -9,
+        "y": -10,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 1,
+          "gqu": 1
+        }
+      },
+      {
+        "x": 64,
+        "y": 63,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 1,
+          "gqu": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -27,
+        "y": -29,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 0,
+          "gqu": 0
+        }
+      },
+      {
+        "x": 42,
+        "y": 41,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 1,
+          "gqu": 0
+        }
+      },
+      {
+        "x": 53,
+        "y": 52,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 1,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -39,
+        "y": -41,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 0,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -62,
+        "y": -63,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 1,
+          "gqu": 0
+        }
+      },
+      {
+        "x": 11,
+        "y": 9,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 0,
+          "gqu": 1
+        }
+      },
+      {
+        "x": 45,
+        "y": 44,
+        "verb": "sexb",
+        "features": {
+          "3ty": 1,
+          "nj3": 1,
+          "gqu": 1
+        }
+      },
+      {
+        "x": -49,
+        "y": -51,
+        "verb": "sexb",
+        "features": {
+          "3ty": 0,
+          "nj3": 0,
+          "gqu": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "rme85by",
+    "kind": "irreducible",
+    "keys": [
+      "e3c",
+      "acb",
+      "n5z"
+    ],
+    "fit": [
+      {
+        "x": 68,
+        "y": 68,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 1,
+          "n5z": 1
+        }
+      },
+      {
+        "x": 68,
+        "y": 66,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 1,
+          "n5z": 0
+        }
+      },
+      {
+        "x": 68,
+        "y": 66,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 0,
+          "n5z": 0
+        }
+      },
+      {
+        "x": 68,
+        "y": 68,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 0,
+          "n5z": 0
+        }
+      },
+      {
+        "x": 68,
+        "y": 68,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 0,
+          "n5z": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -89,
+        "y": -91,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 1,
+          "n5z": 0
+        }
+      },
+      {
+        "x": -60,
+        "y": -60,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 1,
+          "n5z": 1
+        }
+      },
+      {
+        "x": 37,
+        "y": 35,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 0,
+          "n5z": 0
+        }
+      },
+      {
+        "x": 42,
+        "y": 40,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 0,
+          "n5z": 0
+        }
+      },
+      {
+        "x": -40,
+        "y": -40,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 0,
+          "n5z": 1
+        }
+      },
+      {
+        "x": 22,
+        "y": 22,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 0,
+          "n5z": 1
+        }
+      },
+      {
+        "x": 12,
+        "y": 10,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 1,
+          "n5z": 0
+        }
+      },
+      {
+        "x": 84,
+        "y": 84,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 1,
+          "n5z": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 89,
+        "y": 89,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 0,
+          "n5z": 1
+        }
+      },
+      {
+        "x": 57,
+        "y": 57,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 1,
+          "n5z": 1
+        }
+      },
+      {
+        "x": -4,
+        "y": -4,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 0,
+          "n5z": 1
+        }
+      },
+      {
+        "x": -61,
+        "y": -63,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 0,
+          "n5z": 0
+        }
+      },
+      {
+        "x": 26,
+        "y": 24,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 1,
+          "n5z": 0
+        }
+      },
+      {
+        "x": -42,
+        "y": -42,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 1,
+          "n5z": 1
+        }
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "verb": "htt5",
+        "features": {
+          "e3c": 1,
+          "acb": 1,
+          "n5z": 0
+        }
+      },
+      {
+        "x": -19,
+        "y": -21,
+        "verb": "htt5",
+        "features": {
+          "e3c": 0,
+          "acb": 0,
+          "n5z": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "k2jsm6x",
+    "kind": "exception",
+    "keys": [
+      "hv3",
+      "q6s",
+      "xr8"
+    ],
+    "fit": [
+      {
+        "x": -15,
+        "y": -17,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -15,
+        "y": -14,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -15,
+        "y": -14,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -15,
+        "y": -17,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 26,
+        "y": 27,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 57,
+        "y": 58,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -57,
+        "y": -56,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 32,
+        "y": 30,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -34,
+        "y": -36,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": 23,
+        "y": 21,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 1
+        }
+      },
+      {
+        "x": 54,
+        "y": 52,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 43,
+        "y": 44,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -29,
+        "y": -28,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -89,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -13,
+        "y": -15,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -80,
+        "y": -82,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 1,
+          "xr8": 0
+        }
+      },
+      {
+        "x": 39,
+        "y": 37,
+        "verb": "65r2",
+        "features": {
+          "hv3": 0,
+          "q6s": 0,
+          "xr8": 1
+        }
+      },
+      {
+        "x": -38,
+        "y": -40,
+        "verb": "65r2",
+        "features": {
+          "hv3": 1,
+          "q6s": 1,
+          "xr8": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hzd5w8f",
+    "kind": "exception",
+    "keys": [
+      "u9m",
+      "wvq",
+      "49n"
+    ],
+    "fit": [
+      {
+        "x": 52,
+        "y": 50,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 1
+        }
+      },
+      {
+        "x": 52,
+        "y": 50,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 52,
+        "y": 53,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 52,
+        "y": 53,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 47,
+        "y": 45,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 41,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 26,
+        "y": 27,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 62,
+        "y": 63,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": -24,
+        "y": -23,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 79,
+        "y": 80,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": -46,
+        "y": -48,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 39,
+        "y": 40,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": 29,
+        "y": 27,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 33,
+        "y": 31,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 24,
+        "y": 25,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": -5,
+        "y": -4,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 65,
+        "y": 63,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 1
+        }
+      },
+      {
+        "x": -27,
+        "y": -26,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 1
+        }
+      },
+      {
+        "x": 90,
+        "y": 91,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "72asga7",
+    "kind": "partial",
+    "keys": [
+      "5c7",
+      "cxw",
+      "db4"
+    ],
+    "fit": [
+      {
+        "x": 47,
+        "y": 45,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 1,
+          "db4": 1
+        }
+      },
+      {
+        "x": 47,
+        "y": 48,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 0,
+          "db4": 0
+        }
+      },
+      {
+        "x": 47,
+        "y": 48,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 0,
+          "db4": 0
+        }
+      },
+      {
+        "x": 47,
+        "y": 45,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 1,
+          "db4": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 77,
+        "y": 78,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 1,
+          "db4": 0
+        }
+      },
+      {
+        "x": 63,
+        "y": 61,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 1,
+          "db4": 0
+        }
+      },
+      {
+        "x": 44,
+        "y": 45,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 0,
+          "db4": 1
+        }
+      },
+      {
+        "x": 42,
+        "y": 43,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 1,
+          "db4": 1
+        }
+      },
+      {
+        "x": -44,
+        "y": -43,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 0,
+          "db4": 0
+        }
+      },
+      {
+        "x": 61,
+        "y": 59,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 0,
+          "db4": 1
+        }
+      },
+      {
+        "x": -81,
+        "y": -83,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 0,
+          "db4": 0
+        }
+      },
+      {
+        "x": -52,
+        "y": -54,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 1,
+          "db4": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 55,
+        "y": 53,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 0,
+          "db4": 0
+        }
+      },
+      {
+        "x": 11,
+        "y": 9,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 0,
+          "db4": 1
+        }
+      },
+      {
+        "x": 72,
+        "y": 73,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 0,
+          "db4": 0
+        }
+      },
+      {
+        "x": -18,
+        "y": -17,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 1,
+          "db4": 0
+        }
+      },
+      {
+        "x": -31,
+        "y": -33,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 1,
+          "db4": 1
+        }
+      },
+      {
+        "x": -45,
+        "y": -44,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 0,
+          "db4": 1
+        }
+      },
+      {
+        "x": 53,
+        "y": 54,
+        "verb": "jky3",
+        "features": {
+          "5c7": 0,
+          "cxw": 1,
+          "db4": 1
+        }
+      },
+      {
+        "x": -38,
+        "y": -40,
+        "verb": "jky3",
+        "features": {
+          "5c7": 1,
+          "cxw": 1,
+          "db4": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "fq3cdsg",
+    "kind": "exception",
+    "keys": [
+      "2xz",
+      "t3n",
+      "3rk"
+    ],
+    "fit": [
+      {
+        "x": -13,
+        "y": -12,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -13,
+        "y": -11,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -13,
+        "y": -11,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -13,
+        "y": -12,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 10,
+        "y": 11,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -38,
+        "y": -37,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -34,
+        "y": -32,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": 75,
+        "y": 77,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 32,
+        "y": 33,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 45,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 1,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -44,
+        "y": -43,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -43,
+        "y": -42,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": 67,
+        "y": 68,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": 44,
+        "y": 46,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 1,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -22,
+        "y": -20,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -8,
+        "y": -7,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -61,
+        "y": -59,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 76,
+        "y": 77,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 63,
+        "y": 64,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "bs9bxrz",
+    "kind": "restricted",
+    "keys": [
+      "7ac",
+      "hpt",
+      "hnp"
+    ],
+    "fit": [
+      {
+        "x": 55,
+        "y": 53,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 0,
+          "hnp": 0
+        }
+      },
+      {
+        "x": 55,
+        "y": 55,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 1,
+          "hnp": 1
+        }
+      },
+      {
+        "x": 55,
+        "y": 53,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 0,
+          "hnp": 0
+        }
+      },
+      {
+        "x": 55,
+        "y": 55,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 1,
+          "hnp": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -85,
+        "y": -87,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 0,
+          "hnp": 0
+        }
+      },
+      {
+        "x": 82,
+        "y": 82,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 1,
+          "hnp": 1
+        }
+      },
+      {
+        "x": 41,
+        "y": 39,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 0,
+          "hnp": 0
+        }
+      },
+      {
+        "x": -47,
+        "y": -47,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 1,
+          "hnp": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 80,
+        "y": 78,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 1,
+          "hnp": 0
+        }
+      },
+      {
+        "x": -16,
+        "y": -18,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 1,
+          "hnp": 0
+        }
+      },
+      {
+        "x": -51,
+        "y": -51,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 1,
+          "hnp": 1
+        }
+      },
+      {
+        "x": -33,
+        "y": -33,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 0,
+          "hnp": 1
+        }
+      },
+      {
+        "x": 26,
+        "y": 24,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 0,
+          "hnp": 0
+        }
+      },
+      {
+        "x": -12,
+        "y": -12,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 0,
+          "hpt": 0,
+          "hnp": 1
+        }
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 1,
+          "hnp": 1
+        }
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "verb": "q6b8",
+        "features": {
+          "7ac": 1,
+          "hpt": 0,
+          "hnp": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "dkyb8mu",
+    "kind": "identifiable",
+    "keys": [
+      "aq8",
+      "ugh",
+      "u7v"
+    ],
+    "fit": [
+      {
+        "x": -90,
+        "y": -88,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -90,
+        "y": -89,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -88,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -89,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 62,
+        "y": 63,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": 75,
+        "y": 76,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -82,
+        "y": -80,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 88,
+        "y": 90,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -21,
+        "y": -19,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -12,
+        "y": -11,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 80,
+        "y": 82,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -51,
+        "y": -50,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -26,
+        "y": -24,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": 39,
+        "y": 41,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -48,
+        "y": -46,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -42,
+        "y": -40,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -14,
+        "y": -13,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 63,
+        "y": 64,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 0,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 50,
+        "y": 51,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "mz57bxm",
+    "kind": "restricted",
+    "keys": [
+      "kac",
+      "3d5",
+      "vf4"
+    ],
+    "fit": [
+      {
+        "x": -78,
+        "y": -79,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 0,
+          "vf4": 0
+        }
+      },
+      {
+        "x": -78,
+        "y": -80,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 1,
+          "vf4": 1
+        }
+      },
+      {
+        "x": -78,
+        "y": -79,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 0,
+          "vf4": 1
+        }
+      },
+      {
+        "x": -78,
+        "y": -80,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 1,
+          "vf4": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 69,
+        "y": 68,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 0,
+          "vf4": 0
+        }
+      },
+      {
+        "x": -64,
+        "y": -66,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 1,
+          "vf4": 0
+        }
+      },
+      {
+        "x": 55,
+        "y": 53,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 1,
+          "vf4": 1
+        }
+      },
+      {
+        "x": -21,
+        "y": -22,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 0,
+          "vf4": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -56,
+        "y": -58,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 0,
+          "vf4": 1
+        }
+      },
+      {
+        "x": 18,
+        "y": 17,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 1,
+          "vf4": 1
+        }
+      },
+      {
+        "x": 32,
+        "y": 30,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 0,
+          "vf4": 0
+        }
+      },
+      {
+        "x": -20,
+        "y": -22,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 1,
+          "vf4": 1
+        }
+      },
+      {
+        "x": -87,
+        "y": -88,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 1,
+          "vf4": 0
+        }
+      },
+      {
+        "x": -71,
+        "y": -72,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 0,
+          "vf4": 0
+        }
+      },
+      {
+        "x": -15,
+        "y": -16,
+        "verb": "aa8c",
+        "features": {
+          "kac": 0,
+          "3d5": 0,
+          "vf4": 1
+        }
+      },
+      {
+        "x": -5,
+        "y": -7,
+        "verb": "aa8c",
+        "features": {
+          "kac": 1,
+          "3d5": 1,
+          "vf4": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "d4qpzu2",
+    "kind": "identifiable",
+    "keys": [
+      "u9m",
+      "wvq",
+      "49n"
+    ],
+    "fit": [
+      {
+        "x": 52,
+        "y": 50,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 1
+        }
+      },
+      {
+        "x": 52,
+        "y": 50,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 52,
+        "y": 53,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 52,
+        "y": 53,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 47,
+        "y": 45,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 41,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 26,
+        "y": 27,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 62,
+        "y": 63,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": -24,
+        "y": -23,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 79,
+        "y": 80,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": -46,
+        "y": -48,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 39,
+        "y": 40,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": 29,
+        "y": 27,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 33,
+        "y": 31,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 1
+        }
+      },
+      {
+        "x": 24,
+        "y": 25,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 0,
+          "49n": 0
+        }
+      },
+      {
+        "x": -5,
+        "y": -4,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 0
+        }
+      },
+      {
+        "x": 65,
+        "y": 63,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 1
+        }
+      },
+      {
+        "x": -27,
+        "y": -29,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 0,
+          "wvq": 1,
+          "49n": 1
+        }
+      },
+      {
+        "x": 90,
+        "y": 91,
+        "verb": "cpa4",
+        "features": {
+          "u9m": 1,
+          "wvq": 1,
+          "49n": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "z9t3uzt",
+    "kind": "partial",
+    "keys": [
+      "s8e",
+      "qjh",
+      "8at"
+    ],
+    "fit": [
+      {
+        "x": 3,
+        "y": 2,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 0,
+          "8at": 0
+        }
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 1,
+          "8at": 1
+        }
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 1,
+          "8at": 1
+        }
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 0,
+          "8at": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -48,
+        "y": -48,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 1,
+          "8at": 0
+        }
+      },
+      {
+        "x": -7,
+        "y": -7,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 1,
+          "8at": 1
+        }
+      },
+      {
+        "x": -30,
+        "y": -30,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 1,
+          "8at": 0
+        }
+      },
+      {
+        "x": -4,
+        "y": -4,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 1,
+          "8at": 1
+        }
+      },
+      {
+        "x": 41,
+        "y": 40,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 0,
+          "8at": 1
+        }
+      },
+      {
+        "x": -58,
+        "y": -59,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 0,
+          "8at": 1
+        }
+      },
+      {
+        "x": 69,
+        "y": 68,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 0,
+          "8at": 0
+        }
+      },
+      {
+        "x": 88,
+        "y": 87,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 0,
+          "8at": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 76,
+        "y": 76,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 1,
+          "8at": 1
+        }
+      },
+      {
+        "x": -11,
+        "y": -12,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 0,
+          "8at": 1
+        }
+      },
+      {
+        "x": 42,
+        "y": 41,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 0,
+          "8at": 1
+        }
+      },
+      {
+        "x": 79,
+        "y": 79,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 1,
+          "8at": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 43,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 1,
+          "8at": 0
+        }
+      },
+      {
+        "x": 80,
+        "y": 80,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 1,
+          "8at": 0
+        }
+      },
+      {
+        "x": -5,
+        "y": -6,
+        "verb": "arvw",
+        "features": {
+          "s8e": 0,
+          "qjh": 0,
+          "8at": 0
+        }
+      },
+      {
+        "x": 85,
+        "y": 84,
+        "verb": "arvw",
+        "features": {
+          "s8e": 1,
+          "qjh": 0,
+          "8at": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "utkyb9v",
+    "kind": "outside",
+    "keys": [
+      "8b8",
+      "vsc",
+      "ker"
+    ],
+    "fit": [
+      {
+        "x": 5,
+        "y": 3,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 1,
+          "ker": 1
+        }
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 0,
+          "ker": 1
+        }
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 0,
+          "ker": 0
+        }
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 1,
+          "ker": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -19,
+        "y": -17,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 0,
+          "ker": 1
+        }
+      },
+      {
+        "x": -82,
+        "y": -80,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 0,
+          "ker": 0
+        }
+      },
+      {
+        "x": 51,
+        "y": 49,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 1,
+          "ker": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -90,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 0,
+          "ker": 1
+        }
+      },
+      {
+        "x": -36,
+        "y": -38,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 1,
+          "ker": 1
+        }
+      },
+      {
+        "x": -88,
+        "y": -88,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 0,
+          "ker": 0
+        }
+      },
+      {
+        "x": 37,
+        "y": 37,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 1,
+          "ker": 1
+        }
+      },
+      {
+        "x": 82,
+        "y": 82,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 1,
+          "ker": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -61,
+        "y": -61,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 0,
+          "ker": 1
+        }
+      },
+      {
+        "x": 85,
+        "y": 83,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 1,
+          "ker": 1
+        }
+      },
+      {
+        "x": 36,
+        "y": 34,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 1,
+          "ker": 0
+        }
+      },
+      {
+        "x": 77,
+        "y": 77,
+        "verb": "3f33",
+        "features": {
+          "8b8": 1,
+          "vsc": 0,
+          "ker": 0
+        }
+      },
+      {
+        "x": -58,
+        "y": -58,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 1,
+          "ker": 0
+        }
+      },
+      {
+        "x": 11,
+        "y": 13,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 0,
+          "ker": 1
+        }
+      },
+      {
+        "x": 45,
+        "y": 45,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 1,
+          "ker": 1
+        }
+      },
+      {
+        "x": 89,
+        "y": 91,
+        "verb": "3f33",
+        "features": {
+          "8b8": 0,
+          "vsc": 0,
+          "ker": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "tenjs5h",
+    "kind": "restricted",
+    "keys": [
+      "xyb",
+      "ukg",
+      "h4k"
+    ],
+    "fit": [
+      {
+        "x": -39,
+        "y": -38,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 1,
+          "h4k": 1
+        }
+      },
+      {
+        "x": -39,
+        "y": -41,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 0,
+          "h4k": 1
+        }
+      },
+      {
+        "x": -39,
+        "y": -38,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 1,
+          "h4k": 0
+        }
+      },
+      {
+        "x": -39,
+        "y": -41,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 0,
+          "h4k": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 26,
+        "y": 24,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 0,
+          "h4k": 1
+        }
+      },
+      {
+        "x": -88,
+        "y": -87,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 1,
+          "h4k": 0
+        }
+      },
+      {
+        "x": -85,
+        "y": -87,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 0,
+          "h4k": 0
+        }
+      },
+      {
+        "x": -87,
+        "y": -86,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 1,
+          "h4k": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -51,
+        "y": -50,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 1,
+          "h4k": 1
+        }
+      },
+      {
+        "x": 56,
+        "y": 54,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 1,
+          "h4k": 1
+        }
+      },
+      {
+        "x": 25,
+        "y": 23,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 1,
+          "h4k": 0
+        }
+      },
+      {
+        "x": 45,
+        "y": 46,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 0,
+          "h4k": 1
+        }
+      },
+      {
+        "x": 15,
+        "y": 13,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 0,
+          "h4k": 0
+        }
+      },
+      {
+        "x": -73,
+        "y": -72,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 0,
+          "h4k": 0
+        }
+      },
+      {
+        "x": 61,
+        "y": 62,
+        "verb": "73td",
+        "features": {
+          "xyb": 1,
+          "ukg": 1,
+          "h4k": 0
+        }
+      },
+      {
+        "x": -83,
+        "y": -85,
+        "verb": "73td",
+        "features": {
+          "xyb": 0,
+          "ukg": 0,
+          "h4k": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "utv3qgt",
+    "kind": "partial",
+    "keys": [
+      "qpx",
+      "56v",
+      "ysr"
+    ],
+    "fit": [
+      {
+        "x": -56,
+        "y": -58,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 1,
+          "ysr": 1
+        }
+      },
+      {
+        "x": -56,
+        "y": -58,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 1,
+          "ysr": 1
+        }
+      },
+      {
+        "x": -56,
+        "y": -54,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 0,
+          "ysr": 0
+        }
+      },
+      {
+        "x": -56,
+        "y": -54,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 0,
+          "ysr": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -3,
+        "y": -1,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 0,
+          "ysr": 0
+        }
+      },
+      {
+        "x": 29,
+        "y": 27,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 0,
+          "ysr": 1
+        }
+      },
+      {
+        "x": -14,
+        "y": -16,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 1,
+          "ysr": 1
+        }
+      },
+      {
+        "x": 35,
+        "y": 33,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 0,
+          "ysr": 1
+        }
+      },
+      {
+        "x": -90,
+        "y": -88,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 1,
+          "ysr": 0
+        }
+      },
+      {
+        "x": -67,
+        "y": -65,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 0,
+          "ysr": 0
+        }
+      },
+      {
+        "x": 61,
+        "y": 63,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 1,
+          "ysr": 0
+        }
+      },
+      {
+        "x": -19,
+        "y": -21,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 1,
+          "ysr": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 4,
+        "y": 6,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 1,
+          "ysr": 0
+        }
+      },
+      {
+        "x": -77,
+        "y": -75,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 0,
+          "ysr": 0
+        }
+      },
+      {
+        "x": -79,
+        "y": -77,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 1,
+          "ysr": 0
+        }
+      },
+      {
+        "x": 83,
+        "y": 85,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 0,
+          "ysr": 0
+        }
+      },
+      {
+        "x": -51,
+        "y": -53,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 1,
+          "ysr": 1
+        }
+      },
+      {
+        "x": 67,
+        "y": 65,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 1,
+          "ysr": 1
+        }
+      },
+      {
+        "x": -11,
+        "y": -13,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 0,
+          "56v": 0,
+          "ysr": 1
+        }
+      },
+      {
+        "x": 14,
+        "y": 12,
+        "verb": "ma6t",
+        "features": {
+          "qpx": 1,
+          "56v": 0,
+          "ysr": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "5m5kwh5",
+    "kind": "restricted",
+    "keys": [
+      "673",
+      "jpm",
+      "v6h"
+    ],
+    "fit": [
+      {
+        "x": 65,
+        "y": 64,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 1,
+          "v6h": 1
+        }
+      },
+      {
+        "x": 65,
+        "y": 64,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 1,
+          "v6h": 1
+        }
+      },
+      {
+        "x": 65,
+        "y": 66,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 0,
+          "v6h": 0
+        }
+      },
+      {
+        "x": 65,
+        "y": 66,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 0,
+          "v6h": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -45,
+        "y": -44,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 0,
+          "v6h": 0
+        }
+      },
+      {
+        "x": -20,
+        "y": -21,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 1,
+          "v6h": 1
+        }
+      },
+      {
+        "x": -55,
+        "y": -54,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 0,
+          "v6h": 0
+        }
+      },
+      {
+        "x": 26,
+        "y": 25,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 1,
+          "v6h": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -28,
+        "y": -27,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 0,
+          "v6h": 0
+        }
+      },
+      {
+        "x": 41,
+        "y": 42,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 1,
+          "v6h": 0
+        }
+      },
+      {
+        "x": -9,
+        "y": -10,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 1,
+          "v6h": 1
+        }
+      },
+      {
+        "x": -31,
+        "y": -30,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 0,
+          "v6h": 0
+        }
+      },
+      {
+        "x": -46,
+        "y": -45,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 1,
+          "v6h": 0
+        }
+      },
+      {
+        "x": -49,
+        "y": -50,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 0,
+          "v6h": 1
+        }
+      },
+      {
+        "x": -70,
+        "y": -71,
+        "verb": "4tpw",
+        "features": {
+          "673": 1,
+          "jpm": 1,
+          "v6h": 1
+        }
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "verb": "4tpw",
+        "features": {
+          "673": 0,
+          "jpm": 0,
+          "v6h": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "dcm52f3",
+    "kind": "irreducible",
+    "keys": [
+      "9gf",
+      "byh",
+      "g2d"
+    ],
+    "fit": [
+      {
+        "x": 13,
+        "y": 14,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 1,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 13,
+        "y": 12,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 13,
+        "y": 14,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 13,
+        "y": 14,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 1,
+          "g2d": 1
+        }
+      },
+      {
+        "x": 13,
+        "y": 12,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -58,
+        "y": -57,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 1,
+          "g2d": 1
+        }
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 1,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 33,
+        "y": 32,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 0,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 79,
+        "y": 80,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 1,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 88,
+        "y": 87,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 1,
+          "g2d": 1
+        }
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 1
+        }
+      },
+      {
+        "x": 32,
+        "y": 31,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 0,
+          "g2d": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -17,
+        "y": -16,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 1,
+          "g2d": 1
+        }
+      },
+      {
+        "x": -28,
+        "y": -29,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 0,
+          "g2d": 0
+        }
+      },
+      {
+        "x": -61,
+        "y": -60,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 1,
+          "g2d": 0
+        }
+      },
+      {
+        "x": -6,
+        "y": -5,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 1,
+          "g2d": 1
+        }
+      },
+      {
+        "x": -34,
+        "y": -35,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 1,
+          "byh": 0,
+          "g2d": 1
+        }
+      },
+      {
+        "x": -79,
+        "y": -78,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 1,
+          "g2d": 0
+        }
+      },
+      {
+        "x": 43,
+        "y": 42,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 0
+        }
+      },
+      {
+        "x": -52,
+        "y": -53,
+        "verb": "5tyb",
+        "features": {
+          "9gf": 0,
+          "byh": 0,
+          "g2d": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "rjnu6yu",
+    "kind": "outside",
+    "keys": [
+      "nfv",
+      "xjp",
+      "avq"
+    ],
+    "fit": [
+      {
+        "x": 21,
+        "y": 21,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 0,
+          "avq": 1
+        }
+      },
+      {
+        "x": 21,
+        "y": 21,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 0,
+          "avq": 0
+        }
+      },
+      {
+        "x": 21,
+        "y": 20,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 1,
+          "avq": 1
+        }
+      },
+      {
+        "x": 21,
+        "y": 20,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 1,
+          "avq": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -54,
+        "y": -54,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 0,
+          "avq": 0
+        }
+      },
+      {
+        "x": -36,
+        "y": -38,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 0,
+          "avq": 1
+        }
+      },
+      {
+        "x": -58,
+        "y": -60,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 0,
+          "avq": 0
+        }
+      },
+      {
+        "x": -8,
+        "y": -8,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 0,
+          "avq": 1
+        }
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 1,
+          "avq": 1
+        }
+      },
+      {
+        "x": 22,
+        "y": 20,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 1,
+          "avq": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 42,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 1,
+          "avq": 0
+        }
+      },
+      {
+        "x": -84,
+        "y": -86,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 1,
+          "avq": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 87,
+        "y": 86,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 1,
+          "avq": 1
+        }
+      },
+      {
+        "x": 73,
+        "y": 73,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 0,
+          "avq": 1
+        }
+      },
+      {
+        "x": -74,
+        "y": -76,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 0,
+          "avq": 0
+        }
+      },
+      {
+        "x": -65,
+        "y": -67,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 0,
+          "avq": 1
+        }
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 1,
+          "avq": 1
+        }
+      },
+      {
+        "x": -46,
+        "y": -48,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 1,
+          "avq": 0
+        }
+      },
+      {
+        "x": 57,
+        "y": 56,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 1,
+          "xjp": 1,
+          "avq": 0
+        }
+      },
+      {
+        "x": -78,
+        "y": -78,
+        "verb": "2hmn",
+        "features": {
+          "nfv": 0,
+          "xjp": 0,
+          "avq": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "vp4ca7t",
+    "kind": "outside",
+    "keys": [
+      "hbn",
+      "gr2",
+      "4jd"
+    ],
+    "fit": [
+      {
+        "x": 85,
+        "y": 87,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 1,
+          "4jd": 1
+        }
+      },
+      {
+        "x": 85,
+        "y": 87,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 1,
+          "4jd": 1
+        }
+      },
+      {
+        "x": 85,
+        "y": 85,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 0,
+          "4jd": 0
+        }
+      },
+      {
+        "x": 85,
+        "y": 85,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 0,
+          "4jd": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -5,
+        "y": -3,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 1,
+          "4jd": 1
+        }
+      },
+      {
+        "x": -89,
+        "y": -91,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 1,
+          "4jd": 0
+        }
+      },
+      {
+        "x": -37,
+        "y": -37,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 0,
+          "4jd": 0
+        }
+      },
+      {
+        "x": -46,
+        "y": -48,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 1,
+          "4jd": 0
+        }
+      },
+      {
+        "x": -74,
+        "y": -72,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 1,
+          "4jd": 1
+        }
+      },
+      {
+        "x": 11,
+        "y": 11,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 0,
+          "4jd": 0
+        }
+      },
+      {
+        "x": -24,
+        "y": -26,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 0,
+          "4jd": 1
+        }
+      },
+      {
+        "x": 64,
+        "y": 62,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 0,
+          "4jd": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 84,
+        "y": 82,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 1,
+          "4jd": 0
+        }
+      },
+      {
+        "x": -78,
+        "y": -76,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 1,
+          "4jd": 1
+        }
+      },
+      {
+        "x": -25,
+        "y": -27,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 0,
+          "4jd": 1
+        }
+      },
+      {
+        "x": 31,
+        "y": 29,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 1,
+          "4jd": 0
+        }
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 1,
+          "4jd": 1
+        }
+      },
+      {
+        "x": -39,
+        "y": -41,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 0,
+          "4jd": 1
+        }
+      },
+      {
+        "x": 25,
+        "y": 25,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 1,
+          "gr2": 0,
+          "4jd": 0
+        }
+      },
+      {
+        "x": -13,
+        "y": -13,
+        "verb": "nxpj",
+        "features": {
+          "hbn": 0,
+          "gr2": 0,
+          "4jd": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "yqxc9tv",
+    "kind": "partial",
+    "keys": [
+      "pzn",
+      "zf3",
+      "tkr"
+    ],
+    "fit": [
+      {
+        "x": 8,
+        "y": 6,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 1,
+          "tkr": 1
+        }
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 1,
+          "tkr": 1
+        }
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 0,
+          "tkr": 0
+        }
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 0,
+          "tkr": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": -15,
+        "y": -15,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 1,
+          "tkr": 0
+        }
+      },
+      {
+        "x": 51,
+        "y": 49,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 1,
+          "tkr": 0
+        }
+      },
+      {
+        "x": 79,
+        "y": 79,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 0,
+          "tkr": 1
+        }
+      },
+      {
+        "x": -68,
+        "y": -70,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 0,
+          "tkr": 0
+        }
+      },
+      {
+        "x": -54,
+        "y": -54,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 0,
+          "tkr": 0
+        }
+      },
+      {
+        "x": 66,
+        "y": 64,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 1,
+          "tkr": 1
+        }
+      },
+      {
+        "x": 88,
+        "y": 86,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 0,
+          "tkr": 1
+        }
+      },
+      {
+        "x": -30,
+        "y": -30,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 1,
+          "tkr": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -45,
+        "y": -45,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 1,
+          "tkr": 1
+        }
+      },
+      {
+        "x": -43,
+        "y": -45,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 0,
+          "tkr": 1
+        }
+      },
+      {
+        "x": -32,
+        "y": -32,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 1,
+          "tkr": 0
+        }
+      },
+      {
+        "x": 52,
+        "y": 52,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 0,
+          "tkr": 0
+        }
+      },
+      {
+        "x": -25,
+        "y": -27,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 1,
+          "tkr": 1
+        }
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 0,
+          "tkr": 0
+        }
+      },
+      {
+        "x": 78,
+        "y": 76,
+        "verb": "69re",
+        "features": {
+          "pzn": 1,
+          "zf3": 1,
+          "tkr": 0
+        }
+      },
+      {
+        "x": -63,
+        "y": -63,
+        "verb": "69re",
+        "features": {
+          "pzn": 0,
+          "zf3": 0,
+          "tkr": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "4qak34f",
+    "kind": "outside",
+    "keys": [
+      "kxa",
+      "zjg",
+      "euv"
+    ],
+    "fit": [
+      {
+        "x": -55,
+        "y": -56,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 1,
+          "euv": 1
+        }
+      },
+      {
+        "x": -55,
+        "y": -54,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 0,
+          "euv": 0
+        }
+      },
+      {
+        "x": -55,
+        "y": -56,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 1,
+          "euv": 1
+        }
+      },
+      {
+        "x": -55,
+        "y": -54,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 0,
+          "euv": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 23,
+        "y": 21,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 0,
+          "euv": 1
+        }
+      },
+      {
+        "x": 69,
+        "y": 67,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 0,
+          "euv": 1
+        }
+      },
+      {
+        "x": 10,
+        "y": 8,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 1,
+          "euv": 0
+        }
+      },
+      {
+        "x": -61,
+        "y": -62,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 1,
+          "euv": 1
+        }
+      },
+      {
+        "x": 27,
+        "y": 28,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 0,
+          "euv": 0
+        }
+      },
+      {
+        "x": -46,
+        "y": -45,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 0,
+          "euv": 0
+        }
+      },
+      {
+        "x": -45,
+        "y": -46,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 1,
+          "euv": 1
+        }
+      },
+      {
+        "x": -84,
+        "y": -86,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 1,
+          "euv": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -57,
+        "y": -59,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 1,
+          "euv": 0
+        }
+      },
+      {
+        "x": -12,
+        "y": -11,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 0,
+          "euv": 0
+        }
+      },
+      {
+        "x": -58,
+        "y": -59,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 1,
+          "euv": 1
+        }
+      },
+      {
+        "x": -71,
+        "y": -73,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 1,
+          "euv": 0
+        }
+      },
+      {
+        "x": -30,
+        "y": -32,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 0,
+          "euv": 1
+        }
+      },
+      {
+        "x": -29,
+        "y": -30,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 1,
+          "euv": 1
+        }
+      },
+      {
+        "x": -3,
+        "y": -2,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 0,
+          "zjg": 0,
+          "euv": 0
+        }
+      },
+      {
+        "x": 67,
+        "y": 65,
+        "verb": "rhqc",
+        "features": {
+          "kxa": 1,
+          "zjg": 0,
+          "euv": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "z3j69m8",
+    "kind": "irreducible",
+    "keys": [
+      "9xr",
+      "yyc",
+      "4sc"
+    ],
+    "fit": [
+      {
+        "x": -74,
+        "y": -74,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 0
+        }
+      },
+      {
+        "x": -74,
+        "y": -74,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 1
+        }
+      },
+      {
+        "x": -74,
+        "y": -73,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 0
+        }
+      },
+      {
+        "x": -74,
+        "y": -73,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 1,
+          "4sc": 1
+        }
+      },
+      {
+        "x": -74,
+        "y": -73,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 1,
+          "4sc": 0
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 63,
+        "y": 63,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 0
+        }
+      },
+      {
+        "x": 16,
+        "y": 17,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 1,
+          "4sc": 0
+        }
+      },
+      {
+        "x": 59,
+        "y": 59,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 1
+        }
+      },
+      {
+        "x": 29,
+        "y": 29,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 0,
+          "4sc": 0
+        }
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 0,
+          "4sc": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 44,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 1,
+          "4sc": 1
+        }
+      },
+      {
+        "x": -65,
+        "y": -64,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 1,
+          "4sc": 0
+        }
+      },
+      {
+        "x": 40,
+        "y": 41,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 1,
+          "4sc": 1
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": 37,
+        "y": 38,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 1,
+          "4sc": 0
+        }
+      },
+      {
+        "x": -28,
+        "y": -28,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 1
+        }
+      },
+      {
+        "x": 60,
+        "y": 61,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 1,
+          "4sc": 1
+        }
+      },
+      {
+        "x": -9,
+        "y": -8,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 1,
+          "4sc": 1
+        }
+      },
+      {
+        "x": 36,
+        "y": 36,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 0,
+          "4sc": 1
+        }
+      },
+      {
+        "x": 57,
+        "y": 57,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 0,
+          "4sc": 0
+        }
+      },
+      {
+        "x": -46,
+        "y": -46,
+        "verb": "65u9",
+        "features": {
+          "9xr": 1,
+          "yyc": 0,
+          "4sc": 0
+        }
+      },
+      {
+        "x": 31,
+        "y": 32,
+        "verb": "65u9",
+        "features": {
+          "9xr": 0,
+          "yyc": 1,
+          "4sc": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "75p7jgq",
+    "kind": "exception",
+    "keys": [
+      "aq8",
+      "ugh",
+      "u7v"
+    ],
+    "fit": [
+      {
+        "x": -90,
+        "y": -88,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -90,
+        "y": -89,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -88,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -90,
+        "y": -89,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 62,
+        "y": 63,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": 75,
+        "y": 76,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -82,
+        "y": -80,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 88,
+        "y": 90,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -21,
+        "y": -19,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -12,
+        "y": -11,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 80,
+        "y": 82,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -51,
+        "y": -50,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 0,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -26,
+        "y": -24,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": 39,
+        "y": 41,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -48,
+        "y": -46,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 1
+        }
+      },
+      {
+        "x": -42,
+        "y": -40,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 1,
+          "u7v": 0
+        }
+      },
+      {
+        "x": -14,
+        "y": -13,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 63,
+        "y": 65,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 1,
+          "ugh": 0,
+          "u7v": 1
+        }
+      },
+      {
+        "x": 50,
+        "y": 51,
+        "verb": "qhhp",
+        "features": {
+          "aq8": 0,
+          "ugh": 0,
+          "u7v": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "q2ezt9a",
+    "kind": "identifiable",
+    "keys": [
+      "2xz",
+      "t3n",
+      "3rk"
+    ],
+    "fit": [
+      {
+        "x": -13,
+        "y": -12,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -13,
+        "y": -11,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -13,
+        "y": -11,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -13,
+        "y": -12,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 1
+        }
+      }
+    ],
+    "menu": [
+      {
+        "x": 10,
+        "y": 11,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -38,
+        "y": -37,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -34,
+        "y": -32,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": 75,
+        "y": 77,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 32,
+        "y": 33,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 43,
+        "y": 45,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 1,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -44,
+        "y": -43,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "x": -43,
+        "y": -42,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": 67,
+        "y": 68,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": 44,
+        "y": 46,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 1,
+          "3rk": 1
+        }
+      },
+      {
+        "x": -22,
+        "y": -20,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -8,
+        "y": -6,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 1,
+          "3rk": 0
+        }
+      },
+      {
+        "x": -61,
+        "y": -59,
+        "verb": "6spk",
+        "features": {
+          "2xz": 0,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 76,
+        "y": 77,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 0,
+          "3rk": 1
+        }
+      },
+      {
+        "x": 63,
+        "y": 64,
+        "verb": "6spk",
+        "features": {
+          "2xz": 1,
+          "t3n": 1,
+          "3rk": 1
+        }
+      }
+    ]
+  }
+]
