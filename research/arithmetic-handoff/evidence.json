@@ -1,0 +1,1913 @@
+{
+  "meta": {
+    "authorship": "All conversations are invented. The fresh bank was written independently of the gate; controls use its supported grammar. The four separate boundary probes test the rule without a model call.",
+    "model": "qwen2.5:0.5b",
+    "model_digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+    "ollama": {
+      "version": "0.40.16"
+    },
+    "options": {
+      "temperature": 0,
+      "seed": 0,
+      "num_ctx": 1024,
+      "num_thread": 2,
+      "num_predict": 96
+    },
+    "system_prompt": "Read the full conversation, using answers to earlier clarification questions. The supported operation is: start with one integer, add one signed integer change, then multiply the new total by one integer. A loss is a negative change. Doubling means multiplying by 2. Choose compute if this is what the caller requests and all three quantities are known. Choose clarify if information needed to decide is missing. Choose unsupported if the caller clearly requests a different operation or order. For clarify or unsupported, use 0 for all unused numeric fields. Return only JSON.\nExtract start (initial amount), add (signed change), and multiply (factor). Do not perform the calculation.",
+    "retry_prompt": "Re-read the caller's words. The independent reader found a conflict in: {fields}. Keep fields already supported by the conversation. Return one revised proposal. If the request does not supply what you need, choose clarify.",
+    "initial_trial_prompts": {
+      "route": "Read the full conversation, using answers to earlier clarification questions. The supported operation is: start with one integer, add one signed integer change, then multiply the new total by one integer. A loss is a negative change. Doubling means multiplying by 2. Choose compute if this is what the caller requests and all three quantities are known. Choose clarify if information needed to decide is missing. Choose unsupported if the caller clearly requests a different operation or order. For clarify or unsupported, use 0 for all unused numeric fields. Return only JSON.\nExtract start (initial amount), add (signed change), and multiply (factor). Do not perform the calculation.",
+      "direct": "Read the full conversation, using answers to earlier clarification questions. The supported operation is: start with one integer, add one signed integer change, then multiply the new total by one integer. A loss is a negative change. Doubling means multiplying by 2. Choose compute if this is what the caller requests and all three quantities are known. Choose clarify if information needed to decide is missing. Choose unsupported if the caller clearly requests a different operation or order. For clarify or unsupported, use 0 for all unused numeric fields. Return only JSON.\nWhen the request is supported, calculate the final integer yourself and put it in answer."
+    },
+    "response_schema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "compute",
+            "clarify",
+            "unsupported"
+          ]
+        },
+        "start": {
+          "type": "integer"
+        },
+        "add": {
+          "type": "integer"
+        },
+        "multiply": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action",
+        "start",
+        "add",
+        "multiply"
+      ],
+      "additionalProperties": false
+    },
+    "request_timeout_seconds": 45,
+    "max_retry": 1,
+    "max_arithmetic_checks_per_policy_per_case": 2,
+    "gate_lf_sha256": "7f3d61f5021be84209cdb03315cb4858d2022dbf32d14d4c846c2401f01f5261",
+    "original_model_logs_sha256": "6cdcd1096b400750fb8529b41b5ca813779da55149b32950cef7af532f423180",
+    "followup_model_logs_sha256": "d11089c5d6e79dabef5c299cec566d48503e532c3fb7039cf7662141c8f6e4c4"
+  },
+  "first_trial": [
+    {
+      "id": "cc01",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My jar starts with 18 marbles. I toss in seven more and then triple the whole lot. How many marbles is that?"
+        }
+      ],
+      "start": 18,
+      "add": 7,
+      "multiply": 3,
+      "expected": 75,
+      "raw_draft": {
+        "action": "compute",
+        "start": 18,
+        "add": 7,
+        "multiply": 3
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 21
+      }
+    },
+    {
+      "id": "cc02",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My score is at minus eleven. It goes up by four, then the game doubles whatever score I've got. Where do I land?"
+        }
+      ],
+      "start": -11,
+      "add": 4,
+      "multiply": 2,
+      "expected": -14,
+      "raw_draft": {
+        "action": "compute",
+        "start": -11,
+        "add": 4,
+        "multiply": 2
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 15
+      }
+    },
+    {
+      "id": "cc03",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Take 14 off my balance of 6. What do I get if I multiply the new balance by negative 3?"
+        }
+      ],
+      "start": 6,
+      "add": -14,
+      "multiply": -3,
+      "expected": 24,
+      "raw_draft": {
+        "action": "compute",
+        "start": 14,
+        "add": -1,
+        "multiply": -3
+      },
+      "direct": {
+        "action": "compute",
+        "answer": -42
+      }
+    },
+    {
+      "id": "cc04",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've got an empty tin. Put nine buttons in it, then give me the count for four tins just like that one."
+        }
+      ],
+      "start": 0,
+      "add": 9,
+      "multiply": 4,
+      "expected": 36,
+      "raw_draft": {
+        "action": "compute",
+        "start": 0,
+        "add": 9,
+        "multiply": 4
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 4
+      }
+    },
+    {
+      "id": "cc05",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Could you double what I'll have after I put five more points on my current fifteen?"
+        }
+      ],
+      "start": 15,
+      "add": 5,
+      "multiply": 2,
+      "expected": 40,
+      "raw_draft": {
+        "action": "compute",
+        "start": 15,
+        "add": 5,
+        "multiply": 2
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 22
+      }
+    },
+    {
+      "id": "cc06",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "There are 32 tickets in the box. Nobody adds or takes away any. How many tickets would three boxes like that hold altogether?"
+        }
+      ],
+      "start": 32,
+      "add": 0,
+      "multiply": 3,
+      "expected": 96,
+      "raw_draft": {
+        "action": "compute",
+        "start": 32,
+        "add": 32,
+        "multiply": 1
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 96
+      }
+    },
+    {
+      "id": "cc07",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The starting number was 27 and I knocked eight off. I meant to multiply that answer by something too. What's the final number?"
+        },
+        {
+          "role": "assistant",
+          "content": "What should I multiply the amount left by?"
+        },
+        {
+          "role": "user",
+          "content": "Zero this time."
+        }
+      ],
+      "start": 27,
+      "add": -8,
+      "multiply": 0,
+      "expected": 0,
+      "raw_draft": {
+        "action": "compute",
+        "start": 27,
+        "add": 8,
+        "multiply": 1
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 25
+      }
+    },
+    {
+      "id": "cc08",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need the total for five tables. Each table gets two more chairs than we first planned."
+        },
+        {
+          "role": "assistant",
+          "content": "How many chairs were originally planned for each table?"
+        },
+        {
+          "role": "user",
+          "content": "Seven a table."
+        }
+      ],
+      "start": 7,
+      "add": 2,
+      "multiply": 5,
+      "expected": 45,
+      "raw_draft": {
+        "action": "compute",
+        "start": 7,
+        "add": 2,
+        "multiply": 2
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 14
+      }
+    },
+    {
+      "id": "cc09",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "We're starting with twenty booklets and printing a few extras before doubling the whole run. What's the final count?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 20,
+        "add": 1,
+        "multiply": 2
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 40
+      }
+    },
+    {
+      "id": "cc10",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've got ten points. The rules say to add four and to double, but I lost the bit that says which comes first. What score should I write down?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 10,
+        "add": 4,
+        "multiply": 2
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 44
+      }
+    },
+    {
+      "id": "cc11",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My wages are twelve dollars. They get doubled and only then does a flat five-dollar tip go on top. How much do I take home?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 12,
+        "add": 5,
+        "multiply": 12
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 14
+      }
+    },
+    {
+      "id": "cc12",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My tank has eight liters in it. Add four liters, then split the new amount into three equal shares. How many liters in one share?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 8,
+        "add": 4,
+        "multiply": 3
+      },
+      "direct": {
+        "action": "compute",
+        "answer": 2
+      }
+    }
+  ],
+  "first_totals": {
+    "clear": 8,
+    "noncompute": 4,
+    "direct_right_number": 1,
+    "tool_right_number": 4,
+    "oracle_right_number": 8,
+    "direct_right_disposition": 0,
+    "tool_right_disposition": 0
+  },
+  "cases": [
+    {
+      "id": "g01",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The counter reads 13. Bump it up by 4, then triple the new reading. Where does it land?"
+        }
+      ],
+      "start": 13,
+      "add": 4,
+      "multiply": 3,
+      "expected": 51,
+      "raw_draft": {
+        "action": "compute",
+        "start": 13,
+        "add": 4,
+        "multiply": 3
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 13,
+            "add": 4,
+            "multiply": 3
+          },
+          "value": 51,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g02",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Take 8 off a starting score of 3. Double whatever is left. What's the score?"
+        }
+      ],
+      "start": 3,
+      "add": -8,
+      "multiply": 2,
+      "expected": -10,
+      "raw_draft": {
+        "action": "compute",
+        "start": 3,
+        "add": 8,
+        "multiply": 2
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 3,
+            "add": 8,
+            "multiply": 2
+          },
+          "value": 22,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g03",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What is four times the sum of minus nine and six?"
+        }
+      ],
+      "start": -9,
+      "add": 6,
+      "multiply": 4,
+      "expected": -12,
+      "raw_draft": {
+        "action": "compute",
+        "start": -9,
+        "add": 6,
+        "multiply": 4
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": -9,
+            "add": 6,
+            "multiply": 4
+          },
+          "value": -12,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g04",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My opening balance is 17 points. The adjustment is zero points. Apply that adjustment, then multiply the balance by 5. What do I get?"
+        }
+      ],
+      "start": 17,
+      "add": 0,
+      "multiply": 5,
+      "expected": 85,
+      "raw_draft": {
+        "action": "compute",
+        "start": 17,
+        "add": 0,
+        "multiply": 5
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 17,
+            "add": 0,
+            "multiply": 5
+          },
+          "value": 85,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g05",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I started on minus five and moved down another four. What do I get if I multiply that value by minus three?"
+        }
+      ],
+      "start": -5,
+      "add": -4,
+      "multiply": -3,
+      "expected": 27,
+      "raw_draft": {
+        "action": "compute",
+        "start": -5,
+        "add": 4,
+        "multiply": -3
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": -5,
+            "add": 4,
+            "multiply": -3
+          },
+          "value": 3,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g06",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A bundle had 11 reeds. I tucked 2 extra reeds into it. How many reeds would six bundles of this new size contain altogether?"
+        }
+      ],
+      "start": 11,
+      "add": 2,
+      "multiply": 6,
+      "expected": 78,
+      "raw_draft": {
+        "action": "compute",
+        "start": 11,
+        "add": 2,
+        "multiply": 6
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 11,
+            "add": 2,
+            "multiply": 6
+          },
+          "value": 78,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g07",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please add 7 to 12, then multiply that total by 4."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives 76."
+        },
+        {
+          "role": "user",
+          "content": "I copied the starting value wrong. It should be 9. Can you redo the same calculation?"
+        }
+      ],
+      "start": 9,
+      "add": 7,
+      "multiply": 4,
+      "expected": 64,
+      "raw_draft": {
+        "action": "compute",
+        "start": 9,
+        "add": 7,
+        "multiply": 4
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "unbound-follow-up",
+        "frame": null,
+        "question": "Could you restate the complete calculation?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 9,
+            "add": 7,
+            "multiply": 4
+          },
+          "value": 64,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g08",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Starting at 20, I need to knock some points off and then triple the score. What will it be?"
+        },
+        {
+          "role": "assistant",
+          "content": "How many points should come off?"
+        },
+        {
+          "role": "user",
+          "content": "Six points, please."
+        }
+      ],
+      "start": 20,
+      "add": -6,
+      "multiply": 3,
+      "expected": 42,
+      "raw_draft": {
+        "action": "compute",
+        "start": 20,
+        "add": 6,
+        "multiply": 3
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "unbound-follow-up",
+        "frame": null,
+        "question": "Could you restate the complete calculation?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 20,
+            "add": 6,
+            "multiply": 3
+          },
+          "value": 78,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g09",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "There are 11 reeds per bundle. I tuck a few extra reeds into each one. How many reeds are there in six of the bigger bundles?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 11,
+        "add": 1,
+        "multiply": 6
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 11,
+            "add": 1,
+            "multiply": 6
+          },
+          "value": 72,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g10",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The display starts at 10. I have a button that adds 2 and another that quadruples the display. I'll press each once. What will the display say?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 10,
+        "add": 2,
+        "multiply": 4
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 10,
+            "add": 2,
+            "multiply": 4
+          },
+          "value": 48,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g11",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I took 3 points off my opening score, then doubled the remainder. What was my ending score?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 3,
+        "add": 1,
+        "multiply": 2
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 3,
+            "add": 1,
+            "multiply": 2
+          },
+          "value": 8,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g12",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start with 18 and add 5. The last step is to multiply that sum by the factor on my card. What's the final value?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 18,
+        "add": 5,
+        "multiply": 1
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 18,
+            "add": 5,
+            "multiply": 1
+          },
+          "value": 23,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g13",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The counter reads 13. Triple the reading first, then bump it up by 4. Where does it land?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 13,
+        "add": 4,
+        "multiply": 3
+      },
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 13,
+            "add": 4,
+            "multiply": 3
+          },
+          "value": 51,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g14",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "There are 21 counters in a tin. Add 3 counters and divide the total equally among 4 players. How many does one player get?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 21,
+        "add": 3,
+        "multiply": 4
+      },
+      "gate": {
+        "kind": "unsupported",
+        "reason": "outside-add-then-multiply",
+        "frame": null,
+        "question": null
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 21,
+            "add": 3,
+            "multiply": 4
+          },
+          "value": 96,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g15",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start at 7, add 2, and square the result. What number is that?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 7,
+        "add": 2,
+        "multiply": 4
+      },
+      "gate": {
+        "kind": "unsupported",
+        "reason": "outside-add-then-multiply",
+        "frame": null,
+        "question": null
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 7,
+            "add": 2,
+            "multiply": 4
+          },
+          "value": 36,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    },
+    {
+      "id": "g16",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "After adding 6 to 15, take the remainder when the sum is divided by 8. What's that remainder?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "raw_draft": {
+        "action": "compute",
+        "start": 15,
+        "add": 6,
+        "multiply": 8
+      },
+      "gate": {
+        "kind": "unsupported",
+        "reason": "outside-add-then-multiply",
+        "frame": null,
+        "question": null
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 15,
+            "add": 6,
+            "multiply": 8
+          },
+          "value": 168,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "unsupported",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        }
+      }
+    }
+  ],
+  "observed_totals": {
+    "baseline": {
+      "cases": 16,
+      "clear": 8,
+      "appropriate": 5,
+      "faithful_clear": 5,
+      "correct_clear_number": 5,
+      "wrong_releases": 11,
+      "releases": 16,
+      "safe_noncompute_holds": 0,
+      "unnecessary_holds": 0,
+      "correct_clarifications": 0,
+      "correct_unsupported": 0,
+      "checks": 32
+    },
+    "gate_only": {
+      "cases": 16,
+      "clear": 8,
+      "appropriate": 7,
+      "faithful_clear": 0,
+      "correct_clear_number": 0,
+      "wrong_releases": 0,
+      "releases": 0,
+      "safe_noncompute_holds": 8,
+      "unnecessary_holds": 8,
+      "correct_clarifications": 4,
+      "correct_unsupported": 3,
+      "checks": 0
+    },
+    "gate_retry": {
+      "cases": 16,
+      "clear": 8,
+      "appropriate": 7,
+      "faithful_clear": 0,
+      "correct_clear_number": 0,
+      "wrong_releases": 0,
+      "releases": 0,
+      "safe_noncompute_holds": 8,
+      "unnecessary_holds": 8,
+      "correct_clarifications": 4,
+      "correct_unsupported": 3,
+      "checks": 0
+    },
+    "rule_only": {
+      "cases": 16,
+      "clear": 8,
+      "appropriate": 7,
+      "faithful_clear": 0,
+      "correct_clear_number": 0,
+      "wrong_releases": 0,
+      "releases": 0,
+      "safe_noncompute_holds": 8,
+      "unnecessary_holds": 8,
+      "correct_clarifications": 4,
+      "correct_unsupported": 3,
+      "checks": 0
+    }
+  },
+  "controls": [
+    {
+      "id": "control-1",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start with -8, add 13, then multiply by -3."
+        }
+      ],
+      "start": -8,
+      "add": 13,
+      "multiply": -3,
+      "expected": -15,
+      "raw_draft": {
+        "action": "compute",
+        "start": 8,
+        "add": 13,
+        "multiply": -3
+      },
+      "gate": {
+        "kind": "compute",
+        "reason": "explicit-ordered-roles",
+        "frame": {
+          "start": -8,
+          "add": 13,
+          "multiply": -3
+        },
+        "question": null
+      },
+      "retry_issued": true,
+      "retry": {
+        "action": "compute",
+        "start": 8,
+        "add": 13,
+        "multiply": -3
+      },
+      "fault_fields": [
+        "start"
+      ],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 8,
+            "add": 13,
+            "multiply": -3
+          },
+          "value": -63,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "gate_retry": {
+          "decision": "clarify",
+          "frame": null,
+          "value": null,
+          "checks": 0,
+          "verdicts": []
+        },
+        "rule_only": {
+          "decision": "compute",
+          "frame": {
+            "start": -8,
+            "add": 13,
+            "multiply": -3
+          },
+          "value": -15,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        }
+      }
+    },
+    {
+      "id": "control-2",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start with twenty, subtract seven, then triple the result."
+        }
+      ],
+      "start": 20,
+      "add": -7,
+      "multiply": 3,
+      "expected": 39,
+      "raw_draft": {
+        "action": "compute",
+        "start": 20,
+        "add": -7,
+        "multiply": 3
+      },
+      "gate": {
+        "kind": "compute",
+        "reason": "explicit-ordered-roles",
+        "frame": {
+          "start": 20,
+          "add": -7,
+          "multiply": 3
+        },
+        "question": null
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 20,
+            "add": -7,
+            "multiply": 3
+          },
+          "value": 39,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "compute",
+          "frame": {
+            "start": 20,
+            "add": -7,
+            "multiply": 3
+          },
+          "value": 39,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_retry": {
+          "decision": "compute",
+          "frame": {
+            "start": 20,
+            "add": -7,
+            "multiply": 3
+          },
+          "value": 39,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "rule_only": {
+          "decision": "compute",
+          "frame": {
+            "start": 20,
+            "add": -7,
+            "multiply": 3
+          },
+          "value": 39,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        }
+      }
+    },
+    {
+      "id": "control-3",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start with 9 tokens. Add a few more, then double the total."
+        },
+        {
+          "role": "assistant",
+          "content": "What's the exact amount to add?"
+        },
+        {
+          "role": "user",
+          "content": "Four."
+        }
+      ],
+      "start": 9,
+      "add": 4,
+      "multiply": 2,
+      "expected": 26,
+      "raw_draft": {
+        "action": "compute",
+        "start": 9,
+        "add": 4,
+        "multiply": 2
+      },
+      "gate": {
+        "kind": "compute",
+        "reason": "explicit-ordered-roles",
+        "frame": {
+          "start": 9,
+          "add": 4,
+          "multiply": 2
+        },
+        "question": null
+      },
+      "retry_issued": false,
+      "retry": null,
+      "fault_fields": [],
+      "observed": {
+        "baseline": {
+          "decision": "compute",
+          "frame": {
+            "start": 9,
+            "add": 4,
+            "multiply": 2
+          },
+          "value": 26,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_only": {
+          "decision": "compute",
+          "frame": {
+            "start": 9,
+            "add": 4,
+            "multiply": 2
+          },
+          "value": 26,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "gate_retry": {
+          "decision": "compute",
+          "frame": {
+            "start": 9,
+            "add": 4,
+            "multiply": 2
+          },
+          "value": 26,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        },
+        "rule_only": {
+          "decision": "compute",
+          "frame": {
+            "start": 9,
+            "add": 4,
+            "multiply": 2
+          },
+          "value": 26,
+          "checks": 2,
+          "verdicts": [
+            "checked",
+            "checked"
+          ]
+        }
+      }
+    }
+  ],
+  "control_totals": {
+    "baseline": {
+      "cases": 3,
+      "clear": 3,
+      "appropriate": 2,
+      "faithful_clear": 2,
+      "correct_clear_number": 2,
+      "wrong_releases": 1,
+      "releases": 3,
+      "safe_noncompute_holds": 0,
+      "unnecessary_holds": 0,
+      "correct_clarifications": 0,
+      "correct_unsupported": 0,
+      "checks": 6
+    },
+    "gate_only": {
+      "cases": 3,
+      "clear": 3,
+      "appropriate": 2,
+      "faithful_clear": 2,
+      "correct_clear_number": 2,
+      "wrong_releases": 0,
+      "releases": 2,
+      "safe_noncompute_holds": 0,
+      "unnecessary_holds": 1,
+      "correct_clarifications": 0,
+      "correct_unsupported": 0,
+      "checks": 4
+    },
+    "gate_retry": {
+      "cases": 3,
+      "clear": 3,
+      "appropriate": 2,
+      "faithful_clear": 2,
+      "correct_clear_number": 2,
+      "wrong_releases": 0,
+      "releases": 2,
+      "safe_noncompute_holds": 0,
+      "unnecessary_holds": 1,
+      "correct_clarifications": 0,
+      "correct_unsupported": 0,
+      "checks": 4
+    },
+    "rule_only": {
+      "cases": 3,
+      "clear": 3,
+      "appropriate": 3,
+      "faithful_clear": 3,
+      "correct_clear_number": 3,
+      "wrong_releases": 0,
+      "releases": 3,
+      "safe_noncompute_holds": 0,
+      "unnecessary_holds": 0,
+      "correct_clarifications": 0,
+      "correct_unsupported": 0,
+      "checks": 6
+    }
+  },
+  "probes": [
+    {
+      "id": "b01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The sample on my worksheet reads, “Start with 8, add 3, then double it.” I chose a different problem. Can you work out the one I chose?"
+        }
+      ],
+      "reason": "The quoted instructions belong to the sample. The user has yet to supply the chosen problem.",
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      }
+    },
+    {
+      "id": "b02",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The opening balance is 14. Add 5, then double it."
+        },
+        {
+          "role": "assistant",
+          "content": "Got it."
+        },
+        {
+          "role": "user",
+          "content": "Hold on, I take back the five. We're still deciding how much to add. What does the revised calculation come to?"
+        }
+      ],
+      "reason": "The user withdrew the proposed adjustment and has not supplied a replacement.",
+      "gate": {
+        "kind": "unresolved",
+        "reason": "unbound-follow-up",
+        "frame": null,
+        "question": "Could you restate the complete calculation?"
+      }
+    },
+    {
+      "id": "b03",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start with 12, add 3, then double the sum. Please don't calculate it or give me the result. Just tell me whether my instructions are clear."
+        }
+      ],
+      "reason": "The user asks for confirmation that the instructions are clear and explicitly declines a calculation.",
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      }
+    },
+    {
+      "id": "b04",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I have two slips face down. One says 6 and the other says 9. I picked a slip without looking. Add five to its number and double the sum. What do I record?"
+        }
+      ],
+      "reason": "The starting number depends on which slip the user picked. The selection has not been identified.",
+      "gate": {
+        "kind": "unresolved",
+        "reason": "wording-outside-grammar",
+        "frame": null,
+        "question": "What starting number, change, and multiplier should I use, in that order?"
+      }
+    }
+  ]
+}

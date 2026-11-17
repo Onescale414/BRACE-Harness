@@ -4,6 +4,12 @@ BRACE is a small Python harness for developers who need to check the steps an AI
 
 At an input of 2, `2 + 2` and `2 × 2` both give **4**. In the PAT example, a mislabeled lesson proposes addition when the instruction calls for multiplication. A check on the final number alone would pass. BRACE records `different-operation` and withholds the answer. [Run the PAT example](#try-pat-as-a-proposer)
 
+## From conversation to checked arithmetic
+
+A caller says, “The counter reads 13. Bump it up by 4, then triple the new reading.” Reverse those last two operations and the answer changes from **51** to **43**. Qwen 2.5 0.5B submitted the same calculation both times. BRACE verified the submitted arithmetic both times. What evidence would justify accepting the model’s interpretation?
+
+In an initial trial, Qwen alone answered **1 of 8** clear requests correctly. Having Qwen translate the request and handing off the arithmetic raised that to **4 of 8**. The backend answered **8 of 8** when given the intended inputs. On a fresh set, a stricter reader prevented all 11 wrong or unwarranted releases, but it also withheld all eight clear requests. You can reproduce both results and try confirming or correcting a handoff yourself. [Run the handoff experiment](research/arithmetic-handoff/README.md)
+
 ## Where BRACE fits
 
 - **Require a check before using an answer.** Route the task through `run_bound` and let the host application release the value only when `outcome.status == "checked"`. The application must own that release path. The proposer adapter runs as trusted Python code.
