@@ -1,0 +1,89 @@
+{
+  "case_sha256": "0f29774ad51e11bb02c946f61cc65d8804ca783869c6202cd0c035402c7d09eb",
+  "observed": {
+    "by_kind": {
+      "unavailable": {
+        "requests": 4,
+        "readings": 0,
+        "unavailable": 4,
+        "retained": 28,
+        "changed": 0,
+        "correct": 28,
+        "wrong": 0,
+        "held": 4
+      },
+      "already_complete": {
+        "requests": 0,
+        "readings": 0,
+        "unavailable": 0,
+        "retained": 32,
+        "changed": 0,
+        "correct": 32,
+        "wrong": 0,
+        "held": 0
+      },
+      "two_gaps": {
+        "requests": 4,
+        "readings": 4,
+        "unavailable": 0,
+        "retained": 24,
+        "changed": 4,
+        "correct": 28,
+        "wrong": 0,
+        "held": 4
+      },
+      "agrees": {
+        "requests": 4,
+        "readings": 4,
+        "unavailable": 0,
+        "retained": 28,
+        "changed": 4,
+        "correct": 32,
+        "wrong": 0,
+        "held": 0
+      },
+      "exception": {
+        "requests": 4,
+        "readings": 4,
+        "unavailable": 0,
+        "retained": 28,
+        "changed": 4,
+        "correct": 32,
+        "wrong": 0,
+        "held": 0
+      },
+      "unstable": {
+        "requests": 4,
+        "readings": 4,
+        "unavailable": 0,
+        "retained": 28,
+        "changed": 4,
+        "correct": 28,
+        "wrong": 8,
+        "held": 0
+      }
+    },
+    "policies": {
+      "no_read": {
+        "correct": 168,
+        "wrong": 0,
+        "held": 28
+      },
+      "old_rule": {
+        "correct": 172,
+        "wrong": 24,
+        "held": 0
+      },
+      "targeted": {
+        "correct": 180,
+        "wrong": 8,
+        "held": 8
+      },
+      "exact_only": {
+        "correct": 168,
+        "wrong": 0,
+        "held": 28
+      }
+    }
+  }
+}

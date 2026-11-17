@@ -11,3 +11,44 @@ Compare retaining the old local evidence, extending an ordinary single-control r
 A successful repair must request the actual gap, return the independently expected values at fresh inputs in the stable cases, preserve every previously supported prediction, and leave the gap unresolved after a denial. Report unstable worlds and any wrong predictions. A single agreeing observation cannot establish input-independent behavior.
 
 The synthetic fixture was prepared separately from the reader and frozen at SHA-256 `0f29774ad51e11bb02c946f61cc65d8804ca783869c6202cd0c035402c7d09eb` (UTF-8, LF). The targeted and exact-replay policies share one request opportunity. An unavailable reply consumes it. The old-rule and witnessed-only controls use zero new readings. For equal evidence, score an independent lookup that adds the same single receipt and carries its offset forward at the same setting. This exposes whether the inference itself adds anything beyond a table lookup.
+
+## Results
+
+The reader requested the missing setting in all 16 worlds with one gap and one of the two missing settings in each of four more worlds. The four fully measured worlds triggered no request. Of 20 requests, 16 produced a number and four returned unavailable. Every one of 336 historical readings replayed correctly after the trial. All 168 fresh predictions supported by old readings were preserved.
+
+| Policy on 196 fresh endpoints | Numeric readings | Correct | Wrong | Withheld |
+|---|---:|---:|---:|---:|
+| Keep witnessed settings | 0 | 168 | 0 | 28 |
+| Extend the old single-control rule | 0 | 172 | 24 | 0 |
+| Request the gap and reuse its measured offset | 16 | 180 | 8 | 8 |
+| Independent lookup with the same receipts | 16 | 180 | 8 | 8 |
+| Use the new reading only at its exact starting input | 16 | 168 | 0 | 28 |
+
+The last policy could replay all 16 new readings. Each evaluation question used a fresh starting number. Choosing the gap gained evidence, and ordinary lookup matched BRACE given that evidence. [Frozen cases](missing_setting_cases.json) · [Replay totals](missing_setting_results.json)
+
+In case `7db8337d7d`, the same 14 earlier readings supported adding five whenever `biben=0`. BRACE asked **“What output does pimav produce at 51 with biben=0, kavuk=1, vubiv=0?”** The broad rule predicted 56. The instrument returned 44, an offset of −7. At a fresh input of 67 the repair predicted **60** and the independent outcome was **60**. The other seven settings kept their earlier offsets. Each of the four exception worlds shared its entire pre-reading history with an agreement world and an unavailable world. The question was the same across each trio.
+
+| Condition (four worlds each) | Fresh correct | Wrong | Withheld |
+|---|---:|---:|---:|
+| Stable exception | 32 | 0 | 0 |
+| Reading confirms the old rule | 32 | 0 | 0 |
+| Requested reading unavailable | 28 | 0 | 4 |
+| Two settings missing, one reading allowed | 28 | 0 | 4 |
+| All settings already covered | 32 | 0 | 0 |
+| Offset varies with the starting input at the gap | 28 | 8 | 0 |
+
+All eight errors were fresh predictions at the measured setting in the four unstable worlds. For example, 51 → 44 fits both `y = x − 7` and `y = 2x − 58`. They predict 60 and 76 respectively at 67. A host that knows the effect at a fixed setting is additive can use the repaired offset. A host that lacks that guarantee can release the observed endpoint and keep extrapolations conditional.
+
+The old single-control comparison allows arbitrary integer offsets. The reader's existing rule-labeling routine recognizes only offsets from −2 to +2. It recorded all 16 grants as `accepted_local`. Agreement and exception in the tables come from the independent comparison with the old rule and held-out outcomes. The reader did not identify those two classes by name.
+
+## Reproduce
+
+From the repository root with Python 3.12 or later:
+
+```sh
+python -I -S -B research/domain-induction/missing_setting_trial.py
+python -I -S -B research/domain-induction/missing_setting_trial.py --case 7db8337d7d
+python -I -S -B research/domain-induction/missing_setting_controls.py
+```
+
+The protocol controls exercise misbound, malformed, duplicate and conflicting replies, missing grants, and attempts to overwrite a completed reading. The experiment uses a simulated instrument and consumes no model calls.
