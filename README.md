@@ -12,6 +12,8 @@ In an initial trial, Qwen alone answered **1 of 8** clear requests correctly. Ha
 
 An exploratory replay on those same 16 conversations suggested interrupting only on an explicit conflict. On a subsequent, preregistered test of **32 new conversations**, the verifier could not resolve any of them. It sent no conflict notices. The reminder alone and the conflict-only policy both got **8 of 16** clear requests right and released **20** wrong or unwarranted numbers overall. [See the prospective test and replay](research/arithmetic-handoff/README.md#did-conflict-only-feedback-help-on-new-conversations)
 
+A follow-up rule asked which operation came first in the original bonus example, then missed all eight fresh cases with the same ambiguity. A separate probe showed why the handoff matters. The reader dropped one of two requested additions, and BRACE correctly checked the shortened calculation. [See the missing-order trial and counterexample](research/arithmetic-handoff/README.md#can-the-reader-ask-which-operation-goes-first)
+
 ## Where BRACE fits
 
 - **Require a check before using an answer.** Route the task through `run_bound` and let the host application release the value only when `outcome.status == "checked"`. The application must own that release path. The proposer adapter runs as trusted Python code.

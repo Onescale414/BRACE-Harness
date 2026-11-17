@@ -11,3 +11,5 @@ Look for more correctly grounded order questions, no added inappropriate questio
 As a diagnostic, supply the correct pending quantities for each of the eight order gaps and try its original replies. This isolates reading the caller's choice from recognizing the initial question. These supplied quantities never enter the primary comparison.
 
 The original case bank SHA-256 is `8b19b52a2bce6814ee83263804de08310b7c6acb4a669a66e7adf392008e7beb`. The frozen reader and scorer hashes are `9432cb217cbd935c2b0de977facc3541f219443f2b7ffce2a483f97d6ee87389` and `882c02bf371f46e95713e6f3e96a5ce616908137d3f34ffe3ec744dffdcc28e4`, respectively (SHA-256, LF line endings).
+
+Recover the original bank bytes from the published archive by serializing its `cases` array in the archived key order with Python's `json.dumps(cases, ensure_ascii=False, indent=2)`, appending one LF and encoding as UTF-8.

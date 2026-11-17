@@ -1,0 +1,601 @@
+{
+  "meta": {
+    "protocol_commit": "1a569d5",
+    "case_sha256_canonical": "40cacdf30fd21289861118d492e7afede1f777ad794752c5cd6123ec60a6d0f2",
+    "source": "Independently written synthetic conversations. No model generations in this trial."
+  },
+  "cases": [
+    {
+      "id": "og-01",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I copied this off the board: start at 12. The two changes are +5 and ×3. I left out the arrows, so I can't tell which change goes first. Can you work out the final number?"
+        }
+      ],
+      "start": 12,
+      "add": 5,
+      "multiply": 3,
+      "add_first_value": 51,
+      "multiply_first_value": 41,
+      "replies": {
+        "add_first": "The +5 is the first change.",
+        "multiply_first": "Triple the 12 first."
+      }
+    },
+    {
+      "id": "og-02",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Our balance was 9. Take off 4 for the return, then count six times that adjusted balance. What do we get?"
+        }
+      ],
+      "start": 9,
+      "add": -4,
+      "multiply": 6,
+      "add_first_value": 30,
+      "multiply_first_value": 50
+    },
+    {
+      "id": "og-03",
+      "label": "multiply_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can you give me the score? I started with 8 points, quadrupled my points, and got a 3-point bonus after that."
+        }
+      ],
+      "start": 8,
+      "add": 3,
+      "multiply": 4,
+      "add_first_value": 44,
+      "multiply_first_value": 35
+    },
+    {
+      "id": "og-04",
+      "label": "equivalent",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start at −11. The two instructions are “add zero” and “triple it.” The order wasn't recorded. Where do I land?"
+        }
+      ],
+      "start": -11,
+      "add": 0,
+      "multiply": 3,
+      "add_first_value": -33,
+      "multiply_first_value": -33
+    },
+    {
+      "id": "og-05",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need the new reading."
+        },
+        {
+          "role": "assistant",
+          "content": "What do you have from the last shift?"
+        },
+        {
+          "role": "user",
+          "content": "The old reading was minus four. One correction adds seven and the other multiplies the reading by negative two. Nobody put a time on either correction. What's the new reading?"
+        }
+      ],
+      "start": -4,
+      "add": 7,
+      "multiply": -2,
+      "add_first_value": -6,
+      "multiply_first_value": 15,
+      "replies": {
+        "add_first": "The seven was added to the old reading before the multiplication.",
+        "multiply_first": "Scale the old reading by negative two first, then add seven."
+      }
+    },
+    {
+      "id": "og-06",
+      "label": "other",
+      "messages": [
+        {
+          "role": "user",
+          "content": "For a button in sentence case, which spelling should I use: “Add first” or “Add First”?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "add_first_value": null,
+      "multiply_first_value": null
+    },
+    {
+      "id": "og-07",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start at 12. My changes are +5 and ×3. The arrow runs from +5 to ×3. Give me the final number."
+        }
+      ],
+      "start": 12,
+      "add": 5,
+      "multiply": 3,
+      "add_first_value": 51,
+      "multiply_first_value": 41
+    },
+    {
+      "id": "og-08",
+      "label": "missing_operand",
+      "messages": [
+        {
+          "role": "user",
+          "content": "There are 24 credits in my account. Add the promotional credit first, then triple the resulting balance. The promo email didn't say how many credits the offer is worth. What balance should I expect?"
+        }
+      ],
+      "start": 24,
+      "add": null,
+      "multiply": 3,
+      "add_first_value": null,
+      "multiply_first_value": null
+    },
+    {
+      "id": "og-09",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The starting score is 20. The adjustments are a 3-point penalty and a double-score effect. Both apply; the log has no way to tell which was applied first. Can you give me my score?"
+        }
+      ],
+      "start": 20,
+      "add": -3,
+      "multiply": 2,
+      "add_first_value": 34,
+      "multiply_first_value": 37,
+      "replies": {
+        "add_first": "Take the three points off the starting score, then double it.",
+        "multiply_first": "Double the starting score before taking the three points off."
+      }
+    },
+    {
+      "id": "og-10",
+      "label": "multiply_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start at 12. My changes are +5 and ×3. The arrow points from ×3 to +5. Give me the final number."
+        }
+      ],
+      "start": 12,
+      "add": 5,
+      "multiply": 3,
+      "add_first_value": 51,
+      "multiply_first_value": 41
+    },
+    {
+      "id": "og-11",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the value of (−8 + 2) × (−4)?"
+        }
+      ],
+      "start": -8,
+      "add": 2,
+      "multiply": -4,
+      "add_first_value": 24,
+      "multiply_first_value": 34
+    },
+    {
+      "id": "og-12",
+      "label": "equivalent",
+      "messages": [
+        {
+          "role": "user",
+          "content": "We had 43 on the meter. The adjustments were “subtract 8” and “multiply by 1.” They didn't say in what order. What was the final reading?"
+        }
+      ],
+      "start": 43,
+      "add": -8,
+      "multiply": 1,
+      "add_first_value": 35,
+      "multiply_first_value": 35
+    },
+    {
+      "id": "og-13",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Start at zero. Use these two buttons once each: subtract 5; multiply by 4. The app lists buttons alphabetically, and their actual order was lost. What value was on screen at the end?"
+        }
+      ],
+      "start": 0,
+      "add": -5,
+      "multiply": 4,
+      "add_first_value": -20,
+      "multiply_first_value": -5,
+      "replies": {
+        "add_first": "I tapped subtract before I tapped multiply.",
+        "multiply_first": "I hit the times-four button while the screen still showed zero."
+      }
+    },
+    {
+      "id": "og-14",
+      "label": "multiply_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I have minus three on my calculator."
+        },
+        {
+          "role": "assistant",
+          "content": "What should I do with that?"
+        },
+        {
+          "role": "user",
+          "content": "Double what's on the screen, then subtract seven from the result. Tell me where that lands."
+        }
+      ],
+      "start": -3,
+      "add": -7,
+      "multiply": 2,
+      "add_first_value": -20,
+      "multiply_first_value": -13
+    },
+    {
+      "id": "og-15",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Points start at zero and the finish bonus adds 9. Our fivefold multiplier applies to the total including the finish bonus. How many points is that?"
+        }
+      ],
+      "start": 0,
+      "add": 9,
+      "multiply": 5,
+      "add_first_value": 45,
+      "multiply_first_value": 9
+    },
+    {
+      "id": "og-16",
+      "label": "other",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Fifteen folders, three equal piles. How many folders go in each pile?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "add_first_value": null,
+      "multiply_first_value": null
+    },
+    {
+      "id": "og-17",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A test started at 18 and ran two steps: one adds 2, one multiplies by 0. They ran in some order but the step numbers were stripped. What final result should I write down?"
+        }
+      ],
+      "start": 18,
+      "add": 2,
+      "multiply": 0,
+      "add_first_value": 0,
+      "multiply_first_value": 2,
+      "replies": {
+        "add_first": "Add the two before the multiply-by-zero step.",
+        "multiply_first": "The multiply-by-zero step ran first, with the addition afterward."
+      }
+    },
+    {
+      "id": "og-18",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Nineteen pieces, minus one damaged piece. Triple the count of undamaged pieces for the packing estimate. What's the estimate?"
+        }
+      ],
+      "start": 19,
+      "add": -1,
+      "multiply": 3,
+      "add_first_value": 54,
+      "multiply_first_value": 56
+    },
+    {
+      "id": "og-19",
+      "label": "missing_operand",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Add 6 to my opening number and multiply the sum by −3. I can't find the opening number in my notes. What should my final total be?"
+        }
+      ],
+      "start": null,
+      "add": 6,
+      "multiply": -3,
+      "add_first_value": null,
+      "multiply_first_value": null
+    },
+    {
+      "id": "og-20",
+      "label": "multiply_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "We have 19 pieces in each of three boxes. One piece from the whole shipment was damaged. What's the undamaged count?"
+        }
+      ],
+      "start": 19,
+      "add": -1,
+      "multiply": 3,
+      "add_first_value": 54,
+      "multiply_first_value": 56
+    },
+    {
+      "id": "og-21",
+      "label": "equivalent",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can you check the final score?"
+        },
+        {
+          "role": "assistant",
+          "content": "What figures are you using?"
+        },
+        {
+          "role": "user",
+          "content": "Starting score 0, multiplier −4, bonus +0. The replay skipped the part showing which effect triggered first."
+        }
+      ],
+      "start": 0,
+      "add": 0,
+      "multiply": -4,
+      "add_first_value": 0,
+      "multiply_first_value": 0
+    },
+    {
+      "id": "og-22",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My scratchpad says “initial −9; subtract 2; multiply by −3”. That's a list of the entries I found, not a record of their order. What did I finish on?"
+        }
+      ],
+      "start": -9,
+      "add": -2,
+      "multiply": -3,
+      "add_first_value": 33,
+      "multiply_first_value": 25,
+      "replies": {
+        "add_first": "I remember subtracting 2 from −9 as the opening move.",
+        "multiply_first": "I multiplied −9 by −3 before subtracting the 2."
+      }
+    },
+    {
+      "id": "og-23",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My first estimate was 3. Reduce that by 5 and scale the revised estimate by −2. What's the result?"
+        }
+      ],
+      "start": 3,
+      "add": -5,
+      "multiply": -2,
+      "add_first_value": 4,
+      "multiply_first_value": -11
+    },
+    {
+      "id": "og-24",
+      "label": "other",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Turn “multiply the subtotal by the rate” into a yes-or-no question for the form. Keep the words “subtotal” and “rate”."
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "add_first_value": null,
+      "multiply_first_value": null
+    },
+    {
+      "id": "og-25",
+      "label": "multiply_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I started at −5. I added 8, but that was the last step. Before that I multiplied my starting number by −2. Could you check the end result?"
+        }
+      ],
+      "start": -5,
+      "add": 8,
+      "multiply": -2,
+      "add_first_value": -6,
+      "multiply_first_value": 18
+    },
+    {
+      "id": "og-26",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need the corrected offset. The raw offset was 31. The correction sheet calls for reversing the sign (multiply by −1) and subtracting 6. There's no sequencing information on this copy. What corrected offset goes in the box?"
+        }
+      ],
+      "start": 31,
+      "add": -6,
+      "multiply": -1,
+      "add_first_value": -25,
+      "multiply_first_value": -37,
+      "replies": {
+        "add_first": "Subtract the six from the raw offset, then reverse the sign.",
+        "multiply_first": "Reverse the sign of the raw offset and subtract six afterward."
+      }
+    },
+    {
+      "id": "og-27",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's 4 minus 9, all multiplied by zero?"
+        }
+      ],
+      "start": 4,
+      "add": -9,
+      "multiply": 0,
+      "add_first_value": 0,
+      "multiply_first_value": -9
+    },
+    {
+      "id": "og-28",
+      "label": "missing_operand",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's my payout if I had 14 tokens, spent 2 and then the game multiplied the tokens left by the round multiplier?"
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have the round multiplier?"
+        },
+        {
+          "role": "user",
+          "content": "That box is blank on my screenshot. I still need the payout."
+        }
+      ],
+      "start": 14,
+      "add": -2,
+      "multiply": null,
+      "add_first_value": null,
+      "multiply_first_value": null
+    },
+    {
+      "id": "og-29",
+      "label": "equivalent",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I started with 7. A bonus of 24 was added and a ×1 multiplier was applied. I missed which happened first. What's on the scoreboard now?"
+        }
+      ],
+      "start": 7,
+      "add": 24,
+      "multiply": 1,
+      "add_first_value": 31,
+      "multiply_first_value": 31
+    },
+    {
+      "id": "og-30",
+      "label": "multiply_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "For this board reset, take the starting 6, multiply by 0, and only then subtract 5. What is the displayed number?"
+        }
+      ],
+      "start": 6,
+      "add": -5,
+      "multiply": 0,
+      "add_first_value": 0,
+      "multiply_first_value": -5
+    },
+    {
+      "id": "og-31",
+      "label": "add_first",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Is my new total right?"
+        },
+        {
+          "role": "assistant",
+          "content": "Walk me through your calculation."
+        },
+        {
+          "role": "user",
+          "content": "I began at −1, moved down another six, and doubled what I had at that point. What total do you get?"
+        }
+      ],
+      "start": -1,
+      "add": -6,
+      "multiply": 2,
+      "add_first_value": -14,
+      "multiply_first_value": -8
+    },
+    {
+      "id": "og-32",
+      "label": "ask_order",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Starting value 6. Available moves: +4 and ×5. Each was played exactly once. The move history was cleared. What number did that leave?"
+        }
+      ],
+      "start": 6,
+      "add": 4,
+      "multiply": 5,
+      "add_first_value": 50,
+      "multiply_first_value": 34,
+      "replies": {
+        "add_first": "The first move was to add four to the six.",
+        "multiply_first": "The player used ×5 on the six and used +4 second."
+      }
+    }
+  ],
+  "observed": {
+    "case_counts": {
+      "ask_order": 8,
+      "add_first": 8,
+      "multiply_first": 6,
+      "equivalent": 4,
+      "missing_operand": 3,
+      "other": 3
+    },
+    "changed_control_responses": 0,
+    "baseline": {
+      "gap_questions": 0,
+      "gap_pending_exact": 0,
+      "gap_question_and_frame": 0,
+      "gap_generic_clarifications": 8,
+      "false_order_questions": 1,
+      "correct_initial_releases": 0,
+      "wrong_or_extra_initial_releases": 0,
+      "initial_checks": 0
+    },
+    "candidate": {
+      "gap_questions": 0,
+      "gap_pending_exact": 0,
+      "gap_question_and_frame": 0,
+      "gap_generic_clarifications": 8,
+      "false_order_questions": 1,
+      "correct_initial_releases": 0,
+      "wrong_or_extra_initial_releases": 0,
+      "initial_checks": 0
+    },
+    "followups": {
+      "probed": 0,
+      "add_first_checked": 0,
+      "reverse_unsupported": 0,
+      "undecided_clarifies": 0,
+      "both_orders_correct": 0,
+      "wrong_or_extra_releases": 0,
+      "checks": 0
+    }
+  }
+}

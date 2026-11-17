@@ -76,6 +76,32 @@ Run the offline replay from the repository root, or add `--case c15` to inspect 
 python -I -S -B research/arithmetic-handoff/prospective.py
 ```
 
+## Can the reader ask which operation goes first?
+
+The new reader caught the original bonus example. It asked which effect came first and spent zero checks. “Add first” released 20 after two checks. “Double first” withheld the answer because the public checker supports addition followed by multiplication. Replaying all 32 saved Qwen conversations changed only that teaching example. Wrong or unwarranted releases fell from 20 to 19. Both policies retained all eight previously correct clear answers.
+
+We froze the new reader and tested it on **32 independently written synthetic conversations**. Both versions had the same two-step arithmetic budget. This trial ran offline with no new Qwen calls. [Frozen protocol](order-gap-protocol.md) · [Case texts, keys and scores](order_gap.json)
+
+| Fresh conversations | Published reader | Candidate |
+|---|---:|---:|
+| Asked the specific question with all three quantities correct, out of 8 genuine order gaps | 0 | 0 |
+| Asked for a more general restatement on those 8 | 8 | 8 |
+| Asked about order unnecessarily, out of 24 controls | 1 | 1 |
+| Initial arithmetic checks, across all 32 | 0 | 0 |
+
+No fresh case reached the new follow-up path. All 24 control responses stayed the same, including an unnecessary question about whether to subtract 8 before or after multiplying by 1. In `og-01` the reader recognized that the order was missing but failed to bind the standalone `+5` as an addition. In `og-09` it recovered a 20-point start, a 3-point penalty and a doubling effect, but missed “no way to tell which was applied first.”
+
+Supplying the correct pending quantities by hand exposed a second limitation. The candidate asked again on **all 16** freely worded replies (two alternative choices per case). A post-trial control supplied the same choices as fixed commands. All eight addition-first choices reached the checked answer and all eight multiplication-first choices received the correct unsupported response. This measures the handoff once an operator has identified the quantities and made an explicit selection.
+
+Two exploratory probes showed how a specific question can still lead to a bad answer. For “Start with 5, add 3, add 3 and double,” the reader stored one addition. After “Add 3 first,” BRACE issued two checked receipts for **16**. Keeping both additions gives **19** if doubling is second and **22** if doubling is last. Another probe added 3 days to 5 books and also released 16. Both expose information lost before arithmetic checking. A next reader test should track each operation and its unit through the handoff, including the distinction between requesting a second addition and repeating a description of the first.
+
+Run the fresh comparison and the separate diagnostics from the repository root. Add `--case og-01` to the first command to see the full board example. The optional reader is confined to this research directory.
+
+```sh
+python -I -S -B research/arithmetic-handoff/order_gap.py
+python -I -S -B research/arithmetic-handoff/order_boundaries.py
+```
+
 ## Try a caller correction
 
 ```sh

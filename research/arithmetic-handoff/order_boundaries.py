@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import sys
+from itertools import permutations
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -81,9 +82,51 @@ def replies_given_exact_frame(cases):
     return rows
 
 
+def fixed_choices(cases):
+    """Post-trial control: simulate two explicit selections with known quantities."""
+    checked = unsupported = 0
+    for case in cases:
+        if case["label"] != "ask_order":
+            continue
+        frame = {k: case[k] for k in ("start", "add", "multiply")}
+        pending = dict(decision="ask_order", frame=frame, question=order_question(frame))
+        choice = "Subtract first." if frame["add"] < 0 else "Add first."
+        add = continue_order(pending, choice)
+        if add["decision"] == "compute":
+            outcome = calculate(add["frame"])
+            checked += (outcome["frame"] == frame and outcome["value"] == case["add_first_value"]
+                        and outcome["verdicts"] == ["checked", "checked"])
+        unsupported += continue_order(pending, "Multiply first.")["decision"] == "unsupported"
+    return dict(checked_addition_first=checked, withheld_multiplication_first=unsupported)
+
+
+def changed_meaning():
+    """Post-trial counterexamples to the reader's binding of arithmetic roles."""
+    rows = []
+    for request in ("Start with 5, add 3, add 3 and double.",
+                    "Start with 5 books, add 3 days and double."):
+        request += " I'm not sure of the order. What's the total?"
+        pending = inspect_order([dict(role="user", content=request)])
+        reply = continue_order(pending, "Add 3 first.")
+        result = calculate(reply["frame"]) if reply["decision"] == "compute" else response(reply["decision"])
+        rows.append(dict(request=request, pending=pending, reply="Add 3 first.", outcome=result))
+
+    # Enumerate every order consistent with the supplied choice on the first request.
+    endpoints = set()
+    for order in permutations(("add", "add", "double")):
+        if order[0] == "add":
+            value = 5
+            for op in order:
+                value = value + 3 if op == "add" else value * 2
+            endpoints.add(value)
+    return dict(probes=rows, repeated_add_possible_after_reply=sorted(endpoints))
+
+
 if __name__ == "__main__":
     cases = json.loads((HERE / "prospective.json").read_bytes())["cases"]
     fresh = json.loads((HERE / "order_gap.json").read_bytes())["cases"]
     seed = next(case for case in cases if case["id"] == "c15")
     print(json.dumps({"saved_drafts": saved_trial(cases), "teaching_example": reply_probes(seed),
-                      "diagnostic_given_exact_frame": replies_given_exact_frame(fresh)}, indent=2))
+                      "diagnostic_given_exact_frame": replies_given_exact_frame(fresh),
+                      "post_trial_fixed_choices": fixed_choices(fresh),
+                      "post_trial_counterexamples": changed_meaning()}, indent=2))
