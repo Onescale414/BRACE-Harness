@@ -1,0 +1,50 @@
+{
+  "0": {
+    "clean_accepted": 2,
+    "exceptions_missed": 12,
+    "exceptions_caught": 0,
+    "reuse_correct": 100,
+    "reuse_wrong": 12,
+    "reuse_held": 0,
+    "lookup_correct": 28,
+    "lookup_held": 84,
+    "retained_correct": 100,
+    "retained_wrong": 12
+  },
+  "1": {
+    "clean_accepted": 2,
+    "exceptions_missed": 10,
+    "exceptions_caught": 2,
+    "reuse_correct": 86,
+    "reuse_wrong": 10,
+    "reuse_held": 16,
+    "lookup_correct": 42,
+    "lookup_held": 70,
+    "retained_correct": 92,
+    "retained_wrong": 10
+  },
+  "3": {
+    "clean_accepted": 2,
+    "exceptions_missed": 6,
+    "exceptions_caught": 6,
+    "reuse_correct": 58,
+    "reuse_wrong": 6,
+    "reuse_held": 48,
+    "lookup_correct": 70,
+    "lookup_held": 42,
+    "retained_correct": 88,
+    "retained_wrong": 6
+  },
+  "6": {
+    "clean_accepted": 2,
+    "exceptions_missed": 0,
+    "exceptions_caught": 12,
+    "reuse_correct": 16,
+    "reuse_wrong": 0,
+    "reuse_held": 96,
+    "lookup_correct": 112,
+    "lookup_held": 0,
+    "retained_correct": 112,
+    "retained_wrong": 0
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "patterns": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ]
+  ],
+  "certificate": {
+    "rule_count": 65,
+    "distinct_signatures": 65,
+    "attempts_by_size": [
+      1,
+      8,
+      28,
+      13
+    ],
+    "smaller_subsets_expected": 37,
+    "smaller_subsets_witnessed": 37,
+    "minimal": true,
+    "collisions": [
+      [
+        [],
+        0,
+        1
+      ],
+      [
+        [
+          0
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          1
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          2
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          3
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          4
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          5
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          6
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          7
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        0,
+        25
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        0,
+        25
+      ],
+      [
+        [
+          0,
+          6
+        ],
+        5,
+        25
+      ],
+      [
+        [
+          0,
+          7
+        ],
+        5,
+        25
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        0,
+        25
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        0,
+        25
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        5,
+        25
+      ],
+      [
+        [
+          1,
+          7
+        ],
+        5,
+        25
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        9,
+        25
+      ],
+      [
+        [
+          2,
+          5
+        ],
+        9,
+        25
+      ],
+      [
+        [
+          2,
+          6
+        ],
+        1,
+        25
+      ],
+      [
+        [
+          2,
+          7
+        ],
+        1,
+        25
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        9,
+        25
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        9,
+        25
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        1,
+        25
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        1,
+        25
+      ],
+      [
+        [
+          4,
+          5
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          4,
+          7
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          5,
+          6
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          5,
+          7
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          6,
+          7
+        ],
+        1,
+        5
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          0,
+          1,
+          3
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          0,
+          1,
+          4
+        ],
+        0,
+        25
+      ],
+      [
+        [
+          0,
+          1,
+          5
+        ],
+        0,
+        25
+      ],
+      [
+        [
+          0,
+          1,
+          6
+        ],
+        5,
+        25
+      ],
+      [
+        [
+          0,
+          1,
+          7
+        ],
+        5,
+        25
+      ],
+      [
+        [
+          0,
+          2,
+          3
+        ],
+        0,
+        5
+      ],
+      [
+        [
+          0,
+          2,
+          4
+        ],
+        0,
+        45
+      ],
+      [
+        [
+          0,
+          2,
+          5
+        ],
+        5,
+        45
+      ],
+      [
+        [
+          0,
+          2,
+          6
+        ],
+        0,
+        45
+      ],
+      [
+        [
+          0,
+          2,
+          7
+        ],
+        5,
+        45
+      ],
+      [
+        [
+          0,
+          3,
+          4
+        ],
+        25,
+        45
+      ]
+    ]
+  },
+  "cold_design_predictions": 520,
+  "cold_subsets_tried": 50,
+  "methods": {
+    "fixed_3": {
+      "worlds": 7,
+      "correct": 56,
+      "wrong": 0,
+      "held": 72,
+      "validation_reads": 72,
+      "selection_evaluations": 0
+    },
+    "active_3": {
+      "worlds": 5,
+      "correct": 40,
+      "wrong": 0,
+      "held": 88,
+      "validation_reads": 45,
+      "selection_evaluations": 9974
+    },
+    "designed_3": {
+      "worlds": 12,
+      "correct": 96,
+      "wrong": 0,
+      "held": 32,
+      "validation_reads": 144,
+      "accepted_entries": 0,
+      "unseen_predictions": 80,
+      "unseen_predicted_correctly": 74,
+      "unseen_correct_in_confirmed_worlds": 60
+    },
+    "single_8": {
+      "worlds": 12,
+      "correct": 96,
+      "wrong": 0,
+      "held": 32,
+      "validation_reads": 126,
+      "accepted_entries": 0
+    },
+    "lookup_8": {
+      "worlds": 14,
+      "correct": 112,
+      "wrong": 0,
+      "held": 16,
+      "validation_reads": 144,
+      "accepted_entries": 112
+    },
+    "repair_8": {
+      "worlds": 14,
+      "correct": 112,
+      "wrong": 0,
+      "held": 16,
+      "validation_reads": 144,
+      "accepted_entries": 28,
+      "expanded": 2
+    }
+  },
+  "recovered_partitions": [
+    {
+      "world": "w01",
+      "kind": "interaction",
+      "axes": [
+        "mip",
+        "tev"
+      ],
+      "table": [
+        {
+          "bits": [
+            0,
+            0
+          ],
+          "effect": -1
+        },
+        {
+          "bits": [
+            0,
+            1
+          ],
+          "effect": 0
+        },
+        {
+          "bits": [
+            1,
+            0
+          ],
+          "effect": 0
+        },
+        {
+          "bits": [
+            1,
+            1
+          ],
+          "effect": -1
+        }
+      ],
+      "confirmed": true
+    },
+    {
+      "world": "w06",
+      "kind": "interaction",
+      "axes": [
+        "mip",
+        "tev"
+      ],
+      "table": [
+        {
+          "bits": [
+            0,
+            0
+          ],
+          "effect": 1
+        },
+        {
+          "bits": [
+            0,
+            1
+          ],
+          "effect": 1
+        },
+        {
+          "bits": [
+            1,
+            0
+          ],
+          "effect": 1
+        },
+        {
+          "bits": [
+            1,
+            1
+          ],
+          "effect": 2
+        }
+      ],
+      "confirmed": true
+    }
+  ]
+}

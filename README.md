@@ -70,6 +70,7 @@ The example submits one candidate per step. The correct case spends two checks, 
 
 ## Research examples
 
+- **Learning a domain from observations.** BRACE learned different meanings for the same action name in different worlds, revised wrong guesses, and constructed a two-signal distinction after a simpler rule failed. The offline comparison includes cases where reuse produces wrong answers. [Domain induction, repair and transfer](research/domain-induction/README.md)
 - **Repeated additions.** A consecutive-integer detector flagged 22 of 24 fresh cases involving possible repeated additions and 6 of 8 outside controls. A later reader linked both amounts to their event text on 4 of 18 relevant requests, including a penalty that had been copied into a second record. [Repeat detection](research/arithmetic-handoff/README.md#does-a-repeated-integer-mean-a-repeated-operation) · [Event attachment and replay](research/arithmetic-handoff/README.md#can-the-reader-attach-each-amount-to-its-event)
 - **Bracket geometry.** Two measured marks admit two possible tip positions, 96 drawing units apart. Reveal the third mark to distinguish them. Open the viewer locally or run `python -I -S -B preview/verify.py` to check the coordinates. [Bracket viewer](preview/bracket.html)
 - **Task handoff.** The experimental reader completed 25 of 36 connector requests. It still checked a URL that the user mentioned only as an example. The trial includes all wordings and an offline replay. [Delivery experiment](research/delivery/README.md)
