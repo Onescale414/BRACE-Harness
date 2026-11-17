@@ -1,0 +1,1036 @@
+{
+  "meta": {
+    "preregistered_commit": "f928236",
+    "canonical_bank_sha256": "68beb2a9025b8d17db37dc89909f7685bde806a0eb4104681bd8929f811b893a",
+    "capture_sha256": "f9f7a9f6fd963967112539c5fcc4c06bbdf3dae03afc305354a6c0ad5a15006c",
+    "bank_sha256": "ea2fd5627922bfa7e16092a7ba7f310c105c6f92cf0ae9024145bd370f2afafa",
+    "protocol_sha256": "6c027219c95a8bd9856f487e5a49a375d7360b1c37e10fe6976fd77cb3d15728",
+    "runner_sha256": "e8321565f6f6dbbf7ea13c9f84305fd8d8c007705bd5c9c73461e5363920349a",
+    "published_pins": {
+      "gate.py": "7f3d61f5021be84209cdb03315cb4858d2022dbf32d14d4c846c2401f01f5261",
+      "feedback.py": "55224fa8216e87438f78c82f2073c05de7cb519025cf9e0313a57e354030389d",
+      "feedback.json": "160f62d4d189fde2d3bceb10925b982dd984d265167cd1f9ace9ebc921095379"
+    },
+    "model": "qwen2.5:0.5b",
+    "model_digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+    "runtime": {
+      "version": "0.40.16"
+    },
+    "options": {
+      "temperature": 0,
+      "seed": 0,
+      "num_ctx": 1024,
+      "num_thread": 2,
+      "num_predict": 96
+    },
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "compute",
+            "clarify",
+            "unsupported"
+          ]
+        },
+        "start": {
+          "type": "integer"
+        },
+        "add": {
+          "type": "integer"
+        },
+        "multiply": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action",
+        "start",
+        "add",
+        "multiply"
+      ],
+      "additionalProperties": false
+    },
+    "system": "Read the full conversation, using answers to earlier clarification questions. The supported operation is: start with one integer, add one signed integer change, then multiply the new total by one integer. A loss is a negative change. Doubling means multiplying by 2. Choose compute if this is what the caller requests and all three quantities are known. Choose clarify if information needed to decide is missing. Choose unsupported if the caller clearly requests a different operation or order. For clarify or unsupported, use 0 for all unused numeric fields. Return only JSON.\nExtract start (initial amount), add (signed change), and multiply (factor). Do not perform the calculation.",
+    "review_prompts": {
+      "neutral": "Review your proposed interpretation once. Return your final choice and fields. You may keep or revise your proposal.",
+      "advisory": "Review your proposed interpretation once. Return your final choice and fields. You may keep or revise your proposal. Which words tell you the starting amount, the signed change, and what happens first? If the caller leaves a detail open, you can ask about it.",
+      "signal": "Review your proposed interpretation once. Return your final choice and fields. You may keep or revise your proposal. Which words tell you the starting amount, the signed change, and what happens first? If the caller leaves a detail open, you can ask about it. A separate reader compared your draft with the conversation. Its signal is {signal}. Agreement supports the draft, conflict challenges it, and unresolved gives no evidence either way. You decide whether to keep or revise it."
+    },
+    "timeout_seconds": 45,
+    "phase_order": "rotate neutral/advisory/signal by case index",
+    "model_retry_cap": 0,
+    "unfinished_model_responses": [],
+    "eval_tokens_by_phase": {
+      "draft": 873,
+      "neutral": 858,
+      "advisory": 846,
+      "signal": 872
+    }
+  },
+  "cases": [
+    {
+      "id": "c01",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The print shop used to fit 18 labels on a sheet. The new layout squeezes in six extra per sheet. How many labels do I get on three new sheets?"
+        }
+      ],
+      "start": 18,
+      "add": 6,
+      "multiply": 3,
+      "expected": 72,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 3 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 3 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 3 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 3 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c02",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "We have 18 labels per sheet, and the redesign fits some extra labels on each. How many labels will three redesigned sheets hold?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 18, \"add\": 18, \"multiply\": 3 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 18, \"add\": 18, \"multiply\": 3 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 18, \"add\": 18, \"multiply\": 3 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 18, \"add\": 18, \"multiply\": 3 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c03",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's (7 + -3) × -2?"
+        }
+      ],
+      "start": 7,
+      "add": -3,
+      "multiply": -2,
+      "expected": -8,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 7, \"add\": -3, \"multiply\": -2 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 7, \"add\": -3, \"multiply\": -2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 7, \"add\": -3, \"multiply\": -2 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 7, \"add\": -3, \"multiply\": -2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c04",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Triple 18 and add 6 to the result. What do you get?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 36 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 36 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 18, \"add\": 6, \"multiply\": 36 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 18, \"add\": 6, \"multiply\": 36 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c05",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I was 11 points in the hole before I picked up an eight-point bonus. A card doubles the score I have now. Where does that leave me?"
+        }
+      ],
+      "start": -11,
+      "add": 8,
+      "multiply": 2,
+      "expected": -6,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 11, \"add\": 8, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 11, \"add\": 8, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 11, \"add\": 8, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 11, \"add\": 8, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c06",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I have 31 loose bottles. How many full six-packs can I make, and how many bottles will be left over?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 31, \"add\": 6, \"multiply\": 1 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 31, \"add\": 6, \"multiply\": 1 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 31, \"add\": 6, \"multiply\": 1 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 31, \"add\": 6, \"multiply\": 1 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c07",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Nine volunteers each get a five-seed packet. The promised top-up came to zero seeds per packet. How many seeds are we handing out?"
+        }
+      ],
+      "start": 5,
+      "add": 0,
+      "multiply": 9,
+      "expected": 45,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 9, \"add\": 5, \"multiply\": 0 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 9, \"add\": 5, \"multiply\": 0 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 9, \"add\": 5, \"multiply\": 0 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 9, \"add\": 5, \"multiply\": 0 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c08",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I know I lose four points before the double-score card kicks in. Can you work out my final score?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{\n  \"action\": \"compute\",\n  \"start\": 100,\n  \"add\": 4,\n  \"multiply\": 2\n}",
+        "neutral": "{\n  \"action\": \"compute\",\n  \"start\": 100,\n  \"add\": 4,\n  \"multiply\": 2\n}",
+        "advisory": "{\n  \"action\": \"compute\",\n  \"start\": 100,\n  \"add\": 4,\n  \"multiply\": 2\n}",
+        "signal": "{\n  \"action\": \"clarify\",\n  \"start\": 100,\n  \"add\": 4,\n  \"multiply\": 2\n}",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c09",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My sensor reads -6. The calibration sheet says to add -2 to the reading. The display shows four times the calibrated number. What shows up?"
+        }
+      ],
+      "start": -6,
+      "add": -2,
+      "multiply": 4,
+      "expected": -32,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": -6, \"add\": -2, \"multiply\": 4 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": -6, \"add\": -2, \"multiply\": 4 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": -6, \"add\": -2, \"multiply\": 4 }",
+        "signal": "{ \"action\": \"compute\", \"start\": -6, \"add\": -2, \"multiply\": 4 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c10",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My soup takes four carrots per pot, but I like to throw in two more per pot. How many carrots should I buy for five pots my way?"
+        }
+      ],
+      "start": 4,
+      "add": 2,
+      "multiply": 5,
+      "expected": 30,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 4, \"add\": 2, \"multiply\": 5 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 4, \"add\": 2, \"multiply\": 5 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 4, \"add\": 2, \"multiply\": 5 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 4, \"add\": 2, \"multiply\": 5 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c11",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "There were nine cups on the tray and I added two. Now I’m setting up several identical trays. How many cups should I order altogether?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 9, \"add\": 2, \"multiply\": 1 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 9, \"add\": 2, \"multiply\": 1 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 9, \"add\": 2, \"multiply\": 1 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 9, \"add\": 2, \"multiply\": 1 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c12",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm cutting 36 inches of ribbon into four equal pieces after trimming eight inches off the roll. How long is a piece?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 36, \"add\": 8, \"multiply\": 4 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 36, \"add\": 8, \"multiply\": 4 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 36, \"add\": 8, \"multiply\": 4 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 36, \"add\": 8, \"multiply\": 4 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c13",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The ledger starts at 23. Apply a change of minus ten, then a multiplier of one. What's the closing figure?"
+        }
+      ],
+      "start": 23,
+      "add": -10,
+      "multiply": 1,
+      "expected": 13,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 23, \"add\": -10, \"multiply\": 1 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 23, \"add\": -10, \"multiply\": 1 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 23, \"add\": -10, \"multiply\": 1 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 23, \"add\": -10, \"multiply\": 1 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c14",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Which temperature is higher, -12 degrees or -7 degrees?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": -12, \"add\": -7, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": -12, \"add\": -7, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": -12, \"add\": -7, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"compute\", \"start\": -12, \"add\": -7, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c15",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My counter's at 7. I have a +3 bonus and a ×2 card, and the rule sheet doesn't say which goes first. What's the final count?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 7, \"add\": 3, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"clarify\", \"start\": 7, \"add\": 3, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 7, \"add\": 3, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 7, \"add\": 3, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c16",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Could you do (6 + 9) × 0 for me?"
+        }
+      ],
+      "start": 6,
+      "add": 9,
+      "multiply": 0,
+      "expected": 0,
+      "record": {
+        "draft": "{\"action\":\"compute\",\"start\":6,\"add\":9,\"multiply\":0}",
+        "neutral": "{\"action\":\"unsupported\",\"start\":6,\"add\":9,\"multiply\":0}",
+        "advisory": "{\"action\":\"clarify\",\"start\":6,\"add\":9,\"multiply\":0}",
+        "signal": "{\"action\":\"clarify\",\"start\":6,\"add\":9,\"multiply\":0}",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c17",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Keep 14 in mind for the calculation."
+        },
+        {
+          "role": "assistant",
+          "content": "Okay, I’ve got 14."
+        },
+        {
+          "role": "user",
+          "content": "Take five off it, then double what’s left. What do you get?"
+        }
+      ],
+      "start": 14,
+      "add": -5,
+      "multiply": 2,
+      "expected": 18,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 14, \"add\": 5, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"clarify\", \"start\": 14, \"add\": 5, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 14, \"add\": 5, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 14, \"add\": 5, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c18",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The price tag fell off this lamp. Add six dollars to the tag price, then triple that. Can you tell me the result?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 100, \"add\": 6, \"multiply\": 3 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 100, \"add\": 6, \"multiply\": 3 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 100, \"add\": 6, \"multiply\": 3 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 100, \"add\": 6, \"multiply\": 3 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c19",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A ticket comes with eight ride credits. I want the total for four tickets once the bonus is added."
+        },
+        {
+          "role": "assistant",
+          "content": "How many bonus credits come with each ticket?"
+        },
+        {
+          "role": "user",
+          "content": "Three each. Sorry, make that five tickets. How many credits altogether?"
+        }
+      ],
+      "start": 8,
+      "add": 3,
+      "multiply": 5,
+      "expected": 55,
+      "record": {
+        "draft": "{ \"action\" : \"compute\", \"start\" : 8, \"add\" : 5, \"multiply\" : 1 }",
+        "neutral": "{ \"action\" : \"compute\", \"start\" : 8, \"add\" : 5, \"multiply\" : 1 }",
+        "advisory": "{\"action\":\"compute\",\"start\":8,\"add\":5,\"multiply\":1}",
+        "signal": "{ \"action\" : \"clarify\", \"start\" : 8, \"add\" : 5, \"multiply\" : 1 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c20",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Could you average my three lap times? They were 14, 17, and 20 seconds."
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{\n  \"action\": \"compute\",\n  \"start\": 14,\n  \"add\": 17,\n  \"multiply\": 20\n}",
+        "neutral": "{\n  \"action\": \"compute\",\n  \"start\": 14,\n  \"add\": 17,\n  \"multiply\": 20\n}",
+        "advisory": "{\n  \"action\": \"compute\",\n  \"start\": 14,\n  \"add\": 17,\n  \"multiply\": 20\n}",
+        "signal": "{\n  \"action\": \"clarify\",\n  \"start\": 14,\n  \"add\": 17,\n  \"multiply\": 20\n}",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c21",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Both drafts start with 12 stitches and repeat the adjusted pattern four times. One draft adds a stitch per repeat and the other adds two. How many stitches in the draft I picked?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 12, \"add\": 1, \"multiply\": 4 }",
+        "neutral": "{ \"action\": \"clarify\", \"start\": 12, \"add\": 1, \"multiply\": 4 }",
+        "advisory": "{ \"action\": \"clarify\", \"start\": 12, \"add\": 1, \"multiply\": 4 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 12, \"add\": 1, \"multiply\": 4 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c22",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The basement sensor read -3 before adjustment."
+        },
+        {
+          "role": "assistant",
+          "content": "What adjustment should I use?"
+        },
+        {
+          "role": "user",
+          "content": "Add five. Our report records that adjusted value with its sign flipped. What number goes in the report?"
+        }
+      ],
+      "start": -3,
+      "add": 5,
+      "multiply": -1,
+      "expected": -2,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": -3, \"add\": 5, \"multiply\": 1 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": -3, \"add\": 5, \"multiply\": 1 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": -3, \"add\": 5, \"multiply\": 1 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": -3, \"add\": 5, \"multiply\": 1 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c23",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Starting with 0, add -4, then multiply by -3. Where do I end up?"
+        }
+      ],
+      "start": 0,
+      "add": -4,
+      "multiply": -3,
+      "expected": 12,
+      "record": {
+        "draft": "{\"action\":\"compute\",\"start\":0,\"add\":-4,\"multiply\":-3}",
+        "neutral": "{\"action\":\"unsupported\",\"start\":0,\"add\":-4,\"multiply\":-3}",
+        "advisory": "{\"action\":\"compute\",\"start\":0,\"add\":-4,\"multiply\":-3}",
+        "signal": "{\"action\":\"compute\",\"start\":0,\"add\":-4,\"multiply\":-3}",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c24",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "We start with four beads, add two, double what we have, then take one bead away. How many are left?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 4, \"add\": 2, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 4, \"add\": 2, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 4, \"add\": 2, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 4, \"add\": 2, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c25",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use 15 as the base, take away three, and multiply the rest by my table number. What does that give me?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 15, \"add\": -3, \"multiply\": 10 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 15, \"add\": -3, \"multiply\": 10 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 15, \"add\": -3, \"multiply\": 10 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 15, \"add\": -3, \"multiply\": 10 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c26",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I was quoted $48 for a basic kit and another $7 to add a handle. What will two kits with handles cost?"
+        }
+      ],
+      "start": 48,
+      "add": 7,
+      "multiply": 2,
+      "expected": 110,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 48, \"add\": 7, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 48, \"add\": 7, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 48, \"add\": 7, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 48, \"add\": 7, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c27",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've got a fair four-sided die."
+        },
+        {
+          "role": "assistant",
+          "content": "What would you like to work out?"
+        },
+        {
+          "role": "user",
+          "content": "If I roll it twice, what's the probability of two fours in a row?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 4, \"add\": 4, \"multiply\": 1 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 4, \"add\": 4, \"multiply\": 1 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 4, \"add\": 4, \"multiply\": 1 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 4, \"add\": 4, \"multiply\": 1 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c28",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "For the new chant we tack a two-beat clap onto the old nine-beat phrase and repeat the whole thing three times. How many beats is that?"
+        }
+      ],
+      "start": 9,
+      "add": 2,
+      "multiply": 3,
+      "expected": 33,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 2, \"add\": 2, \"multiply\": 3 }",
+        "neutral": "{ \"action\": \"clarify\", \"start\": 2, \"add\": 2, \"multiply\": 3 }",
+        "advisory": "{ \"action\": \"clarify\", \"start\": 2, \"add\": 2, \"multiply\": 3 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 2, \"add\": 2, \"multiply\": 3 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c29",
+      "kind": "clarify",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My bill starts at $30. There’s a flat $4 fee and a weekend rate that doubles prices."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the weekend rate apply to the fee too?"
+        },
+        {
+          "role": "user",
+          "content": "The flyer doesn’t say. Can you give me the exact total?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 30, \"add\": 4, \"multiply\": 2 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 30, \"add\": 4, \"multiply\": 2 }",
+        "advisory": "{ \"action\": \"clarify\", \"start\": 30, \"add\": 4, \"multiply\": 2 }",
+        "signal": "{ \"action\": \"clarify\", \"start\": 30, \"add\": 4, \"multiply\": 2 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c30",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm scoring a trick. It starts at -4 points, the penalty changes that by -6, and the last card triples the result. What's the score?"
+        }
+      ],
+      "start": -4,
+      "add": -6,
+      "multiply": 3,
+      "expected": -30,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": -4, \"add\": -6, \"multiply\": 3 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": -4, \"add\": -6, \"multiply\": 3 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": -4, \"add\": -6, \"multiply\": 3 }",
+        "signal": "{ \"action\": \"compute\", \"start\": -4, \"add\": -6, \"multiply\": 3 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c31",
+      "kind": "unsupported",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Five teams turn in seven cards each, and the host throws in three spare cards for the whole event. What’s the grand total?"
+        }
+      ],
+      "start": null,
+      "add": null,
+      "multiply": null,
+      "expected": null,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 0, \"add\": 7, \"multiply\": 3 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 5, \"add\": 7, \"multiply\": 3 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 5, \"add\": 7, \"multiply\": 3 }",
+        "signal": "{ \"action\": \"compute\", \"start\": 5, \"add\": 7, \"multiply\": 3 }",
+        "reader_signal": "unresolved"
+      }
+    },
+    {
+      "id": "c32",
+      "kind": "compute",
+      "messages": [
+        {
+          "role": "user",
+          "content": "The worksheet says add one to three and multiply the answer by four."
+        },
+        {
+          "role": "assistant",
+          "content": "I have the expression."
+        },
+        {
+          "role": "user",
+          "content": "I missed the minus sign on the multiplier. It’s negative four. What should I write down?"
+        }
+      ],
+      "start": 3,
+      "add": 1,
+      "multiply": -4,
+      "expected": -16,
+      "record": {
+        "draft": "{ \"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 4 }",
+        "neutral": "{ \"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 4 }",
+        "advisory": "{ \"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 4 }",
+        "signal": "{\"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 4}",
+        "reader_signal": "unresolved"
+      }
+    }
+  ],
+  "observed": {
+    "signals": {
+      "agree": 0,
+      "conflict": 0,
+      "unresolved": 32
+    },
+    "arms": {
+      "initial": {
+        "cases": 32,
+        "clear": 16,
+        "appropriate": 9,
+        "faithful_clear": 9,
+        "correct_clear_number": 9,
+        "wrong_releases": 23,
+        "releases": 32,
+        "safe_noncompute_holds": 0,
+        "unnecessary_holds": 0,
+        "correct_clarifications": 0,
+        "correct_unsupported": 0,
+        "checks": 64,
+        "clear_answered": 16,
+        "wrong_clear": 7,
+        "noncompute_releases": 16
+      },
+      "strict_agreement": {
+        "cases": 32,
+        "clear": 16,
+        "appropriate": 8,
+        "faithful_clear": 0,
+        "correct_clear_number": 0,
+        "wrong_releases": 0,
+        "releases": 0,
+        "safe_noncompute_holds": 16,
+        "unnecessary_holds": 16,
+        "correct_clarifications": 8,
+        "correct_unsupported": 0,
+        "checks": 0,
+        "clear_answered": 0,
+        "wrong_clear": 0,
+        "noncompute_releases": 0
+      },
+      "neutral": {
+        "cases": 32,
+        "clear": 16,
+        "appropriate": 9,
+        "faithful_clear": 7,
+        "correct_clear_number": 7,
+        "wrong_releases": 19,
+        "releases": 26,
+        "safe_noncompute_holds": 2,
+        "unnecessary_holds": 4,
+        "correct_clarifications": 2,
+        "correct_unsupported": 0,
+        "checks": 52,
+        "clear_answered": 12,
+        "wrong_clear": 5,
+        "noncompute_releases": 14
+      },
+      "advisory": {
+        "cases": 32,
+        "clear": 16,
+        "appropriate": 10,
+        "faithful_clear": 8,
+        "correct_clear_number": 8,
+        "wrong_releases": 20,
+        "releases": 28,
+        "safe_noncompute_holds": 2,
+        "unnecessary_holds": 2,
+        "correct_clarifications": 2,
+        "correct_unsupported": 0,
+        "checks": 56,
+        "clear_answered": 14,
+        "wrong_clear": 6,
+        "noncompute_releases": 14
+      },
+      "always_signal": {
+        "cases": 32,
+        "clear": 16,
+        "appropriate": 8,
+        "faithful_clear": 4,
+        "correct_clear_number": 4,
+        "wrong_releases": 9,
+        "releases": 13,
+        "safe_noncompute_holds": 9,
+        "unnecessary_holds": 10,
+        "correct_clarifications": 4,
+        "correct_unsupported": 0,
+        "checks": 26,
+        "clear_answered": 6,
+        "wrong_clear": 2,
+        "noncompute_releases": 7
+      },
+      "conflict_only": {
+        "cases": 32,
+        "clear": 16,
+        "appropriate": 10,
+        "faithful_clear": 8,
+        "correct_clear_number": 8,
+        "wrong_releases": 20,
+        "releases": 28,
+        "safe_noncompute_holds": 2,
+        "unnecessary_holds": 2,
+        "correct_clarifications": 2,
+        "correct_unsupported": 0,
+        "checks": 56,
+        "clear_answered": 14,
+        "wrong_clear": 6,
+        "noncompute_releases": 14
+      }
+    },
+    "paired": {
+      "clear_answered": {
+        "both": [
+          "c01",
+          "c03",
+          "c05",
+          "c07",
+          "c09",
+          "c10",
+          "c13",
+          "c17",
+          "c19",
+          "c22",
+          "c23",
+          "c26",
+          "c30",
+          "c32"
+        ],
+        "advisory_only": [],
+        "conflict_only": [],
+        "neither": [
+          "c16",
+          "c28"
+        ]
+      },
+      "faithful_clear": {
+        "both": [
+          "c01",
+          "c03",
+          "c09",
+          "c10",
+          "c13",
+          "c23",
+          "c26",
+          "c30"
+        ],
+        "advisory_only": [],
+        "conflict_only": [],
+        "neither": [
+          "c05",
+          "c07",
+          "c16",
+          "c17",
+          "c19",
+          "c22",
+          "c28",
+          "c32"
+        ]
+      },
+      "appropriate": {
+        "both": [
+          "c01",
+          "c03",
+          "c09",
+          "c10",
+          "c13",
+          "c21",
+          "c23",
+          "c26",
+          "c29",
+          "c30"
+        ],
+        "advisory_only": [],
+        "conflict_only": [],
+        "neither": [
+          "c02",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c11",
+          "c12",
+          "c14",
+          "c15",
+          "c16",
+          "c17",
+          "c18",
+          "c19",
+          "c20",
+          "c22",
+          "c24",
+          "c25",
+          "c27",
+          "c28",
+          "c31",
+          "c32"
+        ]
+      },
+      "wrong_releases": {
+        "both": [
+          "c02",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c11",
+          "c12",
+          "c14",
+          "c15",
+          "c17",
+          "c18",
+          "c19",
+          "c20",
+          "c22",
+          "c24",
+          "c25",
+          "c27",
+          "c31",
+          "c32"
+        ],
+        "advisory_only": [],
+        "conflict_only": [],
+        "neither": [
+          "c01",
+          "c03",
+          "c09",
+          "c10",
+          "c13",
+          "c16",
+          "c21",
+          "c23",
+          "c26",
+          "c28",
+          "c29",
+          "c30"
+        ]
+      }
+    },
+    "primary_pass": false
+  }
+}

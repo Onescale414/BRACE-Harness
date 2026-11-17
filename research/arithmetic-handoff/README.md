@@ -54,6 +54,28 @@ Reproduce the table, including the original draft and a host-only conflict polic
 python -I -S -B research/arithmetic-handoff/feedback.py
 ```
 
+## Did conflict-only feedback help on new conversations?
+
+**The preregistered comparison tied on every case.** Before running Qwen, we published the test design, case-bank hashes, and a scorer. To pass, conflict-only feedback had to preserve every clear answer delivered by the reminder, preserve each faithful clear answer, and strictly reduce wrong or unwarranted releases. The table below uses a separate bank of 32 independently written synthetic conversations. [Frozen protocol](prospective-protocol.md)
+
+| Policy | Clear requests answered, out of 16 | Clear requests interpreted and answered correctly | Wrong numbers on clear requests | Numbers released on ambiguous or unsupported requests, out of 16 |
+|---|---:|---:|---:|---:|
+| Ordinary reminder | 14 | 8 | 6 | 14 |
+| Interrupt only on explicit conflict | 14 | 8 | 6 | 14 |
+| Always send the verifier’s signal | 6 | 4 | 2 | 7 |
+
+The independent reader returned **unresolved on all 32**. It could not match the wording on 26 single-turn requests or bind the follow-up to the original instruction on six conversations. Conflict-only feedback therefore selected the identical ordinary reread every time. Each primary policy spent 56 step checks. The tested rule offered no improvement on these cases, and this run supplies no observations of how Qwen reacts to a genuine conflict.
+
+For example, `c15` starts at 7 with a +3 bonus and a doubling card. The caller says the order is unspecified. Applying the bonus first gives 20. Doubling first gives 17. Qwen selected the first order and released 20. Both primary policies answered when they should have asked.
+
+All 128 local generations completed, recording an original draft and three independent rereads per conversation. A deployed conflict-only policy uses one reread. One case labeled clear, `c28`, admits another plausible reading of “repeat ... three times.” Both policies asked for clarification. Excluding it leaves the comparison tied with 20 wrong or unwarranted releases for each.
+
+Run the offline replay from the repository root, or add `--case c15` to inspect a single conversation, all four model outputs and each policy’s arithmetic decisions. [Frozen cases, proposals and observed results](prospective.json)
+
+```sh
+python -I -S -B research/arithmetic-handoff/prospective.py
+```
+
 ## Try a caller correction
 
 ```sh

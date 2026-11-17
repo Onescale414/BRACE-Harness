@@ -10,7 +10,7 @@ A caller says, “The counter reads 13. Bump it up by 4, then triple the new rea
 
 In an initial trial, Qwen alone answered **1 of 8** clear requests correctly. Having Qwen translate the request and handing off the arithmetic raised that to **4 of 8**. The backend answered **8 of 8** when given the intended inputs. On a fresh set, a stricter reader prevented all 11 wrong or unwarranted releases, but it also withheld all eight clear requests. You can reproduce both results and try confirming or correcting a handoff yourself. [Run the handoff experiment](research/arithmetic-handoff/README.md)
 
-A follow-up on those same 16 conversations explores when the verifier should speak. Interrupting only on an explicit conflict preserved the five correct answers and reduced wrong or unwarranted releases from 11 to 6. [Compare the feedback policies](research/arithmetic-handoff/README.md#when-should-the-verifier-speak)
+An exploratory replay on those same 16 conversations suggested interrupting only on an explicit conflict. On a subsequent, preregistered test of **32 new conversations**, the verifier could not resolve any of them. It sent no conflict notices. The reminder alone and the conflict-only policy both got **8 of 16** clear requests right and released **20** wrong or unwarranted numbers overall. [See the prospective test and replay](research/arithmetic-handoff/README.md#did-conflict-only-feedback-help-on-new-conversations)
 
 ## Where BRACE fits
 
