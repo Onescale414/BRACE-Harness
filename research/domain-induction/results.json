@@ -1,0 +1,146 @@
+{
+  "scalar_sha256_lf": "c675372f44cb33ee5a2109a683bccc0ef074db907418cfe36417b2f50f75fe6a",
+  "observed": {
+    "scalar_scores": {
+      "exact_lookup": {
+        "right": 0,
+        "wrong": 0,
+        "held": 48
+      },
+      "initial_guess": {
+        "right": 4,
+        "wrong": 44,
+        "held": 0
+      },
+      "after_feedback_unchecked": {
+        "right": 43,
+        "wrong": 5,
+        "held": 0
+      },
+      "direct_two_point": {
+        "right": 38,
+        "wrong": 0,
+        "held": 10
+      },
+      "checked": {
+        "right": 38,
+        "wrong": 0,
+        "held": 10
+      }
+    },
+    "feedback_misses": 14,
+    "revised": 14,
+    "validated": 16,
+    "tampered_traces_rejected": 28,
+    "context_scores": [
+      {
+        "arm": "constant",
+        "budget": 2,
+        "worlds": 4,
+        "supported": 4,
+        "features": 0,
+        "tested": 32,
+        "wrong": 0,
+        "validation_reads": 63,
+        "validation_vetoes": 3,
+        "selection_evaluations": 0
+      },
+      {
+        "arm": "fixed",
+        "budget": 2,
+        "worlds": 3,
+        "supported": 3,
+        "features": 2,
+        "tested": 24,
+        "wrong": 0,
+        "validation_reads": 36,
+        "validation_vetoes": 1,
+        "selection_evaluations": 0
+      },
+      {
+        "arm": "active",
+        "budget": 2,
+        "worlds": 4,
+        "supported": 4,
+        "features": 0,
+        "tested": 32,
+        "wrong": 0,
+        "validation_reads": 45,
+        "validation_vetoes": 1,
+        "selection_evaluations": 9776
+      },
+      {
+        "arm": "constant",
+        "budget": 3,
+        "worlds": 4,
+        "supported": 4,
+        "features": 0,
+        "tested": 32,
+        "wrong": 0,
+        "validation_reads": 36,
+        "validation_vetoes": 0,
+        "selection_evaluations": 0
+      },
+      {
+        "arm": "fixed",
+        "budget": 3,
+        "worlds": 6,
+        "supported": 6,
+        "features": 4,
+        "tested": 48,
+        "wrong": 0,
+        "validation_reads": 81,
+        "validation_vetoes": 3,
+        "selection_evaluations": 0
+      },
+      {
+        "arm": "active",
+        "budget": 3,
+        "worlds": 6,
+        "supported": 6,
+        "features": 2,
+        "tested": 48,
+        "wrong": 0,
+        "validation_reads": 54,
+        "validation_vetoes": 0,
+        "selection_evaluations": 9974
+      },
+      {
+        "arm": "constant",
+        "budget": 4,
+        "worlds": 4,
+        "supported": 4,
+        "features": 0,
+        "tested": 32,
+        "wrong": 0,
+        "validation_reads": 36,
+        "validation_vetoes": 0,
+        "selection_evaluations": 0
+      },
+      {
+        "arm": "fixed",
+        "budget": 4,
+        "worlds": 10,
+        "supported": 10,
+        "features": 7,
+        "tested": 80,
+        "wrong": 0,
+        "validation_reads": 108,
+        "validation_vetoes": 2,
+        "selection_evaluations": 0
+      },
+      {
+        "arm": "active",
+        "budget": 4,
+        "worlds": 12,
+        "supported": 12,
+        "features": 8,
+        "tested": 96,
+        "wrong": 0,
+        "validation_reads": 135,
+        "validation_vetoes": 3,
+        "selection_evaluations": 10064
+      }
+    ]
+  }
+}
