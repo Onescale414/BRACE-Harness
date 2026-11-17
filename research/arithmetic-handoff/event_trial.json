@@ -1,0 +1,1012 @@
+{
+  "cases": [
+    {
+      "id": "er01",
+      "label": "distinct",
+      "text": "The tally starts at 19. The clerk posted a 4-point addition for parcel PINE. The copy shows a 4-point addition for BIRCH, a separate parcel the clerk also posted. Finally multiply the tally by 3.",
+      "start": 19,
+      "amount": 4,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            43,
+            44
+          ],
+          "event_spans": [
+            [
+              71,
+              75
+            ],
+            [
+              64,
+              75
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            94,
+            95
+          ],
+          "event_spans": [
+            [
+              115,
+              120
+            ],
+            [
+              124,
+              139
+            ]
+          ]
+        }
+      ],
+      "note": "Both parcels received their own posting."
+    },
+    {
+      "id": "er02",
+      "label": "outside",
+      "text": "Start with 32 points. Add 5 for the relay. The relay route was 5 miles long. Finally multiply the points by 2.",
+      "start": null,
+      "amount": null,
+      "multiplier": null,
+      "mentions": [],
+      "note": "The second numeral measures distance."
+    },
+    {
+      "id": "er03",
+      "label": "same",
+      "text": "The game starts at 30 points. A scorer applied -5 for the missed gate. The umpire's -5 for the missed gate was a written copy of that ruling. Multiply the final score by 2.",
+      "start": 30,
+      "amount": -5,
+      "multiplier": 2,
+      "mentions": [
+        {
+          "amount_span": [
+            47,
+            49
+          ],
+          "event_spans": [
+            [
+              58,
+              69
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            84,
+            86
+          ],
+          "event_spans": [
+            [
+              95,
+              106
+            ],
+            [
+              129,
+              140
+            ]
+          ]
+        }
+      ],
+      "note": "The umpire copied the first deduction."
+    },
+    {
+      "id": "er04",
+      "label": "uncertain",
+      "text": "Begin with 13 credits. On Monday, six credits were added for a desk move. Tuesday's log says six credits for the desk move; nobody knows whether the crew moved it again or the clerk copied Monday's entry. Multiply the resulting balance by 4.",
+      "start": 13,
+      "amount": 6,
+      "multiplier": 4,
+      "mentions": [
+        {
+          "amount_span": [
+            34,
+            37
+          ],
+          "event_spans": [
+            [
+              26,
+              32
+            ],
+            [
+              63,
+              72
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            93,
+            96
+          ],
+          "event_spans": [
+            [
+              74,
+              87
+            ],
+            [
+              113,
+              122
+            ]
+          ]
+        }
+      ],
+      "note": "The later entry could be a copy or a second move."
+    },
+    {
+      "id": "er05",
+      "label": "same",
+      "text": "Opening balance: 28 tickets. Refund RAVEN added 7 tickets. In other words, that refund put 7 tickets back. Multiply the balance by 3 at the end.",
+      "start": 28,
+      "amount": 7,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            48,
+            49
+          ],
+          "event_spans": [
+            [
+              36,
+              41
+            ],
+            [
+              29,
+              41
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            91,
+            92
+          ],
+          "event_spans": [
+            [
+              75,
+              86
+            ]
+          ]
+        }
+      ],
+      "note": "The prose restates the named refund."
+    },
+    {
+      "id": "er06",
+      "label": "uncertain",
+      "text": "The tally starts at 19. The clerk posted a 4-point addition for parcel PINE. The copy shows a 4-point addition with a torn parcel label; even the clerk cannot tell whether it was a reprint or another parcel. Finally multiply the tally by 3.",
+      "start": 19,
+      "amount": 4,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            43,
+            44
+          ],
+          "event_spans": [
+            [
+              71,
+              75
+            ],
+            [
+              64,
+              75
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            94,
+            95
+          ],
+          "event_spans": [
+            [
+              118,
+              135
+            ],
+            [
+              123,
+              135
+            ]
+          ]
+        }
+      ],
+      "note": "The label that would distinguish a new parcel from a reprint is unreadable."
+    },
+    {
+      "id": "er07",
+      "label": "outside",
+      "text": "The counter starts at 24. A weigh-in added 6 points. Then multiply the counter by 6.",
+      "start": null,
+      "amount": null,
+      "multiplier": null,
+      "mentions": [],
+      "note": "The repeated number is the multiplier."
+    },
+    {
+      "id": "er08",
+      "label": "distinct",
+      "text": "The game starts at 30 points. A scorer applied -5 for the missed gate. The umpire applied -5 for the false start as well. Multiply the final score by 2.",
+      "start": 30,
+      "amount": -5,
+      "multiplier": 2,
+      "mentions": [
+        {
+          "amount_span": [
+            47,
+            49
+          ],
+          "event_spans": [
+            [
+              58,
+              69
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            90,
+            92
+          ],
+          "event_spans": [
+            [
+              101,
+              112
+            ]
+          ]
+        }
+      ],
+      "note": "The scorer and umpire imposed penalties for different infractions."
+    },
+    {
+      "id": "er09",
+      "label": "same",
+      "text": "Begin with 13 credits. On Monday, six credits were added for a desk move. Tuesday's log says six credits for the desk move; the clerk copied Monday's entry into Tuesday's log. Multiply the resulting balance by 4.",
+      "start": 13,
+      "amount": 6,
+      "multiplier": 4,
+      "mentions": [
+        {
+          "amount_span": [
+            34,
+            37
+          ],
+          "event_spans": [
+            [
+              26,
+              32
+            ],
+            [
+              63,
+              72
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            93,
+            96
+          ],
+          "event_spans": [
+            [
+              74,
+              87
+            ],
+            [
+              113,
+              122
+            ]
+          ]
+        }
+      ],
+      "note": "Tuesday is the date of copying, not of a second move."
+    },
+    {
+      "id": "er10",
+      "label": "uncertain",
+      "text": "The inventory starts at 18 crates. The morning pickup added 2 crates. The evening pickup would have added 2 crates if the driver showed up; no one knows if she did. Finally multiply the crate count by 5.",
+      "start": 18,
+      "amount": 2,
+      "multiplier": 5,
+      "mentions": [
+        {
+          "amount_span": [
+            60,
+            61
+          ],
+          "event_spans": [
+            [
+              39,
+              53
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            106,
+            107
+          ],
+          "event_spans": [
+            [
+              74,
+              88
+            ]
+          ]
+        }
+      ],
+      "note": "The evening pickup was conditional and its completion is unknown."
+    },
+    {
+      "id": "er11",
+      "label": "distinct",
+      "text": "The account starts with 26 tokens. Inez returned a jar and added 8 tokens to the account for that return. Later she returned a second jar and added 8 tokens for it. Multiply the final balance by 3.",
+      "start": 26,
+      "amount": 8,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            65,
+            66
+          ],
+          "event_spans": [
+            [
+              49,
+              54
+            ],
+            [
+              93,
+              104
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            148,
+            149
+          ],
+          "event_spans": [
+            [
+              127,
+              137
+            ]
+          ]
+        }
+      ],
+      "note": "Each return earned tokens, even though Inez made both."
+    },
+    {
+      "id": "er12",
+      "label": "outside",
+      "text": "Start with 17 tokens. Add 3 for the book return. A sign on the wall reads '3 for a postcard'. Finally multiply the token balance by 2.",
+      "start": null,
+      "amount": null,
+      "multiplier": null,
+      "mentions": [],
+      "note": "The quoted number is a posted price."
+    },
+    {
+      "id": "er13",
+      "label": "uncertain",
+      "text": "The game starts at 30 points. A scorer applied -5 for the missed gate. The umpire proposed -5 for the false start; that ruling is still pending. Multiply the final score by 2.",
+      "start": 30,
+      "amount": -5,
+      "multiplier": 2,
+      "mentions": [
+        {
+          "amount_span": [
+            47,
+            49
+          ],
+          "event_spans": [
+            [
+              58,
+              69
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            91,
+            93
+          ],
+          "event_spans": [
+            [
+              102,
+              113
+            ],
+            [
+              115,
+              126
+            ]
+          ]
+        }
+      ],
+      "note": "The second penalty has been proposed but has no final ruling."
+    },
+    {
+      "id": "er14",
+      "label": "same",
+      "text": "The tally starts at 19. The clerk posted a 4-point addition for parcel PINE. The copy shows a 4-point addition for PINE, a reprint of the original posting. Finally multiply the tally by 3.",
+      "start": 19,
+      "amount": 4,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            43,
+            44
+          ],
+          "event_spans": [
+            [
+              71,
+              75
+            ],
+            [
+              64,
+              75
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            94,
+            95
+          ],
+          "event_spans": [
+            [
+              115,
+              119
+            ],
+            [
+              123,
+              130
+            ]
+          ]
+        }
+      ],
+      "note": "The copy identifies the same parcel posting."
+    },
+    {
+      "id": "er15",
+      "label": "outside",
+      "text": "Start the board at 31. Add 4 points for the quiz. The prize requires a score ending in 4. Multiply the board total by 3.",
+      "start": null,
+      "amount": null,
+      "multiplier": null,
+      "mentions": [],
+      "note": "The last digit of a qualifying score is not an amount added to the board."
+    },
+    {
+      "id": "er16",
+      "label": "distinct",
+      "text": "Begin with 13 credits. On Monday, six credits were added for a desk move. Tuesday's log says six credits for the desk move; the crew earned them by moving the desk again on Tuesday. Multiply the resulting balance by 4.",
+      "start": 13,
+      "amount": 6,
+      "multiplier": 4,
+      "mentions": [
+        {
+          "amount_span": [
+            34,
+            37
+          ],
+          "event_spans": [
+            [
+              26,
+              32
+            ],
+            [
+              63,
+              72
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            93,
+            96
+          ],
+          "event_spans": [
+            [
+              74,
+              87
+            ],
+            [
+              113,
+              122
+            ],
+            [
+              148,
+              169
+            ]
+          ]
+        }
+      ],
+      "note": "The crew earned another addition for a second move."
+    },
+    {
+      "id": "er17",
+      "label": "same",
+      "text": "The board starts at 25 points. The referee subtracted three for the late pass. Her report put the late-pass deduction at three. Then multiply the board total by 4.",
+      "start": 25,
+      "amount": -3,
+      "multiplier": 4,
+      "mentions": [
+        {
+          "amount_span": [
+            54,
+            59
+          ],
+          "event_spans": [
+            [
+              68,
+              77
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            121,
+            126
+          ],
+          "event_spans": [
+            [
+              98,
+              117
+            ],
+            [
+              98,
+              107
+            ]
+          ]
+        }
+      ],
+      "note": "The report gives the size of the referee's deduction."
+    },
+    {
+      "id": "er18",
+      "label": "distinct",
+      "text": "Start with 42 points. A red flag cost 4 points. A separate blue flag also cost 4 points. Multiply what remains by 3.",
+      "start": 42,
+      "amount": -4,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            38,
+            39
+          ],
+          "event_spans": [
+            [
+              24,
+              32
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            79,
+            80
+          ],
+          "event_spans": [
+            [
+              59,
+              68
+            ]
+          ]
+        }
+      ],
+      "note": "Both flag penalties were assessed."
+    },
+    {
+      "id": "er19",
+      "label": "uncertain",
+      "text": "The till starts with 37 coins. The fruit stall paid in 5 coins for its permit. A loose slip says 'flower stall: 5 coins due'; the slip does not say whether the stall ever paid. Finally multiply the till balance by 2.",
+      "start": 37,
+      "amount": 5,
+      "multiplier": 2,
+      "mentions": [
+        {
+          "amount_span": [
+            55,
+            56
+          ],
+          "event_spans": [
+            [
+              35,
+              46
+            ],
+            [
+              67,
+              77
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            112,
+            113
+          ],
+          "event_spans": [
+            [
+              98,
+              110
+            ]
+          ]
+        }
+      ],
+      "note": "The second fee was due but its payment is unknown."
+    },
+    {
+      "id": "er20",
+      "label": "outside",
+      "text": "Begin with 8 stamps. Add 8 stamps from the harbor booth. Finally multiply the number of stamps by 3.",
+      "start": null,
+      "amount": null,
+      "multiplier": null,
+      "mentions": [],
+      "note": "One numeral is the opening balance."
+    },
+    {
+      "id": "er21",
+      "label": "same",
+      "text": "Start at 14 points. Bea earned 5 for sorting the maps. 'Map duty: 5 earned,' read Bea's copy of that award. Then multiply the score by 2.",
+      "start": 14,
+      "amount": 5,
+      "multiplier": 2,
+      "mentions": [
+        {
+          "amount_span": [
+            31,
+            32
+          ],
+          "event_spans": [
+            [
+              37,
+              53
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            66,
+            67
+          ],
+          "event_spans": [
+            [
+              56,
+              64
+            ],
+            [
+              96,
+              106
+            ]
+          ]
+        }
+      ],
+      "note": "Bea's copy names the same map-sorting award."
+    },
+    {
+      "id": "er22",
+      "label": "uncertain",
+      "text": "The score starts at 23. The judge added 7 for Nia's vault. The scoreboard also shows 7 under 'floor'; the judge is checking whether the vault award was copied there or a floor award was made. Finally multiply the score by 3.",
+      "start": 23,
+      "amount": 7,
+      "multiplier": 3,
+      "mentions": [
+        {
+          "amount_span": [
+            40,
+            41
+          ],
+          "event_spans": [
+            [
+              46,
+              57
+            ],
+            [
+              52,
+              57
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            85,
+            86
+          ],
+          "event_spans": [
+            [
+              94,
+              99
+            ],
+            [
+              87,
+              100
+            ]
+          ]
+        }
+      ],
+      "note": "The displayed floor amount may be a new award or a copy of the vault award."
+    },
+    {
+      "id": "er23",
+      "label": "distinct",
+      "text": "Opening count: 20. Posted: 6 added for unloading the van. Also posted: 6 added for packing the crates. Final step: multiply the count by 2.",
+      "start": 20,
+      "amount": 6,
+      "multiplier": 2,
+      "mentions": [
+        {
+          "amount_span": [
+            27,
+            28
+          ],
+          "event_spans": [
+            [
+              39,
+              56
+            ]
+          ]
+        },
+        {
+          "amount_span": [
+            71,
+            72
+          ],
+          "event_spans": [
+            [
+              83,
+              101
+            ]
+          ]
+        }
+      ],
+      "note": "The ledger posts a separate addition for each job."
+    },
+    {
+      "id": "er24",
+      "label": "outside",
+      "text": "Start the day with 11 points. Add 2 points for a ride on bus number 2. Multiply the final score by 4.",
+      "start": null,
+      "amount": null,
+      "multiplier": null,
+      "mentions": [],
+      "note": "The bus number is an identifier, not a second award."
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "B01",
+      "text": "Start with 20 credits. Iris requested a rebate of 6 credits. The supervisor approved a rebate of 6 credits, but the payment record says the rebate was only partly paid and omits the amount. Add the credits Iris actually received, then multiply the result by 2.",
+      "expected_value": null,
+      "note": "Request and approval both specify 6. The partial payment has no stated amount."
+    },
+    {
+      "id": "B02",
+      "text": "Start with 9 seals in the north cupboard. The south cupboard received a delivery of 4 seals. The west cupboard also received a delivery of 4 seals. The line giving the size of the north cupboard's delivery is torn off. Add the north cupboard's delivery and then multiply by 3.",
+      "expected_value": null,
+      "note": "Both quantities belong to deliveries to other cupboards. Neither determines the north delivery."
+    },
+    {
+      "id": "B03",
+      "text": "Start with 12 tickets. Monday's ticket release added 5 tickets. Friday's ticket release added 5 tickets. Add the tickets from Thursday's release to the starting count and multiply the result by 4. The Thursday bulletin gives only the time of the release.",
+      "expected_value": null,
+      "note": "The two counts of 5 refer to different days. Thursday's release size is missing."
+    },
+    {
+      "id": "B04",
+      "text": "Start with 11 parcels. The delivery docket records 7 crates. The depot's scale records 7 kilograms for that delivery. Add the number of individual parcels in the delivery, then multiply by 2. Several parcels can share a crate, and their weights vary.",
+      "expected_value": null,
+      "note": "Neither the crate count nor the weight specifies the parcel count, even though the delivery is the same."
+    },
+    {
+      "id": "B05",
+      "text": "Start with 14 points. The draft cited a 'bonus of 8 points'. The correction says the bonus of 8 points was a sample entry copied from the handbook. Add the bonus actually awarded and then multiply by 3. The correction confirms an award but leaves its amount blank.",
+      "expected_value": null,
+      "note": "Both mentions of 8 are traceable to one rejected example. The real award is unquantified."
+    },
+    {
+      "id": "B06",
+      "text": "Start with the opening balance of 8 credits. The shift sheet also shows 8 credits per hour. Add the credits earned during the shift and multiply the updated balance by 5. The hours worked are missing from the shift sheet.",
+      "expected_value": null,
+      "note": "An opening balance and an hourly rate do not determine the shift earnings without the hours."
+    },
+    {
+      "id": "B07",
+      "text": "Start with 8 seals in the east cupboard. The delivery docket records 4 seals for the east cupboard. The receiving clerk copied that docket into the log as 'delivery of 4 seals to the east cupboard'. Add the seals received, then multiply the updated count by 3.",
+      "expected_value": 36,
+      "note": "The clerk copied the original docket. One delivery raises 8 to 12, then multiplication gives 36."
+    },
+    {
+      "id": "B08",
+      "text": "Start with 12 tickets. Thursday's release added 5 tickets. On Friday the office published a recap of Thursday's release and listed the 5 tickets again. Add the tickets released on Thursday to the starting count, then multiply by 4.",
+      "expected_value": 68,
+      "note": "Friday is the publication date of a recap. Both mentions describe Thursday's single release."
+    },
+    {
+      "id": "B09",
+      "text": "Start with 14 points. The award letter grants a bonus of 8 points. The corrected award letter still grants 8 points and fixes the spelling of the recipient's name. Add the awarded bonus and then multiply by 3.",
+      "expected_value": 66,
+      "note": "The name correction preserves the single award. Adding 8 once and tripling gives 66."
+    }
+  ],
+  "hashes": {
+    "cases": "c892f5217e821e1f2c930775af53a6d15bc8798489e179dfe341651e977d6e22",
+    "boundaries": "b256b9edb73e46ee4f72ddabcda1e39c0e6efcf7e2b7e097ccd1b8e7cc44f6e9"
+  },
+  "observed": {
+    "correct_by_label": {
+      "distinct": {
+        "merge": 0,
+        "count": 6,
+        "ask": 0,
+        "previous": 0,
+        "candidate": 1
+      },
+      "outside": {
+        "merge": 0,
+        "count": 0,
+        "ask": 0,
+        "previous": 6,
+        "candidate": 5
+      },
+      "same": {
+        "merge": 6,
+        "count": 0,
+        "ask": 0,
+        "previous": 0,
+        "candidate": 2
+      },
+      "uncertain": {
+        "merge": 0,
+        "count": 0,
+        "ask": 6,
+        "previous": 0,
+        "candidate": 1
+      }
+    },
+    "decisions": {
+      "uncertain": 7,
+      "pass": 14,
+      "same": 2,
+      "distinct": 1
+    },
+    "attachment": {
+      "amounts": 22,
+      "candidate_links": 11,
+      "candidate_pairs": 4,
+      "proximity_links": 0,
+      "proximity_pairs": 0,
+      "swapped_links": 0,
+      "swapped_pairs": 0,
+      "proximity_given_amounts_links": 3,
+      "proximity_given_amounts_pairs": 0,
+      "pairs_and_relation": 2
+    },
+    "arithmetic": {
+      "old": {
+        "correct": 0,
+        "grounded": 0,
+        "wrong": 0,
+        "outside": 0,
+        "checks": 0
+      },
+      "new": {
+        "correct": 2,
+        "grounded": 1,
+        "wrong": 0,
+        "outside": 0,
+        "checks": 4
+      }
+    },
+    "boundaries": [
+      {
+        "id": "B01",
+        "expected": null,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "uncertain",
+        "checks": 0
+      },
+      {
+        "id": "B02",
+        "expected": null,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "uncertain",
+        "checks": 0
+      },
+      {
+        "id": "B03",
+        "expected": null,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "uncertain",
+        "checks": 0
+      },
+      {
+        "id": "B04",
+        "expected": null,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "pass",
+        "checks": 0
+      },
+      {
+        "id": "B05",
+        "expected": null,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "pass",
+        "checks": 0
+      },
+      {
+        "id": "B06",
+        "expected": null,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "pass",
+        "checks": 0
+      },
+      {
+        "id": "B07",
+        "expected": 36,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "pass",
+        "checks": 0
+      },
+      {
+        "id": "B08",
+        "expected": 68,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "pass",
+        "checks": 0
+      },
+      {
+        "id": "B09",
+        "expected": 66,
+        "previous_value": null,
+        "candidate_value": null,
+        "decision": "pass",
+        "checks": 0
+      }
+    ]
+  },
+  "post_trial": [
+    {
+      "id": "pending",
+      "text": "The game starts at 30 points. A scorer proposed -5 for the missed gate. The umpire's -5 for the missed gate was a written copy of that ruling. The ruling is still pending. Multiply the final score by 2.",
+      "expected_supported_value": null,
+      "decision": "pass",
+      "value": null
+    },
+    {
+      "id": "next-lap",
+      "text": "The game starts at 30 points. A scorer applied -5 for the missed gate. The umpire applied a separate -5 for the missed gate on the next lap. Multiply the final score by 2.",
+      "expected_supported_value": null,
+      "decision": "distinct",
+      "value": null
+    },
+    {
+      "id": "deducted",
+      "text": "The game starts at 30 points. A scorer deducted 5 for the missed gate. The umpire's 5 for the missed gate was a written copy of that deduction. Multiply the final score by 2.",
+      "expected_supported_value": 50,
+      "decision": "pass",
+      "value": null
+    },
+    {
+      "id": "never-applied",
+      "text": "The game starts at 30 points. A scorer recorded but never applied -5 for the missed gate. The umpire's -5 for the missed gate was a written copy of that proposed ruling. Multiply the final score by 2.",
+      "expected_supported_value": null,
+      "decision": "pass",
+      "value": null
+    }
+  ]
+}

@@ -124,6 +124,32 @@ The fresh cases suggest asking *whether the second mention describes the same ev
 
 Run `python -I -S -B research/arithmetic-handoff/repeat_trial.py` from the repository root. Add `--case rr03` to inspect one request. This offline comparison calls the existing public arithmetic checker only for a supported single-addition handoff.
 
+## Can the reader attach each amount to its event?
+
+A scorer applies −5 for a missed gate. The umpire's −5 is a written copy of the ruling. The reader pointed to the two separate occurrences of “missed gate,” counted one penalty and submitted `(30 − 5) × 2`. BRACE released **50** after two checks. When the umpire applied the second −5 for a **false start**, the reader linked both penalties to their own events and withheld the three-operation request. When the umpire merely **proposed** the false-start penalty, it still found both event phrases but deferred without asking about the pending ruling.
+
+The frozen offline trial used 24 new synthetic requests and nine separate boundary probes. Each of the 18 relevant requests had two amounts with independently annotated character positions and local event phrases. The remaining six contained repeated numbers in other roles. A complete link required the correct number occurrence and an event phrase covering an accepted anchor. [Protocol](event-protocol.md) · [Requests, annotations and scores](event_trial.json)
+
+| On the 18 relevant requests | Event reader | Nearest content word, same detected amounts |
+|---|---:|---:|
+| Correct individual links, out of 36 | 11 | 0 |
+| Both amounts linked, out of 18 | 4 | 0 |
+
+The reader located 22 of the 36 amount occurrences. Swapping its two event phrases gave zero correct links. Giving the nearest-word rule all 36 annotated amount locations yielded three correct individual links and zero complete pairs. Two of the candidate's four complete pairs also had the correct relationship. It classified **9/24** requests correctly, including five outside-scope deferrals. The previous wording reader and each of the three integer-only policies scored **6/24**. None of the three matched groups received all three correct relationship decisions.
+
+The candidate issued two correct numeric answers, **50** on `er03` and **69** on `er14`, using four checks in total. Only `er03` had both event links supported. For the parcel in `er14`, the first anchor was just “addition.” The second, “original posting,” is a defensible alternative omitted from the key. Accepting it would add one individual link and leave the complete-pair count unchanged. Across the nine separate boundary probes the reader released no numbers, including on three supported restatements.
+
+**Question quality.** The reader asked seven questions. Five asked for information the request already supplied. One treated a quoted postcard price as a possible second credit. The seventh identified a genuinely ambiguous parcel record (`er06`), but asking if the adjustment was authorized could yield “yes” under either interpretation. The question that would separate them is “Was the second line a reprint of the PINE posting, or did it record another parcel?” The other five ambiguous requests received no question. This review of the wording is separate from the automatic relationship scores.
+
+Four exploratory variations on the penalty example are included in the archive. The reader withheld a pending ruling and one that was never applied, and identified a separately applied penalty on the next lap. Replacing “applied −5” with “deducted 5” caused it to miss a supported answer of 50.
+
+Run the comparison or inspect the actual text captured for each link. The production harness uses its existing arithmetic entry point.
+
+```sh
+python -I -S -B research/arithmetic-handoff/event_trial.py
+python -I -S -B research/arithmetic-handoff/event_trial.py --case er03
+```
+
 ## Try a caller correction
 
 ```sh
