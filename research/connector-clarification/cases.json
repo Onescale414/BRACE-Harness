@@ -1,0 +1,224 @@
+{
+  "resources": [
+    "orders",
+    "teams",
+    "invoices",
+    "jobs",
+    "assets",
+    "tickets",
+    "accounts",
+    "events",
+    "files",
+    "users"
+  ],
+  "actions": [
+    "list",
+    "search",
+    "preview",
+    "count",
+    "summary",
+    "history",
+    "status",
+    "details",
+    "export",
+    "changes"
+  ],
+  "symptom_groups": [
+    {
+      "symptom": "Only base64 data is allowed",
+      "actions": [
+        "status",
+        "export",
+        "changes"
+      ]
+    },
+    {
+      "symptom": "Expecting value: line 2 column 48 (char 49)",
+      "actions": [
+        "list",
+        "search",
+        "details"
+      ]
+    },
+    {
+      "symptom": "syntax error: line 2, column 47",
+      "actions": [
+        "preview",
+        "history"
+      ]
+    },
+    {
+      "symptom": "[<class 'decimal.ConversionSyntax'>]",
+      "actions": [
+        "count",
+        "summary"
+      ]
+    }
+  ],
+  "mappings": {
+    "P001": {
+      "resource": "jobs",
+      "symptom": "Expecting value: line 2 column 48 (char 49)",
+      "suffix": "5qa7c",
+      "source": {
+        "text": "Translate this mapping.",
+        "serverSettings": {
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2",
+          "mockServerMatchExactCase": "true"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/jobs/details/5qa7c"
+          },
+          "httpResponse": {
+            "body": "{\"rows\":[]}",
+            "statusCode": 200,
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            }
+          }
+        }
+      },
+      "target": {
+        "request": {
+          "method": "POST",
+          "urlPath": "/v1/jobs/changes/5qa7c"
+        },
+        "response": {
+          "status": 200,
+          "body": "{\"rows\":[]}",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "label": "Current request",
+      "mapping": "P001",
+      "reply": "I viewed the selected job for this request.",
+      "expected": "yes",
+      "record": {
+        "id": "P001",
+        "arm": "current",
+        "question": "one_record",
+        "reply": "I viewed the selected job for this request.",
+        "resolution": "yes",
+        "eligible": [
+          37
+        ],
+        "checks": [
+          {
+            "source_sha256": "12f65a7025e32e3f4910675c72ccf4b58c2af62dca93ee0fbcc8881a11b66e5e",
+            "target_sha256": "a5e2ec8a09035e8240d5679e717afb92476532506542489c09cb37d1cfb9f323",
+            "patch": [
+              {
+                "op": "replace",
+                "path": "/request/method",
+                "old": "POST",
+                "value": "GET"
+              },
+              {
+                "op": "replace",
+                "path": "/request/urlPath",
+                "old": "/v1/jobs/changes/5qa7c",
+                "value": "/v2/jobs/details/5qa7c"
+              }
+            ],
+            "patch_sha256": "8b1b9e5fdbd92c01e61d70cffbddb4da3b437acbff611589f4aa0d5b8add309e",
+            "audits": 1,
+            "output_sha256": "011f11f345d40370316577cdfdfa7ab5c45b19417925b5c5b2f985a4b5086dde",
+            "candidate_sha256": "011f11f345d40370316577cdfdfa7ab5c45b19417925b5c5b2f985a4b5086dde",
+            "checked": true,
+            "status": "checked",
+            "reason": "Set the request method to \"GET\" and the URL path to \"/v2/jobs/details/5qa7c\"."
+          }
+        ],
+        "charged": 1,
+        "remaining": 1,
+        "state": "checked",
+        "released": 37
+      },
+      "record_sha256": "1136247e8aa34d36435fa8076b37e87f26022bea76d3bb27b7a5288cd311e824"
+    },
+    {
+      "label": "Undecided",
+      "mapping": "P001",
+      "reply": "I haven't decided yet.",
+      "expected": "unknown",
+      "record": {
+        "id": "P001",
+        "arm": "undecided",
+        "question": "one_record",
+        "reply": "I haven't decided yet.",
+        "resolution": "unknown",
+        "eligible": [],
+        "checks": [],
+        "charged": 0,
+        "remaining": 2,
+        "state": "waiting",
+        "released": null
+      },
+      "record_sha256": "cdcd44b68ab497ad78f7e4c544f1a5c29b1ea74c62b7d768c8c176a057cb0040"
+    },
+    {
+      "label": "Another request",
+      "mapping": "P001",
+      "reply": "I viewed the selected job for another request.",
+      "expected": "unknown",
+      "record": {
+        "id": "P001",
+        "arm": "other",
+        "question": "one_record",
+        "reply": "I viewed the selected job for another request.",
+        "resolution": "yes",
+        "eligible": [
+          37
+        ],
+        "checks": [
+          {
+            "source_sha256": "12f65a7025e32e3f4910675c72ccf4b58c2af62dca93ee0fbcc8881a11b66e5e",
+            "target_sha256": "a5e2ec8a09035e8240d5679e717afb92476532506542489c09cb37d1cfb9f323",
+            "patch": [
+              {
+                "op": "replace",
+                "path": "/request/method",
+                "old": "POST",
+                "value": "GET"
+              },
+              {
+                "op": "replace",
+                "path": "/request/urlPath",
+                "old": "/v1/jobs/changes/5qa7c",
+                "value": "/v2/jobs/details/5qa7c"
+              }
+            ],
+            "patch_sha256": "8b1b9e5fdbd92c01e61d70cffbddb4da3b437acbff611589f4aa0d5b8add309e",
+            "audits": 1,
+            "output_sha256": "011f11f345d40370316577cdfdfa7ab5c45b19417925b5c5b2f985a4b5086dde",
+            "candidate_sha256": "011f11f345d40370316577cdfdfa7ab5c45b19417925b5c5b2f985a4b5086dde",
+            "checked": true,
+            "status": "checked",
+            "reason": "Set the request method to \"GET\" and the URL path to \"/v2/jobs/details/5qa7c\"."
+          }
+        ],
+        "charged": 1,
+        "remaining": 1,
+        "state": "checked",
+        "released": 37
+      },
+      "record_sha256": "cd67b38a9694110f00efe2b2c029c51f83e96a1f5dfcc40574edb47696c38f2b"
+    }
+  ]
+}

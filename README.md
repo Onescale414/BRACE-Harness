@@ -53,5 +53,6 @@ The example submits one candidate per step. The correct case spends two checks, 
 
 - **Bracket geometry.** Two measured marks admit two possible tip positions, 96 drawing units apart. Reveal the third mark to distinguish them. Open the viewer locally or run `python -I -S -B preview/verify.py` to check the coordinates. [Bracket viewer](preview/bracket.html)
 - **Task handoff.** The experimental reader completed 25 of 36 connector requests. It still checked a URL that the user mentioned only as an example. The trial includes all wordings and an offline replay. [Delivery experiment](research/delivery/README.md)
+- **Which request did the caller mean?** Replay a checked connector repair, a reply that keeps both checks available, and a reader mistake that spends a check on another request. Run `python -I -S -B research/connector-clarification/replay.py`. [Connector clarification example](research/connector-clarification/README.md)
 
 [Sources and measurements](PROVENANCE.md)
