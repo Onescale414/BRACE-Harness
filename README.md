@@ -10,6 +10,8 @@ A caller says, “The counter reads 13. Bump it up by 4, then triple the new rea
 
 In an initial trial, Qwen alone answered **1 of 8** clear requests correctly. Having Qwen translate the request and handing off the arithmetic raised that to **4 of 8**. The backend answered **8 of 8** when given the intended inputs. On a fresh set, a stricter reader prevented all 11 wrong or unwarranted releases, but it also withheld all eight clear requests. You can reproduce both results and try confirming or correcting a handoff yourself. [Run the handoff experiment](research/arithmetic-handoff/README.md)
 
+A follow-up on those same 16 conversations explores when the verifier should speak. Interrupting only on an explicit conflict preserved the five correct answers and reduced wrong or unwarranted releases from 11 to 6. [Compare the feedback policies](research/arithmetic-handoff/README.md#when-should-the-verifier-speak)
+
 ## Where BRACE fits
 
 - **Require a check before using an answer.** Route the task through `run_bound` and let the host application release the value only when `outcome.status == "checked"`. The application must own that release path. The proposer adapter runs as trusted Python code.

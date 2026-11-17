@@ -34,6 +34,26 @@ The 11 releases comprise three arithmetic requests with a misread operand and ei
 
 **Repair.** A retry is available only when the rule can independently recover a complete calculation and the model disagrees. Feedback names the conflicting fields. It supplies no replacement values. None of the 16 fresh conversations qualified. Three separate controls used phrasing the rule supports. On two, Qwen and the rule agreed immediately. On the third, the caller said **−8**, Qwen submitted **+8**, and Qwen repeated **+8** on its single retry. BRACE withheld the answer. Using the independently read fields directly solved all three controls. Four additional scope and negation probes admitted no calculation. These controls and probes are separate from the fresh totals.
 
+## When should the verifier speak?
+
+We replayed the same 16 conversations to distinguish an explicit contradiction from a reader simply failing to recognize a phrase. The independent reader made its assessment from the original dialogue. The host compared that assessment with Qwen’s first draft. Each reread could receive one of three signals, **agree**, **conflict** or **unresolved**. Replacement operands and expected answers stayed out of the prompt. The reader found **3 conflicts and 13 unresolved cases**. This set had no agreements.
+
+| How the first draft was reviewed | Clear requests answered, out of 8 | Clear requests interpreted and answered correctly | Wrong or unwarranted numbers released, out of 16 |
+|---|---:|---:|---:|
+| Require the reader to agree before releasing | 0 | 0 | 0 |
+| Ask Qwen to reread once | 7 | 5 | 7 |
+| Cue Qwen to look for the quantities and their order | 8 | 5 | 9 |
+| Give that cue and send the reader’s signal every time | 4 | 3 | 4 |
+| Give the cue and interrupt only on an explicit conflict | 8 | 5 | 6 |
+
+The final row is an exploratory comparison chosen after the initial scores. For each case we selected the already recorded reply produced by that policy, using only the reader’s signal to select it. On the three explicit conflicts Qwen asked for clarification instead of releasing a number. All three requests actually specified unsupported arithmetic. Keeping the reader silent on unresolved wording preserved the original five correct answers and still let six wrong or unwarranted numbers through. A quiet verifier supplies no independent confirmation of the interpretation.
+
+Reproduce the table, including the original draft and a host-only conflict policy, from the repository root. The replay checks the archived proposals against the same two-step arithmetic contract.
+
+```sh
+python -I -S -B research/arithmetic-handoff/feedback.py
+```
+
 ## Try a caller correction
 
 ```sh

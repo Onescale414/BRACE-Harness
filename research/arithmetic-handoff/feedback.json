@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "model": "qwen2.5:0.5b",
+    "model_digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+    "ollama": {
+      "version": "0.40.16"
+    },
+    "options": {
+      "temperature": 0,
+      "seed": 0,
+      "num_ctx": 1024,
+      "num_thread": 2,
+      "num_predict": 96
+    },
+    "timeout_seconds": 45,
+    "system": "Read the full conversation, using answers to earlier clarification questions. The supported operation is: start with one integer, add one signed integer change, then multiply the new total by one integer. A loss is a negative change. Doubling means multiplying by 2. Choose compute if this is what the caller requests and all three quantities are known. Choose clarify if information needed to decide is missing. Choose unsupported if the caller clearly requests a different operation or order. For clarify or unsupported, use 0 for all unused numeric fields. Return only JSON.\nExtract start (initial amount), add (signed change), and multiply (factor). Do not perform the calculation.",
+    "response_schema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "compute",
+            "clarify",
+            "unsupported"
+          ]
+        },
+        "start": {
+          "type": "integer"
+        },
+        "add": {
+          "type": "integer"
+        },
+        "multiply": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action",
+        "start",
+        "add",
+        "multiply"
+      ],
+      "additionalProperties": false
+    },
+    "review_prompts": {
+      "neutral": "Review your proposed interpretation once. Return your final choice and fields. You may keep or revise your proposal.",
+      "advisory": "Review your proposed interpretation once. Return your final choice and fields. You may keep or revise your proposal. Which words tell you the starting amount, the signed change, and what happens first? If the caller leaves a detail open, you can ask about it.",
+      "signal": "Review your proposed interpretation once. Return your final choice and fields. You may keep or revise your proposal. Which words tell you the starting amount, the signed change, and what happens first? If the caller leaves a detail open, you can ask about it. A separate reader compared your draft with the conversation. Its signal is {signal}. Agreement supports the draft, conflict challenges it, and unresolved gives no evidence either way. You decide whether to keep or revise it."
+    },
+    "design": "The same 16 published synthetic conversations and original model drafts were reviewed again. The three live reviews ran independently with one additional call per case. Neutral and advisory order alternated. The signal arm ran separately. Each model saw the original dialogue, original assistant draft and its assigned review prompt. The conflict-only combination was selected after seeing results and reuses archived responses. None of the sixteen initial comparisons produced agreement."
+  },
+  "expected_signal_counts": {
+    "agree": 0,
+    "conflict": 3,
+    "unresolved": 13
+  },
+  "observed": {
+    "original": {
+      "clear_answered": 8,
+      "clear_faithful": 5,
+      "noncompute_releases": 8,
+      "wrong_releases": 11,
+      "step_checks": 32
+    },
+    "require agreement": {
+      "clear_answered": 0,
+      "clear_faithful": 0,
+      "noncompute_releases": 0,
+      "wrong_releases": 0,
+      "step_checks": 0
+    },
+    "neutral reread": {
+      "clear_answered": 7,
+      "clear_faithful": 5,
+      "noncompute_releases": 5,
+      "wrong_releases": 7,
+      "step_checks": 24
+    },
+    "advisory reread": {
+      "clear_answered": 8,
+      "clear_faithful": 5,
+      "noncompute_releases": 6,
+      "wrong_releases": 9,
+      "step_checks": 28
+    },
+    "always signal": {
+      "clear_answered": 4,
+      "clear_faithful": 3,
+      "noncompute_releases": 3,
+      "wrong_releases": 4,
+      "step_checks": 14
+    },
+    "block conflict": {
+      "clear_answered": 8,
+      "clear_faithful": 5,
+      "noncompute_releases": 5,
+      "wrong_releases": 8,
+      "step_checks": 26
+    },
+    "advise on conflict": {
+      "clear_answered": 8,
+      "clear_faithful": 5,
+      "noncompute_releases": 3,
+      "wrong_releases": 6,
+      "step_checks": 22
+    }
+  },
+  "cases": [
+    {
+      "id": "g01",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "signal": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g02",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 3, \"add\": 8, \"multiply\": 2 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 3, \"add\": 8, \"multiply\": 2 }",
+      "neutral": "{ \"action\": \"clarify\", \"start\": 3, \"add\": 8, \"multiply\": 2 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 3, \"add\": 8, \"multiply\": 2 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g03",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": -9, \"add\": 6, \"multiply\": 4 }",
+      "signal": "{ \"action\": \"compute\", \"start\": -9, \"add\": 6, \"multiply\": 4 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": -9, \"add\": 6, \"multiply\": 4 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": -9, \"add\": 6, \"multiply\": 4 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g04",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 17, \"add\": 0, \"multiply\": 5 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 17, \"add\": 0, \"multiply\": 5 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 17, \"add\": 0, \"multiply\": 5 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 17, \"add\": 0, \"multiply\": 5 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g05",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": -5, \"add\": 4, \"multiply\": -3 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": -5, \"add\": 4, \"multiply\": -3 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": -5, \"add\": 4, \"multiply\": -3 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": -5, \"add\": 4, \"multiply\": -3 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g06",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 11, \"add\": 2, \"multiply\": 6 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 11, \"add\": 2, \"multiply\": 6 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 11, \"add\": 2, \"multiply\": 6 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 11, \"add\": 2, \"multiply\": 6 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g07",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 9, \"add\": 7, \"multiply\": 4 }",
+      "signal": "{ \"action\": \"compute\", \"start\": 9, \"add\": 7, \"multiply\": 4 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 9, \"add\": 7, \"multiply\": 4 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 9, \"add\": 7, \"multiply\": 4 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g08",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 20, \"add\": 6, \"multiply\": 3 }",
+      "signal": "{ \"action\": \"compute\", \"start\": 20, \"add\": 6, \"multiply\": 3 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 20, \"add\": 6, \"multiply\": 3 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 20, \"add\": 6, \"multiply\": 3 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g09",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 11, \"add\": 1, \"multiply\": 6 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 11, \"add\": 1, \"multiply\": 6 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 11, \"add\": 1, \"multiply\": 6 }",
+      "advisory": "{ \"action\": \"clarify\", \"start\": 11, \"add\": 1, \"multiply\": 6 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g10",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 10, \"add\": 2, \"multiply\": 4 }",
+      "signal": "{ \"action\": \"compute\", \"start\": 10, \"add\": 2, \"multiply\": 4 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 10, \"add\": 2, \"multiply\": 4 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 10, \"add\": 2, \"multiply\": 4 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g11",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 2 }",
+      "signal": "{ \"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 2 }",
+      "neutral": "{ \"action\": \"clarify\", \"start\": 3, \"add\": 1, \"multiply\": 2 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 3, \"add\": 1, \"multiply\": 2 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g12",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 18, \"add\": 5, \"multiply\": 1 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 18, \"add\": 5, \"multiply\": 1 }",
+      "neutral": "{ \"action\": \"clarify\", \"start\": 18, \"add\": 5, \"multiply\": 1 }",
+      "advisory": "{ \"action\": \"clarify\", \"start\": 18, \"add\": 5, \"multiply\": 1 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g13",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "signal": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 13, \"add\": 4, \"multiply\": 3 }",
+      "reader_signal": "unresolved"
+    },
+    {
+      "id": "g14",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 21, \"add\": 3, \"multiply\": 4 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 21, \"add\": 3, \"multiply\": 4 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 21, \"add\": 3, \"multiply\": 4 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 21, \"add\": 3, \"multiply\": 4 }",
+      "reader_signal": "conflict"
+    },
+    {
+      "id": "g15",
+      "original_assistant_text": "{\"action\":\"compute\",\"start\":7,\"add\":2,\"multiply\":4}",
+      "signal": "{\"action\":\"clarify\",\"start\":7,\"add\":2,\"multiply\":4}",
+      "neutral": "{\"action\":\"unsupported\",\"start\":7,\"add\":2,\"multiply\":4}",
+      "advisory": "{\"action\":\"compute\",\"start\":7,\"add\":2,\"multiply\":4}",
+      "reader_signal": "conflict"
+    },
+    {
+      "id": "g16",
+      "original_assistant_text": "{ \"action\": \"compute\", \"start\": 15, \"add\": 6, \"multiply\": 8 }",
+      "signal": "{ \"action\": \"clarify\", \"start\": 6, \"add\": 15, \"multiply\": 8 }",
+      "neutral": "{ \"action\": \"compute\", \"start\": 15, \"add\": 6, \"multiply\": 8 }",
+      "advisory": "{ \"action\": \"compute\", \"start\": 15, \"add\": 6, \"multiply\": 8 }",
+      "reader_signal": "conflict"
+    }
+  ]
+}
