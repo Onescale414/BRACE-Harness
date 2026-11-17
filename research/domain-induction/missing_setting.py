@@ -6,6 +6,7 @@ Only agreeing measurements of that exact setting authorize a numeric answer.
 
 from collections import Counter
 from collections.abc import Mapping
+from itertools import product
 
 from context_reader import certify
 
@@ -78,10 +79,12 @@ class Session:
             return None
         return x + delta
 
-    def request(self, requested_settings, x=0, allowed=True):
-        """Choose the unseen setting covering the most queries, ties in request order."""
+    def request(self, requested_settings=None, x=0, allowed=True):
+        """Choose an unseen setting. With no demand list, enumerate the binary controls."""
         if self.spent or allowed is not True or not _integer(x):
             return None
+        if requested_settings is None:
+            requested_settings = product((0, 1), repeat=len(self._keys))
         counts = Counter()
         for value in requested_settings:
             setting = _setting(value)

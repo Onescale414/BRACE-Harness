@@ -41,6 +41,12 @@ All eight errors were fresh predictions at the measured setting in the four unst
 
 The old single-control comparison allows arbitrary integer offsets. The reader's existing rule-labeling routine recognizes only offsets from −2 to +2. It recorded all 16 grants as `accepted_local`. Agreement and exception in the tables come from the independent comparison with the old rule and held-out outcomes. The reader did not identify those two classes by name.
 
+## Asking without a menu
+
+The frozen trial supplied the eight settings as the scope of the questions. In a separate follow-up, we made the demand list optional. Calling `session.request(x=calibration)` now enumerates the eight settings from three known binary controls and selects the first unseen one. The host supplies the control names, their binary domain, the prior readings and the calibration input. It supplies no list of settings or hint about which one is missing.
+
+A fresh fixed-seed test omitted every possible setting in turn and tried three outcomes for each omission. The reader named the gap **24/24** times, labeled **8/8** stable exceptions and **8/8** confirmations in its supported labeling range, and withheld at the gap on **8/8** unavailable readings. It replayed all **336** old readings. Across **192** fresh questions it gave **184 correct, zero wrong, eight withheld**. These follow-up cases used stable effects at each setting. The input-dependent stress cases in the main trial still apply. [Schema-only diagnostic](missing_setting_schema_controls.py)
+
 ## Reproduce
 
 From the repository root with Python 3.12 or later:
@@ -49,6 +55,7 @@ From the repository root with Python 3.12 or later:
 python -I -S -B research/domain-induction/missing_setting_trial.py
 python -I -S -B research/domain-induction/missing_setting_trial.py --case 7db8337d7d
 python -I -S -B research/domain-induction/missing_setting_controls.py
+python -I -S -B research/domain-induction/missing_setting_schema_controls.py
 ```
 
 The protocol controls exercise misbound, malformed, duplicate and conflicting replies, missing grants, and attempts to overwrite a completed reading. The experiment uses a simulated instrument and consumes no model calls.
