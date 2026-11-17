@@ -1,5 +1,7 @@
 # BRACE
 
+BRACE tests when a tool has enough evidence to act on a proposal and when it should ask the caller first. The arithmetic demo checks proposed steps. A separate experiment checks proposed repairs to an API mapping under a two-check budget. [Try the connector example](research/connector-clarification/README.md)
+
 At an input of 2, `2 + 2` and `2 × 2` both give **4**. In the PAT example, a mislabeled lesson proposes addition when the instruction calls for multiplication. A check on the final number alone would pass. BRACE records `different-operation` and withholds the answer. [Run the PAT example](#try-pat-as-a-proposer)
 
 BRACE can evaluate these two-step integer instructions directly. A separate proposer lets you test what happens when a suggested step is wrong and whether one retry can repair it. BRACE checks each proposed operation against the instruction and five witness values. The second step must cite the receipt for the accepted first step.
@@ -53,6 +55,6 @@ The example submits one candidate per step. The correct case spends two checks, 
 
 - **Bracket geometry.** Two measured marks admit two possible tip positions, 96 drawing units apart. Reveal the third mark to distinguish them. Open the viewer locally or run `python -I -S -B preview/verify.py` to check the coordinates. [Bracket viewer](preview/bracket.html)
 - **Task handoff.** The experimental reader completed 25 of 36 connector requests. It still checked a URL that the user mentioned only as an example. The trial includes all wordings and an offline replay. [Delivery experiment](research/delivery/README.md)
-- **Which request did the caller mean?** Replay a checked connector repair, a reply that keeps both checks available, and a reader mistake that spends a check on another request. Run `python -I -S -B research/connector-clarification/replay.py`. [Connector clarification example](research/connector-clarification/README.md)
+- **Which request did the caller mean?** When one API error fits three routes and a tool can only check two, it can ask which action the caller meant. Compare two readers on “this request,” “another request,” and replies that mention multiple actions. Run `python -I -S -B research/connector-clarification/comparison.py`. [Connector clarification example](research/connector-clarification/README.md)
 
 [Sources and measurements](PROVENANCE.md)

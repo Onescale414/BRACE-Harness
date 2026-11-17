@@ -1,0 +1,1856 @@
+{
+  "reader_sha256": "37976c05609bc7752691ba2e5b6d5ac04071d97ff301515261086ea4de25adaa",
+  "baseline_commit": "aaa40fe2cf0577b892a68aec054e4f67b7ac0f83",
+  "mappings": {
+    "T001": {
+      "resource": "jobs",
+      "symptom": "Expecting value: line 2 column 48 (char 49)",
+      "suffix": "sc001",
+      "source": {
+        "serverSettings": {
+          "mockServerMatchExactCase": "true",
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/jobs/details/sc001"
+          },
+          "httpResponse": {
+            "body": "{\"rows\":[]}",
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            },
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "statusCode": 200
+          }
+        },
+        "text": "Translate this mapping."
+      },
+      "target": {
+        "request": {
+          "method": "POST",
+          "urlPath": "/v1/assets/history/sc001"
+        },
+        "response": {
+          "body": "{\"rows\":[]}",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          },
+          "status": 200
+        }
+      }
+    },
+    "T004": {
+      "resource": "files",
+      "symptom": "Only base64 data is allowed",
+      "suffix": "sc004",
+      "source": {
+        "serverSettings": {
+          "mockServerMatchExactCase": "true",
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/files/export/sc004"
+          },
+          "httpResponse": {
+            "body": "cGF5bG9hZA==",
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            },
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "statusCode": 200
+          }
+        },
+        "text": "Translate this mapping."
+      },
+      "target": {
+        "request": {
+          "method": "GET",
+          "urlPath": "/v1/orders/preview/sc004"
+        },
+        "response": {
+          "body": "cGF5bG9hZA==",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          },
+          "status": 200
+        }
+      }
+    },
+    "T002": {
+      "resource": "jobs",
+      "symptom": "Expecting value: line 2 column 48 (char 49)",
+      "suffix": "sc002",
+      "source": {
+        "serverSettings": {
+          "mockServerMatchExactCase": "true",
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/jobs/search/sc002"
+          },
+          "httpResponse": {
+            "body": "{\"rows\":[]}",
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            },
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "statusCode": 200
+          }
+        },
+        "text": "Translate this mapping."
+      },
+      "target": {
+        "request": {
+          "method": "GET",
+          "urlPath": "/v1/assets/history/sc002"
+        },
+        "response": {
+          "body": "{\"rows\":[]}",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          },
+          "status": 200
+        }
+      }
+    },
+    "T003": {
+      "resource": "jobs",
+      "symptom": "Expecting value: line 2 column 48 (char 49)",
+      "suffix": "sc003",
+      "source": {
+        "serverSettings": {
+          "mockServerMatchExactCase": "true",
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/jobs/list/sc003"
+          },
+          "httpResponse": {
+            "body": "{\"rows\":[]}",
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            },
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "statusCode": 200
+          }
+        },
+        "text": "Translate this mapping."
+      },
+      "target": {
+        "request": {
+          "method": "POST",
+          "urlPath": "/v1/assets/history/sc003"
+        },
+        "response": {
+          "body": "{\"rows\":[]}",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          },
+          "status": 200
+        }
+      }
+    },
+    "T006": {
+      "resource": "files",
+      "symptom": "Only base64 data is allowed",
+      "suffix": "sc006",
+      "source": {
+        "serverSettings": {
+          "mockServerMatchExactCase": "true",
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/files/status/sc006"
+          },
+          "httpResponse": {
+            "body": "cGF5bG9hZA==",
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            },
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "statusCode": 200
+          }
+        },
+        "text": "Translate this mapping."
+      },
+      "target": {
+        "request": {
+          "method": "GET",
+          "urlPath": "/v1/orders/preview/sc006"
+        },
+        "response": {
+          "body": "cGF5bG9hZA==",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          },
+          "status": 200
+        }
+      }
+    },
+    "T005": {
+      "resource": "files",
+      "symptom": "Only base64 data is allowed",
+      "suffix": "sc005",
+      "source": {
+        "serverSettings": {
+          "mockServerMatchExactCase": "true",
+          "mockServerVersion": "8.0.0",
+          "wireMockVersion": "3.13.2"
+        },
+        "source": {
+          "httpRequest": {
+            "method": "GET",
+            "path": "/v2/files/changes/sc005"
+          },
+          "httpResponse": {
+            "body": "cGF5bG9hZA==",
+            "delay": {
+              "timeUnit": "MILLISECONDS",
+              "value": 0
+            },
+            "headers": {
+              "Content-Type": [
+                "text/plain; charset=utf-8"
+              ]
+            },
+            "statusCode": 200
+          }
+        },
+        "text": "Translate this mapping."
+      },
+      "target": {
+        "request": {
+          "method": "POST",
+          "urlPath": "/v1/orders/preview/sc005"
+        },
+        "response": {
+          "body": "cGF5bG9hZA==",
+          "fixedDelayMilliseconds": 0,
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+          },
+          "status": 200
+        }
+      }
+    }
+  },
+  "receipts": {
+    "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c": {
+      "source_sha256": "b67961dd2a114736403dd59091eb8ac58c553737a21626a3bc11541e44139c53",
+      "target_sha256": "48023395da1d488bc93cbf34e1dea1c1ad40b0db1e60e1bedf4fa23e2022dc41",
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/request/method",
+          "old": "POST",
+          "value": "GET"
+        },
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/v1/assets/history/sc001",
+          "value": "/v2/jobs/details/sc001"
+        }
+      ],
+      "patch_sha256": "e11dcf7b7608ea21885484e896c2f9c0a2978bb7a976d7e4ecd568c76520235d",
+      "audits": 1,
+      "output_sha256": "abd2c0f3be70667909a96b5cf921eb5028bdeeadfc275f6811720b2f4d2cfb4a",
+      "candidate_sha256": "abd2c0f3be70667909a96b5cf921eb5028bdeeadfc275f6811720b2f4d2cfb4a",
+      "checked": true,
+      "status": "checked",
+      "reason": "Set the request method to \"GET\" and the URL path to \"/v2/jobs/details/sc001\"."
+    },
+    "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f": {
+      "source_sha256": "ef21d93b162d2c15e6c8ab78e2dd12e9662c52f290eca5d1fc2ba8d55108067b",
+      "target_sha256": "0499dd90c3a12022380379b1495198a31bc6f6c7931a31cd1f788a3e6e458733",
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/v1/orders/preview/sc004",
+          "value": "/v2/files/export/sc004"
+        }
+      ],
+      "patch_sha256": "1f44b032309ade3456c10c76b28081954893c31485a4efadfd84886d6d55ddd8",
+      "audits": 1,
+      "output_sha256": "a3dac21fc82b721bb5974acb992eaa43b98cb4a8f6032a95a92d42f5569160d8",
+      "candidate_sha256": "a3dac21fc82b721bb5974acb992eaa43b98cb4a8f6032a95a92d42f5569160d8",
+      "checked": true,
+      "status": "checked",
+      "reason": "Set the URL path to \"/v2/files/export/sc004\"."
+    }
+  },
+  "cases": [
+    {
+      "id": "r01-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I opened a particular record to handle this request.",
+      "expected": "yes",
+      "pair": "r01",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      }
+    },
+    {
+      "id": "r01-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I opened a particular record to handle another request.",
+      "expected": "hold",
+      "pair": "r01",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r02-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "For this request I selected the job with ID 63.",
+      "expected": "yes",
+      "pair": "r02",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      }
+    },
+    {
+      "id": "r02-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "For another request I selected the job with ID 63.",
+      "expected": "hold",
+      "pair": "r02",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r03-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "Please open ticket 974 for this request.",
+      "expected": "yes",
+      "pair": "r03",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r03-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "Please open ticket 974 for another request.",
+      "expected": "hold",
+      "pair": "r03",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r04-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I was opening order 812 while handling this request.",
+      "expected": "yes",
+      "pair": "r04",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r04-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I was opening order 812 while handling another request.",
+      "expected": "hold",
+      "pair": "r04",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r05-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "The action I took for this request was to open that single record.",
+      "expected": "yes",
+      "pair": "r05",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r05-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "The action I took for another request was to open that single record.",
+      "expected": "hold",
+      "pair": "r05",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r06-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I went into the details for that one ticket in this request.",
+      "expected": "yes",
+      "pair": "r06",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      }
+    },
+    {
+      "id": "r06-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I went into the details for that one ticket in another request.",
+      "expected": "hold",
+      "pair": "r06",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "1e9684641620000b049af4c070a0fd5c651ca034bee70f4333c04aa8bee7c53c"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r07-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I picked the entry marked 17 as part of this request.",
+      "expected": "yes",
+      "pair": "r07",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r07-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I picked the entry marked 17 as part of another request.",
+      "expected": "hold",
+      "pair": "r07",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r08-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I used this request to bring up the invoice numbered 42.",
+      "expected": "yes",
+      "pair": "r08",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r08-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I used another request to bring up the invoice numbered 42.",
+      "expected": "hold",
+      "pair": "r08",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r09-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I did browse earlier. For this request I went straight to job 63.",
+      "expected": "yes",
+      "pair": "r09",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r09-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I did browse earlier. For another request I went straight to job 63.",
+      "expected": "hold",
+      "pair": "r09",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r10-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "For this request I chose the single-order view instead of the list.",
+      "expected": "yes",
+      "pair": "r10",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r10-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "For another request I chose the single-order view instead of the list.",
+      "expected": "hold",
+      "pair": "r10",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r11-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "The help page calls it 'details'; I opened that specific record as part of this request.",
+      "expected": "yes",
+      "pair": "r11",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r11-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "The help page calls it 'details'; I opened that specific record as part of another request.",
+      "expected": "hold",
+      "pair": "r11",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r12-current",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I can confirm that I opened the individual ticket under this request.",
+      "expected": "yes",
+      "pair": "r12",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "r12-other",
+      "group": "scope_pair",
+      "question_id": "one_record",
+      "reply": "I can confirm that I opened the individual ticket under another request.",
+      "expected": "hold",
+      "pair": "r12",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d01-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I downloaded the report onto my laptop for this request.",
+      "expected": "yes",
+      "pair": "d01",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      }
+    },
+    {
+      "id": "d01-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I downloaded the report onto my laptop for another request.",
+      "expected": "hold",
+      "pair": "d01",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d02-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "For this request I chose to download the file.",
+      "expected": "yes",
+      "pair": "d02",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      }
+    },
+    {
+      "id": "d02-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "For another request I chose to download the file.",
+      "expected": "hold",
+      "pair": "d02",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d03-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "Please save a local copy of the file for this request.",
+      "expected": "yes",
+      "pair": "d03",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d03-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "Please save a local copy of the file for another request.",
+      "expected": "hold",
+      "pair": "d03",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d04-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I was exporting a copy while handling this request.",
+      "expected": "yes",
+      "pair": "d04",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      }
+    },
+    {
+      "id": "d04-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I was exporting a copy while handling another request.",
+      "expected": "hold",
+      "pair": "d04",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "yes",
+        "prompt": null,
+        "checks": [
+          "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+        ],
+        "released": true
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d05-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "For this request I used the download button to get a copy.",
+      "expected": "yes",
+      "pair": "d05",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d05-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "For another request I used the download button to get a copy.",
+      "expected": "hold",
+      "pair": "d05",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d06-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I wanted the file on disk as part of this request.",
+      "expected": "yes",
+      "pair": "d06",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d06-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I wanted the file on disk as part of another request.",
+      "expected": "hold",
+      "pair": "d06",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d07-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I used this request to download the attachment.",
+      "expected": "yes",
+      "pair": "d07",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d07-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I used another request to download the attachment.",
+      "expected": "hold",
+      "pair": "d07",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d08-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "A copy of the report is what I tried to download for this request.",
+      "expected": "yes",
+      "pair": "d08",
+      "scope": "current",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d08-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "A copy of the report is what I tried to download for another request.",
+      "expected": "hold",
+      "pair": "d08",
+      "scope": "other",
+      "wording": "straightforward",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d09-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I had checked its status earlier. For this request I downloaded the file.",
+      "expected": "yes",
+      "pair": "d09",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d09-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I had checked its status earlier. For another request I downloaded the file.",
+      "expected": "hold",
+      "pair": "d09",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d10-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "For this request I chose the file download instead of monitoring progress.",
+      "expected": "yes",
+      "pair": "d10",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d10-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "For another request I chose the file download instead of monitoring progress.",
+      "expected": "hold",
+      "pair": "d10",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d11-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "The menu says 'export'; I downloaded my own copy to handle this request.",
+      "expected": "yes",
+      "pair": "d11",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d11-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "The menu says 'export'; I downloaded my own copy to handle another request.",
+      "expected": "hold",
+      "pair": "d11",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d12-current",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I can confirm that I tried to save the attachment locally for this request.",
+      "expected": "yes",
+      "pair": "d12",
+      "scope": "current",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "d12-other",
+      "group": "scope_pair",
+      "question_id": "download_copy",
+      "reply": "I can confirm that I tried to save the attachment locally for another request.",
+      "expected": "hold",
+      "pair": "d12",
+      "scope": "other",
+      "wording": "varied",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "a01",
+      "group": "ambiguous",
+      "question_id": "one_record",
+      "reply": "I opened a job and searched the list. Only one of those was for this request.",
+      "expected": "ask",
+      "pair": null,
+      "alternatives": [
+        "opened the particular job",
+        "searched the list"
+      ],
+      "note": "One action is assigned to the current request, but which of the two is unresolved.",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "a02",
+      "group": "ambiguous",
+      "question_id": "one_record",
+      "reply": "One task was to view a single ticket, the other to browse the queue. I forget which one goes here.",
+      "expected": "ask",
+      "pair": null,
+      "alternatives": [
+        "viewed the single ticket",
+        "browsed the queue"
+      ],
+      "note": "One action is assigned to the current request, but which of the two is unresolved.",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "a03",
+      "group": "ambiguous",
+      "question_id": "one_record",
+      "reply": "I used both the details page and the list page today; this request was for one of them.",
+      "expected": "ask",
+      "pair": null,
+      "alternatives": [
+        "used details",
+        "used the list"
+      ],
+      "note": "One action is assigned to the current request, but which of the two is unresolved.",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "a04",
+      "group": "ambiguous",
+      "question_id": "download_copy",
+      "reply": "I downloaded a copy and checked its status. One was for this request and one was for a different job.",
+      "expected": "ask",
+      "pair": null,
+      "alternatives": [
+        "downloaded a copy",
+        "checked status"
+      ],
+      "note": "One action is assigned to the current request, but which of the two is unresolved.",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "a05",
+      "group": "ambiguous",
+      "question_id": "download_copy",
+      "reply": "I had to export a file and review the changes. I can't tell you yet which of those belongs here.",
+      "expected": "ask",
+      "pair": null,
+      "alternatives": [
+        "exported the file",
+        "reviewed the changes"
+      ],
+      "note": "One action is assigned to the current request, but which of the two is unresolved.",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "a06",
+      "group": "ambiguous",
+      "question_id": "download_copy",
+      "reply": "The two tasks were to get an offline copy and to monitor progress. I know this request was one of the two.",
+      "expected": "ask",
+      "pair": null,
+      "alternatives": [
+        "got the offline copy",
+        "monitored progress"
+      ],
+      "note": "One action is assigned to the current request, but which of the two is unresolved.",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c01",
+      "group": "control",
+      "question_id": "one_record",
+      "reply": "I didn't open an individual record for this request. I only searched the list.",
+      "expected": "no",
+      "pair": null,
+      "note": "Explicit denial of opening a record and an affirmative alternative.",
+      "target_action": "search",
+      "mapping": "T002",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c02",
+      "group": "control",
+      "question_id": "one_record",
+      "reply": "For another request I opened a job. For this request I browsed the queue.",
+      "expected": "no",
+      "pair": null,
+      "note": "Each action has its own explicit scope.",
+      "target_action": "list",
+      "mapping": "T003",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c03",
+      "group": "control",
+      "question_id": "one_record",
+      "reply": "For another request I browsed the queue. For this request I opened the job numbered 63.",
+      "expected": "yes",
+      "pair": null,
+      "note": "Each action has its own explicit scope.",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check opening one particular record for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c04",
+      "group": "control",
+      "question_id": "one_record",
+      "reply": "I am just quoting the help text: 'Open one record for this request.'",
+      "expected": "hold",
+      "pair": null,
+      "note": "Quoting instructions declares no action by the caller.",
+      "target_action": "details",
+      "mapping": "T001",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c05",
+      "group": "control",
+      "question_id": "download_copy",
+      "reply": "I didn't download any copy for this request; I just wanted the status.",
+      "expected": "no",
+      "pair": null,
+      "note": "Explicit denial of downloading and an affirmative alternative.",
+      "target_action": "status",
+      "mapping": "T006",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c06",
+      "group": "control",
+      "question_id": "download_copy",
+      "reply": "For another request I exported the report. For this request I tracked changes.",
+      "expected": "no",
+      "pair": null,
+      "note": "Each action has its own explicit scope.",
+      "target_action": "changes",
+      "mapping": "T005",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c07",
+      "group": "control",
+      "question_id": "download_copy",
+      "reply": "For another request I tracked changes. For this request I downloaded a copy.",
+      "expected": "yes",
+      "pair": null,
+      "note": "Each action has its own explicit scope.",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "ask",
+        "prompt": "Should I check downloading a copy for the current request?",
+        "checks": [],
+        "released": false
+      }
+    },
+    {
+      "id": "c08",
+      "group": "control",
+      "question_id": "download_copy",
+      "reply": "Someone suggested a download for this request. I haven't made a choice.",
+      "expected": "hold",
+      "pair": null,
+      "note": "Another person's suggestion grants no choice.",
+      "target_action": "export",
+      "mapping": "T004",
+      "baseline": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      },
+      "candidate": {
+        "decision": "hold",
+        "prompt": null,
+        "checks": [],
+        "released": false
+      }
+    }
+  ]
+}

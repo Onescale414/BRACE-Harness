@@ -7,3 +7,5 @@
 **Delivery.** The 36 authored requests use two synthetic connector mappings. Recorded WireMock responses supply the URL verdicts. The evidence includes the labels, observed decisions and source hashes for the three readers and the delivery guard. [Evidence](research/delivery/observations.json)
 
 **Connector clarification.** Three synthetic replies share one stale jobs mapping and an observed decoder error from WireMock 3.13.2. The catalog groups come from 100 previously checked teaching mappings. The offline example executes the frozen reader, reconstructs each proposed patch and checks it against the original research receipts. The accompanying two-pair human wording trial is reported separately. [Evidence](research/connector-clarification/cases.json)
+
+**Request scope.** The side-by-side comparison uses independently written synthetic replies and the same 100-route catalog. Each case includes its intended reading, each reader's decision, and a reference to each original check. Identical receipts are stored once. The replay checks both the selected action and the proposed connector mapping. [Comparison evidence](research/connector-clarification/comparison.json)

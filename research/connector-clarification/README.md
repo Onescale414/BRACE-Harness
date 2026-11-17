@@ -1,6 +1,32 @@
 # Which request did the caller mean?
 
-A stale jobs connector and a decoder error leave three possible repairs. The caller might want to list jobs, search jobs, or open one job. With two checks available, the reader asks, “Were you opening one particular record?”
+Suppose an API client fails while retrieving a job. Its error fits three routes. The caller might want to list jobs, search jobs, or open one job. BRACE can afford to check two repairs, so it asks, “Were you opening one particular record?” Each accepted repair produces a patch preview for a reviewer.
+
+## Compare the two readers
+
+Run this command from the repository root with Python 3.12 or later.
+
+```sh
+python -I -S -B research/connector-clarification/comparison.py
+```
+
+Both readers get the same question and reply. A yes or no selects candidates to check. A hold preserves both checks. An ask also preserves both checks and supplies a follow-up question about the action. The offline replay runs both readers, rebuilds each proposed patch, and checks that the resulting mapping and verdict match what BRACE recorded in the original trial. It prints the matched-pair score and examples of individual decisions. Add `--case ID` to inspect a specific reply. [Labeled cases and receipts](comparison.json)
+
+The test used 24 matched pairs. Replacing “this request” with “another request” was the only change within each pair. Six additional replies made the action ambiguous. Eight controls included negation and cases where the scope of one action was already explicit. A separate agent generated all 62 synthetic replies without seeing the candidate reader. The reader and the labels were frozen before scoring.
+
+| On the same fresh replies | Published reader | Candidate |
+|---|---:|---:|
+| Checked the current action | 4/24 | 6/24 |
+| Kept both checks on another request | 20/24 | 24/24 |
+| Correct on both members, including holding quietly on the other request | 0/24 | 6/24 |
+| Asked which action to check when ambiguous | 0/6 | 5/6 |
+| Matched the expected decision on the additional controls | 2/8 | 2/8 |
+
+The candidate held quietly on 19 unrelated replies and asked an unnecessary question on five. It still missed clear instructions such as “Please open ticket 974 for this request.” A separate deliberate exclusion, “I downloaded a copy for every ticket except for this request,” triggered a preview. Replay it with `--case X01`. That counterexample is outside the table. [Exclusion probe and receipts](limit.json)
+
+After the freeze, one person supplied a new instruction with three actions. The scope phrase immediately preceded the download action. Changing that phrase from the current request to another request produced one matched pair. Asked about downloading, the published reader waited on both versions. The candidate asked for confirmation on both and spent zero checks. It still needed help binding a scope phrase to one action in a sequence. This human pair is separate from the 62 synthetic replies.
+
+## Reproduce the original scope failure
 
 Run this command from the repository root with Python 3.12 or later.
 

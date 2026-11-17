@@ -1,0 +1,49 @@
+{
+  "case": {
+    "id": "X01",
+    "group": "targeted_limit",
+    "pair": null,
+    "question_id": "download_copy",
+    "target_action": "export",
+    "reply": "I downloaded a copy for every ticket except for this request.",
+    "expected": "hold",
+    "mapping": "T004",
+    "baseline": {
+      "decision": "yes",
+      "prompt": null,
+      "checks": [
+        "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+      ],
+      "released": true
+    },
+    "candidate": {
+      "decision": "yes",
+      "prompt": null,
+      "checks": [
+        "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f"
+      ],
+      "released": true
+    }
+  },
+  "receipts": {
+    "7aaa2e8e07ce122097502fc64b922a77126aeda72e85f75f44bec26c277bb32f": {
+      "source_sha256": "ef21d93b162d2c15e6c8ab78e2dd12e9662c52f290eca5d1fc2ba8d55108067b",
+      "target_sha256": "0499dd90c3a12022380379b1495198a31bc6f6c7931a31cd1f788a3e6e458733",
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/v1/orders/preview/sc004",
+          "value": "/v2/files/export/sc004"
+        }
+      ],
+      "patch_sha256": "1f44b032309ade3456c10c76b28081954893c31485a4efadfd84886d6d55ddd8",
+      "audits": 1,
+      "output_sha256": "a3dac21fc82b721bb5974acb992eaa43b98cb4a8f6032a95a92d42f5569160d8",
+      "candidate_sha256": "a3dac21fc82b721bb5974acb992eaa43b98cb4a8f6032a95a92d42f5569160d8",
+      "checked": true,
+      "status": "checked",
+      "reason": "Set the URL path to \"/v2/files/export/sc004\"."
+    }
+  }
+}
