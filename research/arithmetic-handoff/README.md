@@ -102,6 +102,28 @@ python -I -S -B research/arithmetic-handoff/order_gap.py
 python -I -S -B research/arithmetic-handoff/order_boundaries.py
 ```
 
+## Does a repeated integer mean a repeated operation?
+
+“Start with 5. Add 3, then add 3 again. Double the result” and “Start with 5. Add 3. To be clear, that's a three-point bonus. Double the result” both give the run detector `[[3, 2]]`: the value 3 occurred twice in consecutive numeric mentions. The experimental reader distinguished the two teaching sentences. It withheld the three-operation request and released **16** for the restatement after two checked steps. A third example, “Start with 3. Add 3, then multiply by 3,” has a run of three across three different roles. It contains exactly one addition.
+
+The detector matched all **121** short signed-integer sequences in its separate mechanical test. On fresh wording it flagged **22 of 24** requests involving a repeated or potentially repeated addition, as well as **6 of 8** outside controls. One missed request says “the same amount” for the second addition. In another, “two-person booking” contributes a number between the two mentions of 8. [Frozen test design](repeat-protocol.md) · [Fresh cases](repeat_cases.json)
+
+| Intended reading (8 cases each) | Flagged by detector | Always merge, correct | Always count twice, correct | Always ask, correct | Use the wording, correct |
+|---|---:|---:|---:|---:|---:|
+| One restated addition | 8 | 8 | 0 | 0 | 0 |
+| Two separate additions | 6 | 0 | 6 | 0 | 0 |
+| Caller needs to clarify | 8 | 0 | 0 | 8 | 0 |
+| Outside this reader's scope | 6 | 2 | 2 | 2 | 8 |
+| **Total correct out of 32** | | **10** | **8** | **10** | **8** |
+
+The three simple policies defer when there is no run. The wording-aware candidate deferred on all 32 fresh cases and all nine separate boundary probes. It issued zero checks and delivered neither of the two permitted boundary answers. Its eight correct classifications all came from deferring on outside controls. On the earlier dropped-addition example, it also deferred. Sending that case on to the older order reader still reproduces the wrong release of 16. [Boundary cases](repeat_boundaries.json) · [Observed results](repeat_results.json)
+
+On inspection, the candidate recognized the start in 14 of the 24 relevant requests, the final multiplier in 10, and both in seven. Six of those seven contained exactly two candidate change spans. All six failed on the intervening or trailing wording. In the seventh, the reader mistook the count of “two messages” for a possible arithmetic quantity.
+
+The fresh cases suggest asking *whether the second mention describes the same event, a separate event that happened, or an event whose status is unknown*. A delivery adjustment repeated in a confirmation (`rr01`) and separate credits for arrival and inspection (`rr03`) both look like a run of two. In `rr08` a second trip would earn credit, but the caller cannot say whether it ran. A repeat flag helps locate wording to inspect. This test found no reliable automatic event count.
+
+Run `python -I -S -B research/arithmetic-handoff/repeat_trial.py` from the repository root. Add `--case rr03` to inspect one request. This offline comparison calls the existing public arithmetic checker only for a supported single-addition handoff.
+
 ## Try a caller correction
 
 ```sh

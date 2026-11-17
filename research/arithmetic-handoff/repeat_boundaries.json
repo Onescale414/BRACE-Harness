@@ -1,0 +1,65 @@
+[
+  {
+    "id": "edge-same-entry",
+    "text": "Start at 11. Add 4. The next line repeats the same entry in words, 'add 4.' There was one adjustment. Double the result.",
+    "permitted_release": true,
+    "expected_value": 30,
+    "why": "Both mentions identify one adjustment of four."
+  },
+  {
+    "id": "edge-possible-copy",
+    "text": "Start at 11. Add 4. The next line also reads 'add 4.' The clerk cannot tell whether it is a copy or a new adjustment. Double the result.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "The two possible histories yield 30 and 38."
+  },
+  {
+    "id": "edge-readback",
+    "text": "Start at 8. Add 6. A second caller reads back 'add 6' to confirm what the first caller already entered. Nothing else was entered. Double the result.",
+    "permitted_release": true,
+    "expected_value": 28,
+    "why": "The second caller confirms the first caller's completed entry."
+  },
+  {
+    "id": "edge-units",
+    "text": "Start with 10 tokens. Add 3 tokens. A second line says 'add 3 packs.' Its status and the number of tokens in each pack are missing. Double the resulting token count.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "Equal numerals with different units do not identify one quantity. A posted pack addition would require a conversion."
+  },
+  {
+    "id": "edge-roles",
+    "text": "Start at 20. Add 5 for pickup. A separate packing slip says 'add 5 for packing,' but its posted box is unreadable. Double the result.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "The packing charge has a distinct purpose and its posting status changes the result."
+  },
+  {
+    "id": "edge-quantity-correction",
+    "text": "Start at 12. Add 4. A copy of that entry also says 'add 4,' with a signed correction that changes the quantity. The corrected number is illegible. Double the result.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "The copy confirms the event's identity, but the correction supersedes the visible quantity."
+  },
+  {
+    "id": "edge-denial",
+    "text": "Start at 6. The log says 'add 2.' The reviewer quotes 'add 2' and says it was never applied. The log and the review have equal standing. Double the result.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "The reports disagree about whether the addition occurred."
+  },
+  {
+    "id": "edge-zero",
+    "text": "Start at 9. Add 0. A second 'add 0' line could be a duplicate or a second adjustment. The adjustment history is required. Double the result.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "Both histories yield 18. That agreement cannot resolve the required adjustment history."
+  },
+  {
+    "id": "edge-other-counter",
+    "text": "Start the blue counter at 10. Add 3 to the blue counter. A second caller then added 3 to 'the counter' while both blue and green counters were in use. Double the resulting blue count.",
+    "permitted_release": false,
+    "expected_value": null,
+    "why": "The second event is distinct, and its target determines whether the doubled blue count is 26 or 32."
+  }
+]

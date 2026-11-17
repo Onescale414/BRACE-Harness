@@ -1,0 +1,129 @@
+{
+  "cases_sha256": "3548c4046aae5de3f03afbfb14f99c35754932f50dc9ca3d6cb2160233d65f42",
+  "boundaries_sha256": "fa631850b47515b3cc21ed826a3cd272d93e8498534f5afdcb1b557fe71628fe",
+  "observed": {
+    "by_label": {
+      "one": {
+        "flagged": 8,
+        "correct": {
+          "merge": 8,
+          "count": 0,
+          "ask_on_repeat": 0,
+          "wording": 0
+        },
+        "exact_event_frames": 0,
+        "wording_decisions": {
+          "pass": 8
+        }
+      },
+      "two": {
+        "flagged": 6,
+        "correct": {
+          "merge": 0,
+          "count": 6,
+          "ask_on_repeat": 0,
+          "wording": 0
+        },
+        "exact_event_frames": 0,
+        "wording_decisions": {
+          "pass": 8
+        }
+      },
+      "ask": {
+        "flagged": 8,
+        "correct": {
+          "merge": 0,
+          "count": 0,
+          "ask_on_repeat": 8,
+          "wording": 0
+        },
+        "exact_event_frames": 0,
+        "wording_decisions": {
+          "pass": 8
+        }
+      },
+      "outside": {
+        "flagged": 6,
+        "correct": {
+          "merge": 2,
+          "count": 2,
+          "ask_on_repeat": 2,
+          "wording": 8
+        },
+        "exact_event_frames": 0,
+        "wording_decisions": {
+          "pass": 8
+        }
+      }
+    },
+    "correct_releases": 0,
+    "wrong_releases": 0,
+    "outside_releases": 0,
+    "total_checks": 0,
+    "boundaries": [
+      {
+        "id": "edge-same-entry",
+        "permitted": true,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-possible-copy",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-readback",
+        "permitted": true,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-units",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-roles",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-quantity-correction",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-denial",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-zero",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      },
+      {
+        "id": "edge-other-counter",
+        "permitted": false,
+        "decision": "pass",
+        "checked_correct": false,
+        "wrong_release": false
+      }
+    ]
+  }
+}

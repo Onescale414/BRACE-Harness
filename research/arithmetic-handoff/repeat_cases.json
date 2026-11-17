@@ -1,0 +1,290 @@
+[
+  {
+    "id": "rr01",
+    "label": "one",
+    "text": "Start at 18. Add 4 for the delivery. That delivery adjustment was 4, just to confirm. Now double the total.",
+    "start": 18,
+    "amount": 4,
+    "multiplier": 2,
+    "note": "The confirmation identifies the same delivery adjustment."
+  },
+  {
+    "id": "rr02",
+    "label": "ask",
+    "text": "I had 21 before the adjustments. My screen shows two messages from Pat, both with the same timestamp: “Add 6.” “Add 6.” The app sometimes sends a message twice. What balance should I multiply by 3?",
+    "start": 21,
+    "amount": 6,
+    "multiplier": 3,
+    "note": "The display could show one instruction twice or two separate instructions."
+  },
+  {
+    "id": "rr03",
+    "label": "two",
+    "text": "Begin with 32. Add 7 when the box arrives and add 7 when it passes inspection. Both happened. Multiply the result by 4.",
+    "start": 32,
+    "amount": 7,
+    "multiplier": 4,
+    "note": "Arrival and inspection each trigger a completed addition."
+  },
+  {
+    "id": "rr04",
+    "label": "outside",
+    "text": "Start with 20 dollars and add 5 dollars. The package also weighs 5 pounds. Double the dollar total.",
+    "start": 20,
+    "amount": 5,
+    "multiplier": 2,
+    "note": "The matching number is a weight in a different unit."
+  },
+  {
+    "id": "rr05",
+    "label": "two",
+    "text": "My tally is 10. Can you add 3 for Jo's shift? Lee covered a shift as well, so put 3 on the tally for Lee. Triple the whole thing.",
+    "start": 10,
+    "amount": 3,
+    "multiplier": 3,
+    "note": "Each worker contributes a shift credit."
+  },
+  {
+    "id": "rr06",
+    "label": "one",
+    "text": "Use 45 as the starting figure and put 8 back for the overcharge. When I said put 8 back, I meant the refund you just entered. Multiply the revised figure by 3.",
+    "start": 45,
+    "amount": 8,
+    "multiplier": 3,
+    "note": "The second instruction names the refund already entered."
+  },
+  {
+    "id": "rr07",
+    "label": "outside",
+    "text": "Use 24 as the opening balance. Add 3 and then multiply the updated balance by 3.",
+    "start": 24,
+    "amount": 3,
+    "multiplier": 3,
+    "note": "The second equal value serves as the multiplier."
+  },
+  {
+    "id": "rr08",
+    "label": "ask",
+    "text": "Open at 35 and add 2 for today's pickup. Add 2 for the return trip if it ran. The trip sheet hasn't come back. Double what I should actually have.",
+    "start": 35,
+    "amount": 2,
+    "multiplier": 2,
+    "note": "The pickup is confirmed while the return trip is unverified."
+  },
+  {
+    "id": "rr09",
+    "label": "ask",
+    "text": "My balance started at 14. Sam wrote “add 5 for mileage.” On the loose slip in the same envelope it says “add 5 for mileage” in the same handwriting. Neither has a date. Multiply the corrected balance by 2.",
+    "start": 14,
+    "amount": 5,
+    "multiplier": 2,
+    "note": "The undated slip could copy the first entry or record another mileage payment."
+  },
+  {
+    "id": "rr10",
+    "label": "outside",
+    "text": "Take 19, add 4 for freight and 6 for packing, then double the total.",
+    "start": 19,
+    "amount": null,
+    "multiplier": 2,
+    "note": "Freight and packing have different amounts."
+  },
+  {
+    "id": "rr11",
+    "label": "one",
+    "text": "We were at 52. Add 9 for the callout. “Add 9 for the callout” is my read-back of that instruction. Multiply the result by 5.",
+    "start": 52,
+    "amount": 9,
+    "multiplier": 5,
+    "note": "The speaker explicitly reads back the original instruction."
+  },
+  {
+    "id": "rr12",
+    "label": "two",
+    "text": "Take 20 and add negative three for Monday's correction. Add negative three for Tuesday's correction as well. Double the adjusted figure.",
+    "start": 20,
+    "amount": -3,
+    "multiplier": 2,
+    "note": "Two named days each carry their own negative adjustment."
+  },
+  {
+    "id": "rr13",
+    "label": "outside",
+    "text": "I have 17 points. The help card uses “add 4, then add 4” as its sample. My actual instruction is just to multiply my points by 3.",
+    "start": 17,
+    "amount": null,
+    "multiplier": 3,
+    "note": "Both additions are examples on a help card."
+  },
+  {
+    "id": "rr14",
+    "label": "two",
+    "text": "Keep a running total from 28. Add 6 for the first crate. The second crate came in this afternoon, so add 6. Multiply the closing total by 3.",
+    "start": 28,
+    "amount": 6,
+    "multiplier": 3,
+    "note": "Two received crates each count toward the closing total."
+  },
+  {
+    "id": "rr15",
+    "label": "ask",
+    "text": "Start at 40. The clerk posted an addition of 7. The supervisor's follow-up says “add 7,” but there's no transaction reference on it. Triple the closing amount.",
+    "start": 40,
+    "amount": 7,
+    "multiplier": 3,
+    "note": "The follow-up could reiterate the posted amount or order an additional posting."
+  },
+  {
+    "id": "rr16",
+    "label": "one",
+    "text": "Use 13 to start. Add five for the service credit. Yes, five is the size of that credit. Now multiply the balance by 4.",
+    "start": 13,
+    "amount": 5,
+    "multiplier": 4,
+    "note": "The second mention confirms the size of one credit."
+  },
+  {
+    "id": "rr17",
+    "label": "two",
+    "text": "Start with 41. Add 4 for the morning run. I just authorized a separate 4 for the evening run. Multiply the total by 2.",
+    "start": 41,
+    "amount": 4,
+    "multiplier": 2,
+    "note": "The evening authorization is explicitly separate from the morning run."
+  },
+  {
+    "id": "rr18",
+    "label": "outside",
+    "text": "Start at 36, subtract 4, subtract 4 again, and multiply the remainder by 3.",
+    "start": 36,
+    "amount": null,
+    "multiplier": 3,
+    "note": "Both repeated instructions expressly ask for subtraction."
+  },
+  {
+    "id": "rr19",
+    "label": "one",
+    "text": "Begin at 26. Add 6. To put that same step in words, increase the running total by 6. Then multiply the result by 4.",
+    "start": 26,
+    "amount": 6,
+    "multiplier": 4,
+    "note": "The speaker describes the same step a second way."
+  },
+  {
+    "id": "rr20",
+    "label": "ask",
+    "text": "I started with 19. I penciled in “add four” after the morning call. I found “add four” on a second page, but the top of that page with the caller and date is torn off. Double the balance after the calls.",
+    "start": 19,
+    "amount": 4,
+    "multiplier": 2,
+    "note": "The second note could copy the first call or refer to another call."
+  },
+  {
+    "id": "rr21",
+    "label": "one",
+    "text": "Take 30 and add 7 as my tip. The receipt lists “tip added: 7”; that's the very tip I just told you about. Triple the total.",
+    "start": 30,
+    "amount": 7,
+    "multiplier": 3,
+    "note": "The receipt confirms the previously identified tip."
+  },
+  {
+    "id": "rr22",
+    "label": "ask",
+    "text": "Begin at 27. Add 8 for the confirmed carton. The warehouse email says to add 8 if the spare was used. I have the email but no record of what they shipped. Multiply the actual total by 5.",
+    "start": 27,
+    "amount": 8,
+    "multiplier": 5,
+    "note": "Whether the spare carton qualified for a second addition is unknown."
+  },
+  {
+    "id": "rr23",
+    "label": "outside",
+    "text": "Start with 50 and add 6 for the label marked batch 6. Multiply the final count by 4.",
+    "start": 50,
+    "amount": 6,
+    "multiplier": 4,
+    "note": "The second number is a batch identifier."
+  },
+  {
+    "id": "rr24",
+    "label": "two",
+    "text": "I had 16. Put on 5 for the Saturday slot, then put on the same amount for Sunday. Multiply that weekend-adjusted number by 3.",
+    "start": 16,
+    "amount": 5,
+    "multiplier": 3,
+    "note": "The Sunday instruction repeats the Saturday amount for a separate slot."
+  },
+  {
+    "id": "rr25",
+    "label": "ask",
+    "text": "The till began at 38. Yesterday's log says “add 3 for the return.” Today's handover says “add 3 for the return.” We get returns most days, and the handover sometimes copies yesterday's line. Multiply the adjusted till by 4.",
+    "start": 38,
+    "amount": 3,
+    "multiplier": 4,
+    "note": "Neither entry identifies which return the handover refers to."
+  },
+  {
+    "id": "rr26",
+    "label": "two",
+    "text": "Begin at 55. Add 2 for the inbound scan. Nothing changed while it was on the shelf. At the outbound scan add 2. Multiply the final score by 6.",
+    "start": 55,
+    "amount": 2,
+    "multiplier": 6,
+    "note": "Inbound and outbound scans are separate scoring events."
+  },
+  {
+    "id": "rr27",
+    "label": "one",
+    "text": "Start at 48 and add 3 for the damaged carton. I called that entry “add 3 for breakage” in the notes; both descriptions refer to the same carton and the same entry. Double the figure.",
+    "start": 48,
+    "amount": 3,
+    "multiplier": 2,
+    "note": "Two descriptions refer to one identified adjustment."
+  },
+  {
+    "id": "rr28",
+    "label": "outside",
+    "text": "Start at 12 and append the digit 5, then append the digit 5 again. Double the resulting whole number.",
+    "start": 12,
+    "amount": null,
+    "multiplier": 2,
+    "note": "Appending a digit changes place value and does not request addition."
+  },
+  {
+    "id": "rr29",
+    "label": "outside",
+    "text": "Begin at 18, add 4 for setup, multiply by 3, then add 4 for cleanup. What do we finish with?",
+    "start": 18,
+    "amount": 4,
+    "multiplier": 3,
+    "note": "The multiplication occurs between the two additions."
+  },
+  {
+    "id": "rr30",
+    "label": "one",
+    "text": "My opening balance was 34. Please add 2 for the transfer. I also see “add 2” in my reminder to myself to make that transfer. It's already covered by my first instruction. Multiply the new balance by 5.",
+    "start": 34,
+    "amount": 2,
+    "multiplier": 5,
+    "note": "The reminder explicitly refers to the transfer already counted."
+  },
+  {
+    "id": "rr31",
+    "label": "two",
+    "text": "Let's start at 24. Add 8 for the two-person booking. There's a second booking under the same name and that one earns 8 too. Triple my score after both bookings.",
+    "start": 24,
+    "amount": 8,
+    "multiplier": 3,
+    "note": "The second booking earns an additional credit."
+  },
+  {
+    "id": "rr32",
+    "label": "ask",
+    "text": "We opened at 43. The desk slip reads “add 4 for the visitor.” The door slip also reads “add 4 for the visitor.” Neither gives a name, and guests can check in at either desk or both. Double the total after crediting each visitor once.",
+    "start": 43,
+    "amount": 4,
+    "multiplier": 2,
+    "note": "The slips could describe one visitor twice or two different visitors."
+  }
+]
