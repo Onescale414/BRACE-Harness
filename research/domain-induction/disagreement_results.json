@@ -1,0 +1,9263 @@
+{
+  "case_sha256": "553031a4ef6cc52a4a55a8dfe4c5f1d6205d839fc5d34fd14aca645c64538464",
+  "summary": {
+    "by_kind": {
+      "disagreement": {
+        "threshold": {
+          "requests": 8,
+          "readings": 8,
+          "changed_offset": 4,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 21,
+          "wrong": 0,
+          "held": 11,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 57088,
+          "update_evaluations": 223,
+          "prediction_evaluations": 248,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 0,
+          "unresolved": 8,
+          "contradicted": 0
+        },
+        "quadratic": {
+          "requests": 7,
+          "readings": 7,
+          "changed_offset": 7,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 32,
+          "wrong": 0,
+          "held": 0,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 36096,
+          "update_evaluations": 141,
+          "prediction_evaluations": 32,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 8,
+          "unresolved": 0,
+          "contradicted": 0
+        },
+        "unavailable": {
+          "requests": 7,
+          "readings": 0,
+          "changed_offset": 0,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 4,
+          "wrong": 0,
+          "held": 28,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 37632,
+          "update_evaluations": 0,
+          "prediction_evaluations": 592,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 1,
+          "unresolved": 7,
+          "contradicted": 0
+        },
+        "additive": {
+          "requests": 8,
+          "readings": 8,
+          "changed_offset": 0,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 18,
+          "wrong": 0,
+          "held": 14,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 62976,
+          "update_evaluations": 246,
+          "prediction_evaluations": 336,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 0,
+          "unresolved": 8,
+          "contradicted": 0
+        },
+        "affine": {
+          "requests": 8,
+          "readings": 8,
+          "changed_offset": 8,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 32,
+          "wrong": 0,
+          "held": 0,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 47104,
+          "update_evaluations": 184,
+          "prediction_evaluations": 32,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 8,
+          "unresolved": 0,
+          "contradicted": 0
+        },
+        "outside_family": {
+          "requests": 7,
+          "readings": 7,
+          "changed_offset": 3,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 7,
+          "wrong": 2,
+          "held": 23,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 48640,
+          "update_evaluations": 190,
+          "prediction_evaluations": 148,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 0,
+          "unresolved": 4,
+          "contradicted": 4
+        }
+      },
+      "next": {
+        "threshold": {
+          "requests": 8,
+          "readings": 8,
+          "changed_offset": 0,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 4,
+          "wrong": 0,
+          "held": 28,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 0,
+          "update_evaluations": 223,
+          "prediction_evaluations": 716,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 0,
+          "unresolved": 8,
+          "contradicted": 0
+        },
+        "quadratic": {
+          "requests": 7,
+          "readings": 7,
+          "changed_offset": 6,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 24,
+          "wrong": 0,
+          "held": 8,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 0,
+          "update_evaluations": 141,
+          "prediction_evaluations": 124,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 6,
+          "unresolved": 2,
+          "contradicted": 0
+        },
+        "unavailable": {
+          "requests": 7,
+          "readings": 0,
+          "changed_offset": 0,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 4,
+          "wrong": 0,
+          "held": 28,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 0,
+          "update_evaluations": 0,
+          "prediction_evaluations": 592,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 1,
+          "unresolved": 7,
+          "contradicted": 0
+        },
+        "additive": {
+          "requests": 8,
+          "readings": 8,
+          "changed_offset": 0,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 3,
+          "wrong": 0,
+          "held": 29,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 0,
+          "update_evaluations": 246,
+          "prediction_evaluations": 780,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 0,
+          "unresolved": 8,
+          "contradicted": 0
+        },
+        "affine": {
+          "requests": 8,
+          "readings": 8,
+          "changed_offset": 8,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 20,
+          "wrong": 0,
+          "held": 12,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 0,
+          "update_evaluations": 184,
+          "prediction_evaluations": 48,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 5,
+          "unresolved": 3,
+          "contradicted": 0
+        },
+        "outside_family": {
+          "requests": 7,
+          "readings": 7,
+          "changed_offset": 3,
+          "preserved": 56,
+          "replays": 120,
+          "correct": 0,
+          "wrong": 4,
+          "held": 28,
+          "fit_evaluations": 2408,
+          "selection_evaluations": 0,
+          "update_evaluations": 190,
+          "prediction_evaluations": 380,
+          "worlds": 8,
+          "excluded_questions": 0,
+          "unique": 1,
+          "unresolved": 5,
+          "contradicted": 2
+        }
+      }
+    },
+    "totals": {
+      "disagreement": {
+        "requests": 45,
+        "readings": 38,
+        "changed_offset": 22,
+        "preserved": 336,
+        "replays": 720,
+        "correct": 114,
+        "wrong": 2,
+        "held": 76,
+        "fit_evaluations": 14448,
+        "selection_evaluations": 289536,
+        "update_evaluations": 984,
+        "prediction_evaluations": 1388,
+        "worlds": 48,
+        "excluded_questions": 0,
+        "unique": 17,
+        "unresolved": 27,
+        "contradicted": 4
+      },
+      "next": {
+        "requests": 45,
+        "readings": 38,
+        "changed_offset": 17,
+        "preserved": 336,
+        "replays": 720,
+        "correct": 55,
+        "wrong": 4,
+        "held": 133,
+        "fit_evaluations": 14448,
+        "selection_evaluations": 0,
+        "update_evaluations": 984,
+        "prediction_evaluations": 2640,
+        "worlds": 48,
+        "excluded_questions": 0,
+        "unique": 13,
+        "unresolved": 33,
+        "contradicted": 2
+      }
+    },
+    "paired_questions": {
+      "disagreement_only_correct": 59,
+      "next_only_correct": 0
+    }
+  },
+  "details": [
+    {
+      "id": "8bf68857d7d0",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 0,
+        "y": 2
+      },
+      "request": {
+        "verb": "c70054",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 66,
+      "before": 39,
+      "after": 13,
+      "status": "ambiguous",
+      "predictions": [
+        -25,
+        -64,
+        -129,
+        29,
+        null,
+        -86,
+        40,
+        null,
+        18,
+        18,
+        -31
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9984,
+        "update_evaluations": 39,
+        "prediction_evaluations": 52
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4222,
+          1
+        ],
+        [
+          -4158,
+          1
+        ],
+        [
+          -4094,
+          1
+        ],
+        [
+          -4030,
+          1
+        ],
+        [
+          -3966,
+          1
+        ],
+        [
+          -126,
+          1
+        ],
+        [
+          -62,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          66,
+          13
+        ],
+        [
+          67,
+          3
+        ],
+        [
+          69,
+          3
+        ],
+        [
+          130,
+          1
+        ],
+        [
+          3970,
+          1
+        ],
+        [
+          4034,
+          1
+        ],
+        [
+          4098,
+          1
+        ],
+        [
+          4162,
+          1
+        ],
+        [
+          4226,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8bf68857d7d0",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 0,
+        "y": 2
+      },
+      "request": {
+        "verb": "c70054",
+        "x": 1,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 3,
+      "before": 39,
+      "after": 27,
+      "status": "ambiguous",
+      "predictions": [
+        -25,
+        -64,
+        -129,
+        null,
+        null,
+        -86,
+        40,
+        null,
+        null,
+        18,
+        -31
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 39,
+        "prediction_evaluations": 108
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          27
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4e4bd1165945",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 6,
+        "y": -45
+      },
+      "request": {
+        "verb": "c60734",
+        "x": 5,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -32,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -84,
+        48,
+        103,
+        -67,
+        -5772,
+        -1221,
+        56,
+        -8460,
+        82,
+        -221,
+        108
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 512,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -33,
+          1
+        ],
+        [
+          -32,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        5,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4e4bd1165945",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 6,
+        "y": -45
+      },
+      "request": {
+        "verb": "c60734",
+        "x": 7,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -60,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -84,
+        48,
+        103,
+        -67,
+        -5772,
+        -1221,
+        56,
+        -8460,
+        82,
+        -221,
+        108
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -60,
+          1
+        ],
+        [
+          -59,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        5,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "415eef32390b",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 6,
+        "y": 7
+      },
+      "request": {
+        "verb": "c96390",
+        "x": -65,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -65,
+      "before": 24,
+      "after": 5,
+      "status": "ambiguous",
+      "predictions": [
+        43,
+        -16,
+        null,
+        -40,
+        33,
+        -102,
+        32,
+        73,
+        -92,
+        -75,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6144,
+        "update_evaluations": 24,
+        "prediction_evaluations": 20
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -67,
+          5
+        ],
+        [
+          -65,
+          5
+        ],
+        [
+          -64,
+          9
+        ],
+        [
+          -63,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "415eef32390b",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 6,
+        "y": 7
+      },
+      "request": {
+        "verb": "c96390",
+        "x": 7,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 8,
+      "before": 24,
+      "after": 24,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -16,
+        null,
+        -40,
+        33,
+        -102,
+        32,
+        null,
+        -92,
+        -75,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 24,
+        "prediction_evaluations": 96
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          8,
+          24
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "09d10bc67dc2",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -3,
+        "y": -7
+      },
+      "request": {
+        "verb": "c28138",
+        "x": -17,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 9,
+      "after": 9,
+      "status": "unavailable",
+      "predictions": [
+        -64,
+        null,
+        -41,
+        18,
+        -51,
+        49,
+        null,
+        128,
+        81,
+        null,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 2304,
+        "update_evaluations": 0,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -287,
+          1
+        ],
+        [
+          -273,
+          1
+        ],
+        [
+          -35,
+          1
+        ],
+        [
+          -21,
+          2
+        ],
+        [
+          -20,
+          2
+        ],
+        [
+          -18,
+          2
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        6,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "09d10bc67dc2",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -3,
+        "y": -7
+      },
+      "request": {
+        "verb": "c28138",
+        "x": -2,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 9,
+      "after": 9,
+      "status": "unavailable",
+      "predictions": [
+        -64,
+        null,
+        -41,
+        18,
+        -51,
+        49,
+        null,
+        128,
+        81,
+        null,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -6,
+          6
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        6,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6ce88673d044",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 0,
+        "y": 1
+      },
+      "request": {
+        "verb": "c54000",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 65,
+      "before": 39,
+      "after": 13,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        17,
+        -107,
+        123,
+        50,
+        null,
+        28,
+        43,
+        124,
+        120,
+        98
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9984,
+        "update_evaluations": 39,
+        "prediction_evaluations": 52
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4223,
+          1
+        ],
+        [
+          -4159,
+          1
+        ],
+        [
+          -4095,
+          1
+        ],
+        [
+          -4031,
+          1
+        ],
+        [
+          -3967,
+          1
+        ],
+        [
+          -127,
+          1
+        ],
+        [
+          -63,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          65,
+          13
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          3969,
+          1
+        ],
+        [
+          4033,
+          1
+        ],
+        [
+          4097,
+          1
+        ],
+        [
+          4161,
+          1
+        ],
+        [
+          4225,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        5,
+        6,
+        8
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6ce88673d044",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 0,
+        "y": 1
+      },
+      "request": {
+        "verb": "c54000",
+        "x": 1,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 2,
+      "before": 39,
+      "after": 27,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        17,
+        -107,
+        123,
+        50,
+        null,
+        null,
+        43,
+        null,
+        120,
+        98
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 39,
+        "prediction_evaluations": 108
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        5,
+        6,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8302199a59e1",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -6,
+        "y": -24
+      },
+      "request": null,
+      "observed": null,
+      "before": 1,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -32,
+        128,
+        -48,
+        -36,
+        -575,
+        -9024,
+        59,
+        -9800,
+        -783,
+        -78,
+        -85
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 4
+      },
+      "requests": 0,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8302199a59e1",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -6,
+        "y": -24
+      },
+      "request": null,
+      "observed": null,
+      "before": 1,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -32,
+        128,
+        -48,
+        -36,
+        -575,
+        -9024,
+        59,
+        -9800,
+        -783,
+        -78,
+        -85
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 4
+      },
+      "requests": 0,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "1021d461ab64",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 2,
+        "y": 7
+      },
+      "request": {
+        "verb": "c58451",
+        "x": -5,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 14,
+      "before": 8,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        35,
+        -13,
+        -81,
+        24,
+        10607,
+        137,
+        322,
+        14882,
+        2702,
+        47,
+        -100
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 2048,
+        "update_evaluations": 8,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -7,
+          1
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          28,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        6,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "1021d461ab64",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 2,
+        "y": 7
+      },
+      "request": {
+        "verb": "c58451",
+        "x": 3,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 14,
+      "before": 8,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        35,
+        -13,
+        -81,
+        24,
+        10607,
+        137,
+        322,
+        14882,
+        2702,
+        47,
+        -100
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 8,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        6,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "b5cb00216118",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c31960",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": 3967,
+      "before": 32,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -37,
+        959,
+        11879,
+        19,
+        -20,
+        1762,
+        -36,
+        10,
+        54,
+        107,
+        15374
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8192,
+        "update_evaluations": 32,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4223,
+          1
+        ],
+        [
+          -4160,
+          1
+        ],
+        [
+          -4097,
+          1
+        ],
+        [
+          -4034,
+          1
+        ],
+        [
+          -3971,
+          1
+        ],
+        [
+          -128,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          60,
+          3
+        ],
+        [
+          61,
+          9
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          3967,
+          1
+        ],
+        [
+          4030,
+          1
+        ],
+        [
+          4093,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "b5cb00216118",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c31960",
+        "x": 2,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": -1,
+      "before": 32,
+      "after": 22,
+      "status": "ambiguous",
+      "predictions": [
+        -37,
+        null,
+        null,
+        19,
+        -20,
+        null,
+        -36,
+        10,
+        54,
+        107,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 32,
+        "prediction_evaluations": 88
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -7,
+          1
+        ],
+        [
+          -6,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          22
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "a4af142fc086",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -1,
+        "y": -1
+      },
+      "request": {
+        "verb": "c71656",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 63,
+      "before": 42,
+      "after": 4,
+      "status": "ambiguous",
+      "predictions": [
+        118,
+        -63,
+        -4,
+        -96,
+        19,
+        1,
+        85,
+        -46,
+        60,
+        16,
+        126
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 10752,
+        "update_evaluations": 42,
+        "prediction_evaluations": 16
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4226,
+          1
+        ],
+        [
+          -4161,
+          1
+        ],
+        [
+          -4096,
+          1
+        ],
+        [
+          -4031,
+          1
+        ],
+        [
+          -3966,
+          1
+        ],
+        [
+          -131,
+          1
+        ],
+        [
+          -66,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          61,
+          4
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          64,
+          13
+        ],
+        [
+          65,
+          4
+        ],
+        [
+          67,
+          4
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          4029,
+          1
+        ],
+        [
+          4094,
+          1
+        ],
+        [
+          4159,
+          1
+        ],
+        [
+          4224,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        3,
+        6,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "a4af142fc086",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -1,
+        "y": -1
+      },
+      "request": {
+        "verb": "c71656",
+        "x": 0,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 0,
+      "before": 42,
+      "after": 27,
+      "status": "ambiguous",
+      "predictions": [
+        118,
+        -63,
+        null,
+        null,
+        19,
+        1,
+        null,
+        -46,
+        60,
+        16,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 42,
+        "prediction_evaluations": 108
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        3,
+        6,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6c85ca80b192",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 4
+      },
+      "request": {
+        "verb": "c27227",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 28,
+      "after": 28,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        null,
+        103,
+        null,
+        -38,
+        -118,
+        -125,
+        -94,
+        -31,
+        78,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 7168,
+        "update_evaluations": 0,
+        "prediction_evaluations": 112
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          65,
+          13
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          3969,
+          1
+        ],
+        [
+          4030,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        3,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6c85ca80b192",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 4
+      },
+      "request": {
+        "verb": "c27227",
+        "x": 4,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 28,
+      "after": 28,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        null,
+        103,
+        null,
+        -38,
+        -118,
+        -125,
+        -94,
+        -31,
+        78,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 112
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        3,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "7dba193e9055",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": 1
+      },
+      "request": {
+        "verb": "c73555",
+        "x": 64,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 1,
+      "before": 27,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        20,
+        -40,
+        -49,
+        1,
+        1,
+        1,
+        -41,
+        1,
+        7,
+        43,
+        64
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6912,
+        "update_evaluations": 27,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          1,
+          1
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          61,
+          3
+        ],
+        [
+          62,
+          13
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          3966,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "7dba193e9055",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": 1
+      },
+      "request": {
+        "verb": "c73555",
+        "x": 4,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 1,
+      "before": 27,
+      "after": 2,
+      "status": "ambiguous",
+      "predictions": [
+        20,
+        -40,
+        -49,
+        null,
+        null,
+        null,
+        -41,
+        null,
+        7,
+        43,
+        64
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 27,
+        "prediction_evaluations": 8
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "d110e46e469b",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": -1
+      },
+      "request": {
+        "verb": "c91596",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 39,
+      "after": 39,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        -56,
+        -53,
+        null,
+        null,
+        103,
+        93,
+        -95,
+        null,
+        1,
+        60
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9984,
+        "update_evaluations": 0,
+        "prediction_evaluations": 156
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4225,
+          1
+        ],
+        [
+          -4161,
+          1
+        ],
+        [
+          -4097,
+          1
+        ],
+        [
+          -4033,
+          1
+        ],
+        [
+          -3969,
+          1
+        ],
+        [
+          -129,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          60,
+          3
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          63,
+          13
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          3967,
+          1
+        ],
+        [
+          4031,
+          1
+        ],
+        [
+          4095,
+          1
+        ],
+        [
+          4159,
+          1
+        ],
+        [
+          4223,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        4,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "d110e46e469b",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": -1
+      },
+      "request": {
+        "verb": "c91596",
+        "x": 1,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 39,
+      "after": 39,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        -56,
+        -53,
+        null,
+        null,
+        103,
+        93,
+        -95,
+        null,
+        1,
+        60
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 156
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        4,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "ac81dfcb6c23",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 2,
+        "y": 4
+      },
+      "request": {
+        "verb": "c84266",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 66,
+      "before": 29,
+      "after": 13,
+      "status": "ambiguous",
+      "predictions": [
+        61,
+        98,
+        -1,
+        19,
+        24,
+        87,
+        null,
+        -82,
+        85,
+        null,
+        52
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 7424,
+        "update_evaluations": 29,
+        "prediction_evaluations": 52
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          66,
+          13
+        ],
+        [
+          67,
+          3
+        ],
+        [
+          69,
+          3
+        ],
+        [
+          128,
+          1
+        ],
+        [
+          4034,
+          1
+        ],
+        [
+          4096,
+          1
+        ],
+        [
+          4158,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        6,
+        8,
+        9
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "ac81dfcb6c23",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 2,
+        "y": 4
+      },
+      "request": {
+        "verb": "c84266",
+        "x": 3,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 5,
+      "before": 29,
+      "after": 25,
+      "status": "ambiguous",
+      "predictions": [
+        61,
+        98,
+        -1,
+        null,
+        24,
+        87,
+        null,
+        -82,
+        null,
+        null,
+        52
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 29,
+        "prediction_evaluations": 100
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          5,
+          25
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        6,
+        8,
+        9
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "d4b86f42516d",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": 6
+      },
+      "request": {
+        "verb": "c50675",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 67,
+      "before": 25,
+      "after": 9,
+      "status": "ambiguous",
+      "predictions": [
+        128,
+        -52,
+        null,
+        16,
+        8,
+        -108,
+        -19,
+        46,
+        2,
+        -5,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6400,
+        "update_evaluations": 25,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          64,
+          3
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          67,
+          9
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          128,
+          1
+        ],
+        [
+          3971,
+          1
+        ],
+        [
+          4032,
+          1
+        ],
+        [
+          4093,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        4,
+        10
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "d4b86f42516d",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 3,
+        "y": 6
+      },
+      "request": {
+        "verb": "c50675",
+        "x": 4,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 7,
+      "before": 25,
+      "after": 17,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -52,
+        null,
+        16,
+        8,
+        -108,
+        -19,
+        46,
+        2,
+        -5,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 25,
+        "prediction_evaluations": 68
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        4,
+        10
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 0,
+        "held": 3
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "164181bc34cd",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": -3
+      },
+      "request": {
+        "verb": "c70033",
+        "x": 64,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": -4035,
+      "before": 35,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -77,
+        11,
+        16,
+        -2655,
+        45,
+        -6483,
+        -3083,
+        -13343,
+        -29,
+        -62,
+        92
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8960,
+        "update_evaluations": 35,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4227,
+          1
+        ],
+        [
+          -4163,
+          1
+        ],
+        [
+          -4099,
+          1
+        ],
+        [
+          -4035,
+          1
+        ],
+        [
+          -3971,
+          1
+        ],
+        [
+          -131,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          60,
+          3
+        ],
+        [
+          61,
+          9
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          125,
+          1
+        ],
+        [
+          3965,
+          1
+        ],
+        [
+          4029,
+          1
+        ],
+        [
+          4093,
+          1
+        ],
+        [
+          4157,
+          1
+        ],
+        [
+          4221,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "164181bc34cd",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": -3
+      },
+      "request": {
+        "verb": "c70033",
+        "x": 1,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": -3,
+      "before": 35,
+      "after": 3,
+      "status": "ambiguous",
+      "predictions": [
+        -77,
+        11,
+        16,
+        null,
+        45,
+        null,
+        null,
+        null,
+        -29,
+        -62,
+        92
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 35,
+        "prediction_evaluations": 12
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -6,
+          1
+        ],
+        [
+          -5,
+          2
+        ],
+        [
+          -4,
+          3
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          23
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "30ec76513ed9",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 2,
+        "y": 5
+      },
+      "request": {
+        "verb": "c26525",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": 67,
+      "before": 26,
+      "after": 9,
+      "status": "ambiguous",
+      "predictions": [
+        -97,
+        -92,
+        72,
+        -65,
+        46,
+        null,
+        -66,
+        -119,
+        null,
+        54,
+        105
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6656,
+        "update_evaluations": 26,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          64,
+          3
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          67,
+          9
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          4035,
+          1
+        ],
+        [
+          4097,
+          1
+        ],
+        [
+          4159,
+          1
+        ],
+        [
+          4221,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "30ec76513ed9",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 2,
+        "y": 5
+      },
+      "request": {
+        "verb": "c26525",
+        "x": 3,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": 6,
+      "before": 26,
+      "after": 21,
+      "status": "ambiguous",
+      "predictions": [
+        -97,
+        -92,
+        72,
+        -65,
+        null,
+        null,
+        -66,
+        -119,
+        null,
+        null,
+        105
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 26,
+        "prediction_evaluations": 84
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          6,
+          21
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "c64ef8840747",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c51231",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 61,
+      "before": 32,
+      "after": 9,
+      "status": "ambiguous",
+      "predictions": [
+        -20,
+        71,
+        65,
+        null,
+        -34,
+        42,
+        -111,
+        -59,
+        8,
+        67,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8192,
+        "update_evaluations": 32,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4223,
+          1
+        ],
+        [
+          -4160,
+          1
+        ],
+        [
+          -4097,
+          1
+        ],
+        [
+          -4034,
+          1
+        ],
+        [
+          -3971,
+          1
+        ],
+        [
+          -128,
+          1
+        ],
+        [
+          -65,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          60,
+          3
+        ],
+        [
+          61,
+          9
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          3967,
+          1
+        ],
+        [
+          4030,
+          1
+        ],
+        [
+          4093,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "c64ef8840747",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c51231",
+        "x": 2,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -1,
+      "before": 32,
+      "after": 22,
+      "status": "ambiguous",
+      "predictions": [
+        -20,
+        null,
+        null,
+        null,
+        -34,
+        42,
+        -111,
+        -59,
+        8,
+        67,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 32,
+        "prediction_evaluations": 88
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -7,
+          1
+        ],
+        [
+          -6,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          22
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "d28ea4d157bf",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 2,
+        "y": 5
+      },
+      "request": {
+        "verb": "c45672",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 67,
+      "before": 26,
+      "after": 9,
+      "status": "ambiguous",
+      "predictions": [
+        68,
+        -86,
+        null,
+        -81,
+        19,
+        -119,
+        9,
+        57,
+        -14,
+        null,
+        22
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6656,
+        "update_evaluations": 26,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          64,
+          3
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          67,
+          9
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          4035,
+          1
+        ],
+        [
+          4097,
+          1
+        ],
+        [
+          4159,
+          1
+        ],
+        [
+          4221,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        6,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "d28ea4d157bf",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 2,
+        "y": 5
+      },
+      "request": {
+        "verb": "c45672",
+        "x": 3,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 6,
+      "before": 26,
+      "after": 21,
+      "status": "ambiguous",
+      "predictions": [
+        68,
+        -86,
+        null,
+        -81,
+        19,
+        -119,
+        null,
+        null,
+        -14,
+        null,
+        22
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 26,
+        "prediction_evaluations": 84
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          6,
+          21
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        6,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "adcf2c75c84e",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -3,
+        "y": -1
+      },
+      "request": {
+        "verb": "c18689",
+        "x": 64,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 66,
+      "before": 28,
+      "after": 10,
+      "status": "ambiguous",
+      "predictions": [
+        -58,
+        53,
+        96,
+        89,
+        null,
+        -90,
+        66,
+        null,
+        -5,
+        null,
+        8
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 7168,
+        "update_evaluations": 28,
+        "prediction_evaluations": 40
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4222,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          65,
+          4
+        ],
+        [
+          66,
+          10
+        ],
+        [
+          67,
+          4
+        ],
+        [
+          69,
+          4
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 0,
+        "held": 3
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "adcf2c75c84e",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -3,
+        "y": -1
+      },
+      "request": {
+        "verb": "c18689",
+        "x": -2,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 0,
+      "before": 28,
+      "after": 26,
+      "status": "ambiguous",
+      "predictions": [
+        -58,
+        null,
+        96,
+        89,
+        null,
+        -90,
+        66,
+        null,
+        -5,
+        null,
+        8
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 28,
+        "prediction_evaluations": 104
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          26
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4439deb54fc0",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 2,
+        "y": 3
+      },
+      "request": {
+        "verb": "c49779",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 127,
+      "before": 32,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -63,
+        100,
+        107,
+        -235,
+        183,
+        36,
+        100,
+        33,
+        99,
+        -73,
+        -84
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8192,
+        "update_evaluations": 32,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -3965,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          65,
+          13
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          3971,
+          1
+        ],
+        [
+          4033,
+          1
+        ],
+        [
+          4095,
+          1
+        ],
+        [
+          4157,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4439deb54fc0",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": 2,
+        "y": 3
+      },
+      "request": {
+        "verb": "c49779",
+        "x": 3,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 5,
+      "before": 32,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -63,
+        100,
+        107,
+        -235,
+        183,
+        36,
+        100,
+        33,
+        99,
+        -73,
+        -84
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 32,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          25
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "9cb511318d85",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 6,
+        "y": 2
+      },
+      "request": {
+        "verb": "c86928",
+        "x": -5,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "before": 11,
+      "after": 11,
+      "status": "unavailable",
+      "predictions": [
+        35,
+        -62,
+        -100,
+        48,
+        -25,
+        -53,
+        -7,
+        null,
+        null,
+        null,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 2816,
+        "update_evaluations": 0,
+        "prediction_evaluations": 44
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -9,
+          4
+        ],
+        [
+          -8,
+          3
+        ],
+        [
+          -6,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "9cb511318d85",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": 6,
+        "y": 2
+      },
+      "request": {
+        "verb": "c86928",
+        "x": 7,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": null,
+      "before": 11,
+      "after": 11,
+      "status": "unavailable",
+      "predictions": [
+        35,
+        -62,
+        -100,
+        48,
+        -25,
+        -53,
+        -7,
+        null,
+        null,
+        null,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 44
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "e5bedf52c4f2",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 1,
+        "y": 3
+      },
+      "request": {
+        "verb": "c04347",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 3,
+      "before": 33,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        97,
+        126,
+        -45,
+        3,
+        3,
+        3,
+        -54,
+        79,
+        3,
+        116,
+        -127
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8448,
+        "update_evaluations": 33,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4029,
+          1
+        ],
+        [
+          -3966,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          66,
+          13
+        ],
+        [
+          67,
+          3
+        ],
+        [
+          69,
+          3
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          4035,
+          1
+        ],
+        [
+          4098,
+          1
+        ],
+        [
+          4161,
+          1
+        ],
+        [
+          4224,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "e5bedf52c4f2",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 1,
+        "y": 3
+      },
+      "request": {
+        "verb": "c04347",
+        "x": 2,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 3,
+      "before": 33,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        97,
+        126,
+        -45,
+        3,
+        3,
+        3,
+        -54,
+        79,
+        3,
+        116,
+        -127
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 33,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          25
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "e0cdf92fb9b4",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 3,
+        "y": 2
+      },
+      "request": {
+        "verb": "c41333",
+        "x": 64,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 63,
+      "before": 27,
+      "after": 13,
+      "status": "ambiguous",
+      "predictions": [
+        110,
+        26,
+        84,
+        null,
+        -18,
+        92,
+        -90,
+        null,
+        8,
+        -18,
+        29
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6912,
+        "update_evaluations": 27,
+        "prediction_evaluations": 52
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          2,
+          1
+        ],
+        [
+          60,
+          3
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          63,
+          13
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          3967,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        7,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "e0cdf92fb9b4",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 3,
+        "y": 2
+      },
+      "request": {
+        "verb": "c41333",
+        "x": 4,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 3,
+      "before": 27,
+      "after": 21,
+      "status": "ambiguous",
+      "predictions": [
+        110,
+        26,
+        84,
+        null,
+        -18,
+        92,
+        -90,
+        null,
+        8,
+        -18,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 27,
+        "prediction_evaluations": 84
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        7,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 0,
+        "held": 3
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8f276f426823",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 6,
+        "y": 0
+      },
+      "request": {
+        "verb": "c22974",
+        "x": -1,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 0,
+      "before": 6,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        0,
+        37,
+        -38,
+        97,
+        72,
+        0,
+        0,
+        -136,
+        -13,
+        0,
+        96
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 1536,
+        "update_evaluations": 6,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -7,
+          3
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        5,
+        6,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8f276f426823",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 6,
+        "y": 0
+      },
+      "request": {
+        "verb": "c22974",
+        "x": 7,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 0,
+      "before": 6,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        0,
+        37,
+        -38,
+        97,
+        72,
+        0,
+        0,
+        -136,
+        -13,
+        0,
+        96
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 6,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        5,
+        6,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "db278eacb03d",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c04116",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -67,
+      "before": 37,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -84,
+        98,
+        -72,
+        -6,
+        5,
+        -43,
+        -83,
+        6,
+        20,
+        -116,
+        46
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9472,
+        "update_evaluations": 37,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4227,
+          1
+        ],
+        [
+          -4162,
+          1
+        ],
+        [
+          -4097,
+          1
+        ],
+        [
+          -4032,
+          1
+        ],
+        [
+          -3967,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          60,
+          4
+        ],
+        [
+          62,
+          4
+        ],
+        [
+          63,
+          10
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          66,
+          4
+        ],
+        [
+          128,
+          1
+        ],
+        [
+          4093,
+          1
+        ],
+        [
+          4158,
+          1
+        ],
+        [
+          4223,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        5,
+        6,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "db278eacb03d",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c04116",
+        "x": 0,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -3,
+      "before": 37,
+      "after": 3,
+      "status": "ambiguous",
+      "predictions": [
+        -84,
+        null,
+        -72,
+        -6,
+        5,
+        null,
+        null,
+        6,
+        20,
+        -116,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 37,
+        "prediction_evaluations": 12
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          24
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        5,
+        6,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "734f7dd45dbc",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -6,
+        "y": 9
+      },
+      "request": {
+        "verb": "c53103",
+        "x": -7,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 11,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        4,
+        26,
+        -58,
+        43,
+        -41,
+        72,
+        205,
+        10,
+        57,
+        77,
+        -249
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 512,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "734f7dd45dbc",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -6,
+        "y": 9
+      },
+      "request": {
+        "verb": "c53103",
+        "x": -5,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 7,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        4,
+        26,
+        -58,
+        43,
+        -41,
+        72,
+        205,
+        10,
+        57,
+        77,
+        -249
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "c015dbe180b7",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 6,
+        "y": 4
+      },
+      "request": {
+        "verb": "c80711",
+        "x": -65,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": -67,
+      "before": 24,
+      "after": 9,
+      "status": "ambiguous",
+      "predictions": [
+        76,
+        123,
+        null,
+        -43,
+        -22,
+        -40,
+        1,
+        -67,
+        -40,
+        -121,
+        -74
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6144,
+        "update_evaluations": 24,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -68,
+          5
+        ],
+        [
+          -67,
+          9
+        ],
+        [
+          -66,
+          5
+        ],
+        [
+          -64,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 1,
+        "held": 1
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "c015dbe180b7",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 6,
+        "y": 4
+      },
+      "request": {
+        "verb": "c80711",
+        "x": 7,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 5,
+      "before": 24,
+      "after": 24,
+      "status": "ambiguous",
+      "predictions": [
+        76,
+        123,
+        null,
+        null,
+        null,
+        -40,
+        null,
+        -67,
+        -40,
+        -121,
+        -74
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 24,
+        "prediction_evaluations": 96
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          5,
+          24
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6eace55c7347",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": 5
+      },
+      "request": {
+        "verb": "c72537",
+        "x": -17,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": -14,
+      "before": 11,
+      "after": 3,
+      "status": "ambiguous",
+      "predictions": [
+        13,
+        -86,
+        -8,
+        35,
+        -85,
+        -112,
+        1,
+        122,
+        -11,
+        -18,
+        -76
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 2816,
+        "update_evaluations": 11,
+        "prediction_evaluations": 12
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -31,
+          1
+        ],
+        [
+          -16,
+          3
+        ],
+        [
+          -14,
+          3
+        ],
+        [
+          -13,
+          2
+        ],
+        [
+          257,
+          1
+        ],
+        [
+          275,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        3,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6eace55c7347",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": 5
+      },
+      "request": {
+        "verb": "c72537",
+        "x": 2,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 6,
+      "before": 11,
+      "after": 8,
+      "status": "ambiguous",
+      "predictions": [
+        13,
+        null,
+        -8,
+        35,
+        -85,
+        -112,
+        1,
+        122,
+        -11,
+        null,
+        -76
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 11,
+        "prediction_evaluations": 32
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        3,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4550da81aace",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 0,
+        "y": -2
+      },
+      "request": {
+        "verb": "c51036",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": -130,
+      "before": 39,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -110,
+        182,
+        64,
+        121,
+        112,
+        -234,
+        -106,
+        -12,
+        -98,
+        42,
+        -78
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9984,
+        "update_evaluations": 39,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4226,
+          1
+        ],
+        [
+          -4162,
+          1
+        ],
+        [
+          -4098,
+          1
+        ],
+        [
+          -4034,
+          1
+        ],
+        [
+          -3970,
+          1
+        ],
+        [
+          -130,
+          1
+        ],
+        [
+          -66,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          61,
+          3
+        ],
+        [
+          62,
+          13
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          3966,
+          1
+        ],
+        [
+          4030,
+          1
+        ],
+        [
+          4094,
+          1
+        ],
+        [
+          4158,
+          1
+        ],
+        [
+          4222,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        5,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4550da81aace",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 0,
+        "y": -2
+      },
+      "request": {
+        "verb": "c51036",
+        "x": 1,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": -4,
+      "before": 39,
+      "after": 2,
+      "status": "ambiguous",
+      "predictions": [
+        -110,
+        null,
+        64,
+        121,
+        112,
+        null,
+        -106,
+        -12,
+        -98,
+        null,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 39,
+        "prediction_evaluations": 8
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          27
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        5,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "534623bb73b3",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -3,
+        "y": -10
+      },
+      "request": {
+        "verb": "c82744",
+        "x": -4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -19,
+      "before": 2,
+      "after": 0,
+      "status": "contradicted",
+      "predictions": [
+        76,
+        null,
+        61,
+        106,
+        37,
+        -109,
+        109,
+        28,
+        null,
+        null,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 512,
+        "update_evaluations": 2,
+        "prediction_evaluations": 0
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -18,
+          1
+        ],
+        [
+          -17,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        8,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "534623bb73b3",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -3,
+        "y": -10
+      },
+      "request": {
+        "verb": "c82744",
+        "x": -2,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -5,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        76,
+        -10,
+        61,
+        106,
+        37,
+        -109,
+        109,
+        28,
+        -5477,
+        -4357,
+        -362
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        8,
+        9,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 4,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "f4f10ea1f41b",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": 3
+      },
+      "request": {
+        "verb": "c27404",
+        "x": 64,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 66,
+      "before": 33,
+      "after": 13,
+      "status": "ambiguous",
+      "predictions": [
+        -61,
+        10,
+        3,
+        53,
+        -70,
+        -88,
+        46,
+        null,
+        null,
+        71,
+        115
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8448,
+        "update_evaluations": 33,
+        "prediction_evaluations": 52
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4029,
+          1
+        ],
+        [
+          -3966,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          66,
+          13
+        ],
+        [
+          67,
+          3
+        ],
+        [
+          69,
+          3
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          4035,
+          1
+        ],
+        [
+          4098,
+          1
+        ],
+        [
+          4161,
+          1
+        ],
+        [
+          4224,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        7,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "f4f10ea1f41b",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": 1,
+        "y": 3
+      },
+      "request": {
+        "verb": "c27404",
+        "x": 2,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 4,
+      "before": 33,
+      "after": 25,
+      "status": "ambiguous",
+      "predictions": [
+        -61,
+        10,
+        3,
+        null,
+        -70,
+        -88,
+        46,
+        null,
+        null,
+        71,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 33,
+        "prediction_evaluations": 100
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          25
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        3,
+        7,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6b4603b2734e",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -1,
+        "y": 1
+      },
+      "request": {
+        "verb": "c74189",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 66,
+      "before": 39,
+      "after": 10,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -45,
+        -63,
+        null,
+        12,
+        73,
+        104,
+        66,
+        4,
+        -8,
+        41
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9984,
+        "update_evaluations": 39,
+        "prediction_evaluations": 40
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4224,
+          1
+        ],
+        [
+          -4159,
+          1
+        ],
+        [
+          -4094,
+          1
+        ],
+        [
+          -4029,
+          1
+        ],
+        [
+          -129,
+          1
+        ],
+        [
+          -64,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          65,
+          4
+        ],
+        [
+          66,
+          10
+        ],
+        [
+          67,
+          4
+        ],
+        [
+          69,
+          4
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          3966,
+          1
+        ],
+        [
+          4031,
+          1
+        ],
+        [
+          4096,
+          1
+        ],
+        [
+          4161,
+          1
+        ],
+        [
+          4226,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 1,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "6b4603b2734e",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -1,
+        "y": 1
+      },
+      "request": {
+        "verb": "c74189",
+        "x": 0,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 2,
+      "before": 39,
+      "after": 24,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -45,
+        -63,
+        null,
+        12,
+        null,
+        104,
+        66,
+        null,
+        -8,
+        41
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 39,
+        "prediction_evaluations": 96
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          24
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "03f7a81dd822",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 4
+      },
+      "request": {
+        "verb": "c99556",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 65534,
+      "before": 28,
+      "after": 0,
+      "status": "contradicted",
+      "predictions": [
+        null,
+        -61,
+        null,
+        -18,
+        117,
+        95,
+        null,
+        -52,
+        0,
+        null,
+        -29
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 7168,
+        "update_evaluations": 28,
+        "prediction_evaluations": 0
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          65,
+          13
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          68,
+          3
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          3969,
+          1
+        ],
+        [
+          4030,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        6,
+        9
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "03f7a81dd822",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 4
+      },
+      "request": {
+        "verb": "c99556",
+        "x": 4,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 14,
+      "before": 28,
+      "after": 0,
+      "status": "contradicted",
+      "predictions": [
+        null,
+        -61,
+        null,
+        -18,
+        117,
+        95,
+        null,
+        -52,
+        0,
+        null,
+        -29
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 28,
+        "prediction_evaluations": 0
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        6,
+        9
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "f69a3f6e8749",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": -2
+      },
+      "request": {
+        "verb": "c76173",
+        "x": 64,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 65534,
+      "before": 39,
+      "after": 0,
+      "status": "contradicted",
+      "predictions": [
+        null,
+        114,
+        null,
+        null,
+        33,
+        -123,
+        -77,
+        null,
+        98,
+        67,
+        -117
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9984,
+        "update_evaluations": 39,
+        "prediction_evaluations": 0
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4226,
+          1
+        ],
+        [
+          -4162,
+          1
+        ],
+        [
+          -4098,
+          1
+        ],
+        [
+          -4034,
+          1
+        ],
+        [
+          -3970,
+          1
+        ],
+        [
+          -130,
+          1
+        ],
+        [
+          -66,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          61,
+          3
+        ],
+        [
+          62,
+          13
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          3
+        ],
+        [
+          126,
+          1
+        ],
+        [
+          3966,
+          1
+        ],
+        [
+          4030,
+          1
+        ],
+        [
+          4094,
+          1
+        ],
+        [
+          4158,
+          1
+        ],
+        [
+          4222,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "f69a3f6e8749",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": 0,
+        "y": -2
+      },
+      "request": {
+        "verb": "c76173",
+        "x": 1,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": -2,
+      "before": 39,
+      "after": 3,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        114,
+        null,
+        null,
+        33,
+        -123,
+        -77,
+        null,
+        98,
+        67,
+        -117
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 39,
+        "prediction_evaluations": 12
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          27
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "b7a974883ced",
+      "kind": "outside_family",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": -6,
+        "y": -57
+      },
+      "request": null,
+      "observed": null,
+      "before": 0,
+      "after": 0,
+      "status": "no_model",
+      "predictions": [
+        84,
+        75,
+        null,
+        null,
+        null,
+        -68,
+        -2,
+        null,
+        -50,
+        -130,
+        -50
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 0
+      },
+      "requests": 0,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "b7a974883ced",
+      "kind": "outside_family",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": -6,
+        "y": -57
+      },
+      "request": null,
+      "observed": null,
+      "before": 0,
+      "after": 0,
+      "status": "no_model",
+      "predictions": [
+        84,
+        75,
+        null,
+        null,
+        null,
+        -68,
+        -2,
+        null,
+        -50,
+        -130,
+        -50
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 0
+      },
+      "requests": 0,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "476cbf39e2d0",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -1,
+        "y": 3
+      },
+      "request": {
+        "verb": "c67881",
+        "x": -17,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 15,
+      "after": 15,
+      "status": "unavailable",
+      "predictions": [
+        118,
+        null,
+        110,
+        -11,
+        null,
+        111,
+        78,
+        null,
+        null,
+        -10,
+        31
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 3840,
+        "update_evaluations": 0,
+        "prediction_evaluations": 60
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -269,
+          1
+        ],
+        [
+          -253,
+          1
+        ],
+        [
+          -16,
+          2
+        ],
+        [
+          -14,
+          2
+        ],
+        [
+          -13,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          275,
+          1
+        ],
+        [
+          291,
+          1
+        ],
+        [
+          307,
+          1
+        ],
+        [
+          323,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "476cbf39e2d0",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -1,
+        "y": 3
+      },
+      "request": {
+        "verb": "c67881",
+        "x": 0,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 15,
+      "after": 15,
+      "status": "unavailable",
+      "predictions": [
+        118,
+        null,
+        110,
+        -11,
+        null,
+        111,
+        78,
+        null,
+        null,
+        -10,
+        31
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 60
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "81f21330ac74",
+      "kind": "affine",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -3,
+        "y": 3
+      },
+      "request": {
+        "verb": "c30696",
+        "x": -5,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 3,
+      "before": 8,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        99,
+        3,
+        -62,
+        -36,
+        88,
+        98,
+        3,
+        3,
+        -1,
+        3,
+        26
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 2048,
+        "update_evaluations": 8,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        6,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "81f21330ac74",
+      "kind": "affine",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          0
+        ],
+        "x": -3,
+        "y": 3
+      },
+      "request": {
+        "verb": "c30696",
+        "x": -2,
+        "settings": [
+          0,
+          0,
+          0
+        ]
+      },
+      "observed": 3,
+      "before": 8,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        99,
+        3,
+        -62,
+        -36,
+        88,
+        98,
+        3,
+        3,
+        -1,
+        3,
+        26
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 8,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        6,
+        7,
+        9
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8fdb3f5bb508",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -3,
+        "y": 10
+      },
+      "request": {
+        "verb": "c84252",
+        "x": -4,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 17,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -108,
+        7570,
+        15377,
+        -92,
+        -76,
+        -44,
+        -81,
+        103,
+        3137,
+        68,
+        1601
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 512,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "8fdb3f5bb508",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          1
+        ],
+        "x": -3,
+        "y": 10
+      },
+      "request": {
+        "verb": "c84252",
+        "x": -2,
+        "settings": [
+          1,
+          0,
+          1
+        ]
+      },
+      "observed": 5,
+      "before": 2,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -108,
+        7570,
+        15377,
+        -92,
+        -76,
+        -44,
+        -81,
+        103,
+        3137,
+        68,
+        1601
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 2,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "e7607b3581e2",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -6,
+        "y": 15
+      },
+      "request": null,
+      "observed": null,
+      "before": 1,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -114,
+        -91,
+        191,
+        -80,
+        39,
+        -219,
+        64,
+        -33,
+        -4,
+        63,
+        53
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 4
+      },
+      "requests": 0,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "e7607b3581e2",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -6,
+        "y": 15
+      },
+      "request": null,
+      "observed": null,
+      "before": 1,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -114,
+        -91,
+        191,
+        -80,
+        39,
+        -219,
+        64,
+        -33,
+        -4,
+        63,
+        53
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 4
+      },
+      "requests": 0,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "f5648f7d5533",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": -4
+      },
+      "request": {
+        "verb": "c12467",
+        "x": -5,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": null,
+      "before": 10,
+      "after": 10,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        69,
+        7,
+        88,
+        null,
+        -24,
+        79,
+        null,
+        47,
+        15,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 2560,
+        "update_evaluations": 0,
+        "prediction_evaluations": 40
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -28,
+          1
+        ],
+        [
+          -22,
+          1
+        ],
+        [
+          -16,
+          1
+        ],
+        [
+          -10,
+          2
+        ],
+        [
+          -7,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          32,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "f5648f7d5533",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          0
+        ],
+        "x": 1,
+        "y": -4
+      },
+      "request": {
+        "verb": "c12467",
+        "x": 2,
+        "settings": [
+          0,
+          1,
+          0
+        ]
+      },
+      "observed": null,
+      "before": 10,
+      "after": 10,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        69,
+        7,
+        88,
+        null,
+        -24,
+        79,
+        null,
+        47,
+        15,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 40
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -9,
+          1
+        ],
+        [
+          -8,
+          1
+        ],
+        [
+          -7,
+          1
+        ],
+        [
+          -6,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -3,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "183a54ee2a41",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c76501",
+        "x": 64,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": -3967,
+      "before": 37,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -6887,
+        -47,
+        124,
+        -12319,
+        -23,
+        77,
+        -51,
+        118,
+        -110,
+        -3,
+        -674
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 9472,
+        "update_evaluations": 37,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4227,
+          1
+        ],
+        [
+          -4162,
+          1
+        ],
+        [
+          -4097,
+          1
+        ],
+        [
+          -4032,
+          1
+        ],
+        [
+          -3967,
+          1
+        ],
+        [
+          -67,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          60,
+          4
+        ],
+        [
+          62,
+          4
+        ],
+        [
+          63,
+          10
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          66,
+          4
+        ],
+        [
+          128,
+          1
+        ],
+        [
+          4093,
+          1
+        ],
+        [
+          4158,
+          1
+        ],
+        [
+          4223,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        3,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "183a54ee2a41",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          0,
+          1
+        ],
+        "x": -1,
+        "y": -2
+      },
+      "request": {
+        "verb": "c76501",
+        "x": 0,
+        "settings": [
+          0,
+          0,
+          1
+        ]
+      },
+      "observed": 1,
+      "before": 37,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        -6887,
+        -47,
+        124,
+        -12319,
+        -23,
+        77,
+        -51,
+        118,
+        -110,
+        -3,
+        -674
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 37,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          24
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        3,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "a91301c48630",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -1,
+        "y": -1
+      },
+      "request": {
+        "verb": "c63707",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 64,
+      "before": 42,
+      "after": 13,
+      "status": "ambiguous",
+      "predictions": [
+        -121,
+        67,
+        -62,
+        14,
+        31,
+        null,
+        -23,
+        null,
+        48,
+        -137,
+        57
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 10752,
+        "update_evaluations": 42,
+        "prediction_evaluations": 52
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4226,
+          1
+        ],
+        [
+          -4161,
+          1
+        ],
+        [
+          -4096,
+          1
+        ],
+        [
+          -4031,
+          1
+        ],
+        [
+          -3966,
+          1
+        ],
+        [
+          -131,
+          1
+        ],
+        [
+          -66,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          61,
+          4
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          64,
+          13
+        ],
+        [
+          65,
+          4
+        ],
+        [
+          67,
+          4
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          4029,
+          1
+        ],
+        [
+          4094,
+          1
+        ],
+        [
+          4159,
+          1
+        ],
+        [
+          4224,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "a91301c48630",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -1,
+        "y": -1
+      },
+      "request": {
+        "verb": "c63707",
+        "x": 0,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 0,
+      "before": 42,
+      "after": 27,
+      "status": "ambiguous",
+      "predictions": [
+        -121,
+        null,
+        -62,
+        null,
+        31,
+        null,
+        -23,
+        null,
+        48,
+        -137,
+        57
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 42,
+        "prediction_evaluations": 108
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "1e2b0e061c64",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -3,
+        "y": -6
+      },
+      "request": {
+        "verb": "c96818",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": 61,
+      "before": 27,
+      "after": 7,
+      "status": "ambiguous",
+      "predictions": [
+        22,
+        111,
+        -81,
+        -4,
+        null,
+        -15,
+        -117,
+        111,
+        84,
+        93,
+        103
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6912,
+        "update_evaluations": 27,
+        "prediction_evaluations": 28
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4227,
+          1
+        ],
+        [
+          -4160,
+          1
+        ],
+        [
+          -4093,
+          1
+        ],
+        [
+          58,
+          4
+        ],
+        [
+          60,
+          4
+        ],
+        [
+          61,
+          7
+        ],
+        [
+          62,
+          4
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          128,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "fresh": {
+        "correct": 3,
+        "wrong": 0,
+        "held": 1
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "1e2b0e061c64",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          0
+        ],
+        "x": -3,
+        "y": -6
+      },
+      "request": {
+        "verb": "c96818",
+        "x": -2,
+        "settings": [
+          1,
+          1,
+          0
+        ]
+      },
+      "observed": -5,
+      "before": 27,
+      "after": 23,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        111,
+        -81,
+        -4,
+        null,
+        -15,
+        -117,
+        null,
+        84,
+        93,
+        103
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 27,
+        "prediction_evaluations": 92
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -5,
+          23
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 0,
+        "held": 3
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4d03f277bec5",
+      "kind": "threshold",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -6,
+        "y": -3
+      },
+      "request": {
+        "verb": "c45792",
+        "x": 64,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": 70,
+      "before": 26,
+      "after": 5,
+      "status": "ambiguous",
+      "predictions": [
+        73,
+        -37,
+        -50,
+        58,
+        103,
+        -42,
+        -51,
+        -7,
+        -9,
+        41,
+        86
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6656,
+        "update_evaluations": 26,
+        "prediction_evaluations": 20
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -3,
+          1
+        ],
+        [
+          64,
+          5
+        ],
+        [
+          66,
+          5
+        ],
+        [
+          67,
+          5
+        ],
+        [
+          68,
+          5
+        ],
+        [
+          70,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "4d03f277bec5",
+      "kind": "threshold",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          0,
+          1,
+          1
+        ],
+        "x": -6,
+        "y": -3
+      },
+      "request": {
+        "verb": "c45792",
+        "x": -5,
+        "settings": [
+          0,
+          1,
+          1
+        ]
+      },
+      "observed": -2,
+      "before": 26,
+      "after": 25,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -37,
+        null,
+        58,
+        103,
+        -42,
+        -51,
+        -7,
+        -9,
+        41,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 26,
+        "prediction_evaluations": 100
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          25
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        2,
+        8,
+        10
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 0,
+        "held": 3
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "095b57cdb548",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -6,
+        "y": -7
+      },
+      "request": {
+        "verb": "c59840",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 63,
+      "before": 27,
+      "after": 7,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -12,
+        119,
+        34,
+        -45,
+        -77,
+        null,
+        114,
+        -35,
+        24,
+        -57
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6912,
+        "update_evaluations": 27,
+        "prediction_evaluations": 28
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          60,
+          5
+        ],
+        [
+          62,
+          5
+        ],
+        [
+          63,
+          7
+        ],
+        [
+          64,
+          5
+        ],
+        [
+          66,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        6,
+        7
+      ],
+      "fresh": {
+        "correct": 2,
+        "wrong": 0,
+        "held": 2
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "095b57cdb548",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": -6,
+        "y": -7
+      },
+      "request": {
+        "verb": "c59840",
+        "x": -5,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": -6,
+      "before": 27,
+      "after": 27,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -12,
+        119,
+        null,
+        -45,
+        -77,
+        null,
+        null,
+        -35,
+        24,
+        -57
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 27,
+        "prediction_evaluations": 108
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -6,
+          27
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        3,
+        6,
+        7
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "785d42b92ec1",
+      "kind": "quadratic",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 0
+      },
+      "request": {
+        "verb": "c79985",
+        "x": 64,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 3965,
+      "before": 25,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        9797,
+        11232,
+        2700,
+        90,
+        -117,
+        -2,
+        43,
+        96,
+        -32,
+        87,
+        -137
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6400,
+        "update_evaluations": 25,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -3965,
+          1
+        ],
+        [
+          -61,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          60,
+          3
+        ],
+        [
+          61,
+          9
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          64,
+          3
+        ],
+        [
+          3965,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "785d42b92ec1",
+      "kind": "quadratic",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 3,
+        "y": 0
+      },
+      "request": {
+        "verb": "c79985",
+        "x": 4,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": 5,
+      "before": 25,
+      "after": 1,
+      "status": "identified",
+      "predictions": [
+        9797,
+        11232,
+        2700,
+        90,
+        -117,
+        -2,
+        43,
+        96,
+        -32,
+        87,
+        -137
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 25,
+        "prediction_evaluations": 4
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 1,
+      "partitions": [
+        [
+          -5,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "fresh": {
+        "correct": 4,
+        "wrong": 0,
+        "held": 0
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "11e573754761",
+      "kind": "unavailable",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 2,
+        "y": 2
+      },
+      "request": {
+        "verb": "c84398",
+        "x": -65,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 35,
+      "after": 35,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        66,
+        -33,
+        -15,
+        -84,
+        null,
+        85,
+        null,
+        -61,
+        103,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 8960,
+        "update_evaluations": 0,
+        "prediction_evaluations": 140
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -4353,
+          1
+        ],
+        [
+          -132,
+          1
+        ],
+        [
+          -68,
+          4
+        ],
+        [
+          -66,
+          4
+        ],
+        [
+          -65,
+          13
+        ],
+        [
+          -64,
+          4
+        ],
+        [
+          -62,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4223,
+          1
+        ],
+        [
+          4290,
+          1
+        ],
+        [
+          4357,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        5,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "11e573754761",
+      "kind": "unavailable",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          1,
+          1
+        ],
+        "x": 2,
+        "y": 2
+      },
+      "request": {
+        "verb": "c84398",
+        "x": 3,
+        "settings": [
+          1,
+          1,
+          1
+        ]
+      },
+      "observed": null,
+      "before": 35,
+      "after": 35,
+      "status": "unavailable",
+      "predictions": [
+        null,
+        66,
+        -33,
+        -15,
+        -84,
+        null,
+        85,
+        null,
+        -61,
+        103,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 0,
+        "prediction_evaluations": 140
+      },
+      "requests": 1,
+      "readings": 0,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          29
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        5,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 0,
+        "wrong": 0,
+        "held": 4
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "5bdf0643cfe5",
+      "kind": "additive",
+      "policy": "disagreement",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 6,
+        "y": 4
+      },
+      "request": {
+        "verb": "c60975",
+        "x": -65,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": -67,
+      "before": 24,
+      "after": 9,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        -22,
+        66,
+        -4,
+        -47,
+        -115,
+        83,
+        9,
+        -60,
+        -82,
+        -87
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 6144,
+        "update_evaluations": 24,
+        "prediction_evaluations": 36
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          -68,
+          5
+        ],
+        [
+          -67,
+          9
+        ],
+        [
+          -66,
+          5
+        ],
+        [
+          -64,
+          5
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 3,
+        "wrong": 0,
+        "held": 1
+      },
+      "excluded_indices": []
+    },
+    {
+      "id": "5bdf0643cfe5",
+      "kind": "additive",
+      "policy": "next",
+      "initial": {
+        "settings": [
+          1,
+          0,
+          0
+        ],
+        "x": 6,
+        "y": 4
+      },
+      "request": {
+        "verb": "c60975",
+        "x": 7,
+        "settings": [
+          1,
+          0,
+          0
+        ]
+      },
+      "observed": 5,
+      "before": 24,
+      "after": 24,
+      "status": "ambiguous",
+      "predictions": [
+        null,
+        null,
+        66,
+        -4,
+        -47,
+        -115,
+        83,
+        9,
+        -60,
+        -82,
+        null
+      ],
+      "work": {
+        "fit_evaluations": 301,
+        "selection_evaluations": 0,
+        "update_evaluations": 24,
+        "prediction_evaluations": 96
+      },
+      "requests": 1,
+      "readings": 1,
+      "changed_offset": 0,
+      "partitions": [
+        [
+          5,
+          24
+        ]
+      ],
+      "preserved": 7,
+      "replays": 15,
+      "fresh_indices": [
+        0,
+        1,
+        7,
+        10
+      ],
+      "fresh": {
+        "correct": 1,
+        "wrong": 0,
+        "held": 3
+      },
+      "excluded_indices": []
+    }
+  ]
+}

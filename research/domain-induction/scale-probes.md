@@ -21,6 +21,8 @@ Only three doubling predictions interpolate between its two measured inputs, and
 
 The experiment supports a bounded next-integer probe as a simple way to obtain a second distinct observation here. It also shows why a fitted line needs a stated domain assumption before use at new inputs. An informative wider probe should be selected because competing explanations predict different readings there. For example, an untested threshold between the near and far probe would supply such a distinction. A follow-up should freeze crossing cases and candidate explanations before scoring.
 
+The subsequent comparison gives both policies the same explicit polynomial and threshold family and asks where its rules disagree. It measures the additional answers, internal selection cost and errors caused by missing rules. [Disagreement-selection follow-up](disagreement-probes.md)
+
 The reader, scorer and protocol were committed before opening the held-out case bank at `d285071`. A separate replay reconstructed the frozen functions and interpolation results without importing the reader or scorer. Both numeric readings and original evidence are checked for bounds and exact request identity. The result uses zero model calls.
 
 Run from the repository root with Python 3.12 or later.
