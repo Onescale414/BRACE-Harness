@@ -11,10 +11,11 @@ At an input of 2, `2 + 2` and `2 × 2` both give **4**. In the PAT example, a mi
 | Checked integer steps and bounded retries | `python -B demo.py --json` | Supported add-then-multiply instructions; host-owned release. |
 | Connector selection and repair preview | `python -I -S -B domains/connector/demo.py` | Four supplied mappings, explicit selection rule and a fixed MockServer-to-WireMock subset; read-only. |
 | Bounded composition and accepted lessons | `python -I -S -B domains/composition/demo.py` | Four-example integer plans; explicit host acceptance, checked reuse, reopening and rollback. |
+| Read-only receipt inspection | `python -I -S -B examples/receipt_inspector/demo.py` | Exact lookups in bounded supplied captures; returns original evidence without rechecking or authorizing it. |
 | Geometry reconstruction | `python -I -S -B preview/verify.py` | The supplied bracket measurements and listed alternatives. |
 | Learned local rules and informative observations | [Research replay commands](research/domain-induction/README.md#reproduce) | Finite hypothesis families; reports include errors when the true rule is missing. |
 
-The first four commands run offline with Python 3.12 or later and the standard
+The first five commands run offline with Python 3.12 or later and the standard
 library. No model download or account is required. Research replays also document
 their own assumptions and budgets; they are not a general reasoning guarantee.
 
@@ -44,6 +45,13 @@ A checked lesson means the plan matches its supplied observations. Reuse require
 new expected outputs; it does not establish an unrestricted learned rule or
 certify unknown predictions. The host owns acceptance, observations and storage.
 The CLI accepts structured events, not unrestricted chat.
+
+To inspect captured outcomes, the optional [receipt inspector](examples/receipt_inspector/README.md)
+finds the latest two records matching an exact action, status and decision. It
+returns original request/receipt text with source identity and event positions.
+Scan is the default; cache and index options are explicit. Unsupported captures
+receive a structured refusal. This is a read-only evidence viewer, not another
+checker or a lesson-acceptance path.
 
 ## From conversation to checked arithmetic
 
