@@ -1,0 +1,20 @@
+{
+  "schema": "brace-connector-public-provenance-v1",
+  "publicAuthor": "Onescale414",
+  "license": "MIT (repository LICENSE)",
+  "qualificationDate": "2026-11-19",
+  "publicPackagingDate": "2026-11-20",
+  "runtimeOrigin": "Unmodified dependency closure of the qualified direct selection entry. CLI, demo and tests are public-package adapters.",
+  "checkerOrigin": "BRACE authored fixed mapping-contract checker, pinned by wiremock_audit.py; not MockServer or WireMock vendor code.",
+  "fixtureOrigin": "18 independently authored synthetic cases: 12 repairs, 2 exact no-ops, 2 no eligible routes, unsupported policy and stale bundle. Labels frozen before the model comparison.",
+  "limits": "Prior private lifecycle counts are not public-package test counts. Full document and selection contract in README.md.",
+  "sha256": {
+    "connector_selection.py": "75744ab1e2a60a26896aaca90ee0c4f99ecd80decdd882c409320a5130514628",
+    "wiremock_preview.py": "6ed8b803594e879bfc425932ae458d5ca221d9953b36ad7936a9e23c26fba608",
+    "wiremock_audit.py": "1386acf3e7495618cf70cfb69c5c645c3f7930116645a5d24bc6ca0d8327e89f",
+    "vendor/tv4c.py": "828eb4f3fba5d5c6af683e72760b49994f8e89f0840057d31dd7f09c3988e8c6",
+    "fixtures/cases.json": "db0302b1226bdf01b7e2bc3a06c57b434974c89225f37488e9f8e4b67bf9a80d",
+    "fixtures/labels.json": "d869b25ec3c68954dc99f846b6c430fa51a6c79e0927c6f50add13830b026c80",
+    "fixtures/example.json": "8a0bba17004d3a0dcabf5217806e2192a1b45834e0c214b76e63e7f97136f7bc"
+  }
+}

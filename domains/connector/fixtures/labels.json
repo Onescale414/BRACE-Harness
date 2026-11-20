@@ -1,0 +1,311 @@
+{
+  "schema": "connector-choice-labels-v1",
+  "labels": [
+    {
+      "id": "q01",
+      "category": "repair-method-unit-reversal",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c0",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/Aster/n9choice-q01/stone\"},\"response\":{\"status\":200,\"body\":\"n9choice q01 c0 says \\\"level\\\"\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":1873}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/method",
+          "old": "SEARCH",
+          "value": "GET"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "category": "repair-path-case-nearmiss",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c1",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/birch/n9choice-q02/Zinnia\"},\"response\":{\"status\":200,\"body\":\"n9choice q02 c1 path Zinnia\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":5783}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/birch/n9choice-q02/zinnia",
+          "value": "/birch/n9choice-q02/Zinnia"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "category": "repair-status-three-eligible",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c2",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/Cedar_3/n9choice-q03/0009\"},\"response\":{\"status\":200,\"body\":\"n9choice q03 c2 status stable\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":8539}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/response/status",
+          "old": 409,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "category": "repair-content-type-last-slot",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c3",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/delta-4/n9choice-q04/behind\"},\"response\":{\"status\":200,\"body\":\"n9choice q04 c3 media plain\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":11497}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/response/headers/Content-Type",
+          "old": "application/rtf",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "category": "repair-seconds-conversion",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c0",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/Elm/n9choice-q05/oak\"},\"response\":{\"status\":200,\"body\":\"n9choice q05 c0 eleven seconds\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":11000}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/response/fixedDelayMilliseconds",
+          "old": 11007,
+          "value": 11000
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "category": "repair-body-whitespace",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c1",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/fir_6/n9choice-q06/omega\"},\"response\":{\"status\":200,\"body\":\"  n9choice q06 c1 keep  two spaces  \",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":15317}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/response/body",
+          "old": "n9choice q06 c1 keep two spaces",
+          "value": "  n9choice q06 c1 keep  two spaces  "
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "category": "repair-method-path-unit-reversal",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c2",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/Grove/n9choice-q07/A_b-C\"},\"response\":{\"status\":200,\"body\":\"n9choice q07 c2 \\\"quoted\\\" \\\\ branch\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":18439}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/method",
+          "old": "PATCH",
+          "value": "GET"
+        },
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/Grove/n9choice-q07/A_b-c",
+          "value": "/Grove/n9choice-q07/A_b-C"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "category": "repair-status-content-type-unit-reversal",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c3",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/hazel-8/n9choice-q08/later\"},\"response\":{\"status\":200,\"body\":\"n9choice q08 c3 plain response\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":21683}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/response/headers/Content-Type",
+          "old": "application/vnd.ms-fontobject",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "op": "replace",
+          "path": "/response/status",
+          "old": 410,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "category": "repair-path-body-delay-seconds",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c0",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/Ibis/n9choice-q09/item/item11\"},\"response\":{\"status\":200,\"body\":\"n9choice q09 c0 keep /item11 as data\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":23000}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/Ibis/n9choice-q09/item/item1",
+          "value": "/Ibis/n9choice-q09/item/item11"
+        },
+        {
+          "op": "replace",
+          "path": "/response/body",
+          "old": "n9choice q09 altered data",
+          "value": "n9choice q09 c0 keep /item11 as data"
+        },
+        {
+          "op": "replace",
+          "path": "/response/fixedDelayMilliseconds",
+          "old": 2304,
+          "value": 23000
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "category": "repair-method-status-delay-unit-reversal",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c1",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/juniper/n9choice-q10/00100\"},\"response\":{\"status\":200,\"body\":\"n9choice q10 c1 says \\\"00100\\\"\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":26579}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/method",
+          "old": "REPORT",
+          "value": "GET"
+        },
+        {
+          "op": "replace",
+          "path": "/response/fixedDelayMilliseconds",
+          "old": 2657,
+          "value": 26579
+        },
+        {
+          "op": "replace",
+          "path": "/response/status",
+          "old": 412,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "category": "repair-four-fields-three-eligible",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c2",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/Kestrel_11/n9choice-q11/zZ_9\"},\"response\":{\"status\":200,\"body\":\"n9choice q11 c2 \\\"UP\\\" \\\\ NORTH\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":29483}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/method",
+          "old": "PROPPATCH",
+          "value": "GET"
+        },
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/Kestrel_11/n9choice-q11/zz_9",
+          "value": "/Kestrel_11/n9choice-q11/zZ_9"
+        },
+        {
+          "op": "replace",
+          "path": "/response/body",
+          "old": "n9choice q11 c2 \"DOWN\" \\ NORTH",
+          "value": "n9choice q11 c2 \"UP\" \\ NORTH"
+        },
+        {
+          "op": "replace",
+          "path": "/response/headers/Content-Type",
+          "old": "application/x-tar",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "category": "repair-five-fields-preserve-body",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c3",
+      "expectedTarget": "{\"request\":{\"method\":\"GET\",\"urlPath\":\"/larch-12/n9choice-q12/Zulu_012\"},\"response\":{\"status\":200,\"body\":\"n9choice q12 c3 body fixed [x  y]\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":32843}}",
+      "expectedPatch": [
+        {
+          "op": "replace",
+          "path": "/request/method",
+          "old": "MKWORKSPACE",
+          "value": "GET"
+        },
+        {
+          "op": "replace",
+          "path": "/request/urlPath",
+          "old": "/larch-12/n9choice-q12/Zulu_021",
+          "value": "/larch-12/n9choice-q12/Zulu_012"
+        },
+        {
+          "op": "replace",
+          "path": "/response/fixedDelayMilliseconds",
+          "old": 3284,
+          "value": 32843
+        },
+        {
+          "op": "replace",
+          "path": "/response/headers/Content-Type",
+          "old": "application/wasm",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "op": "replace",
+          "path": "/response/status",
+          "old": 416,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "category": "noop-lf-lexical-tie",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c0",
+      "expectedTarget": "{\n  \"response\" : {\"body\":\"  n9choice q13 c0 LF unchanged  \", \"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"}, \"status\":200, \"fixedDelayMilliseconds\":11000},\n  \"request\" : { \"method\":\"GET\", \"urlPath\":\"/Maple/n9choice-q13/Alpha\" }\n}\n",
+      "expectedPatch": []
+    },
+    {
+      "id": "q14",
+      "category": "noop-crlf-candidate-id-tie",
+      "expectedStatus": "checked",
+      "expectedWinnerId": "c1",
+      "expectedTarget": "{\r\n\t\"request\": {\"urlPath\":\"/nimbus_14/n9choice-q14/knot\",\"method\":\"GET\"},\r\n\t\"response\": {\"fixedDelayMilliseconds\":12000,\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"body\":\"n9choice q14 c1 \\\"CRLF\\\" \\\\ FIXED\",\"status\":200}\r\n}\r\n",
+      "expectedPatch": []
+    },
+    {
+      "id": "q15",
+      "category": "no-match-case-and-prefix",
+      "expectedStatus": "checked-no-match",
+      "expectedWinnerId": null,
+      "expectedTarget": null,
+      "expectedPatch": null
+    },
+    {
+      "id": "q16",
+      "category": "no-match-separator-nearmisses",
+      "expectedStatus": "checked-no-match",
+      "expectedWinnerId": null,
+      "expectedTarget": null,
+      "expectedPatch": null
+    },
+    {
+      "id": "q17",
+      "category": "withheld-unsupported-policy",
+      "expectedStatus": "withheld",
+      "expectedWinnerId": null,
+      "expectedTarget": null,
+      "expectedPatch": null
+    },
+    {
+      "id": "q18",
+      "category": "withheld-stale-bundle",
+      "expectedStatus": "withheld",
+      "expectedWinnerId": null,
+      "expectedTarget": null,
+      "expectedPatch": null
+    }
+  ]
+}

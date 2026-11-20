@@ -1,5 +1,17 @@
 # Sources and measurements
 
+**Connector selection and preview.** Four runtime files were extracted byte-for-byte
+from the qualified direct-selector candidate: selection, preview construction,
+mapping audit and BRACE's bundled subset checker. Their hashes and those of the
+18 synthetic fixtures are [recorded here](domains/connector/provenance.json).
+They are project code covered by this repository's MIT license, not vendor code
+from MockServer or WireMock. `.gitattributes` preserves their pinned bytes and
+fixture bytes across checkout line-ending settings. The public CLI and portable tests are separately
+exercised without private stores, local services or chat history. Source/target
+handoff substitutions and whole-result corruption are explicit negative controls.
+The private installation's lesson/reopen/rollback qualification is not presented
+as validation of this public package. [Contract and usage](domains/connector/README.md)
+
 **Arithmetic.** The harness, demo and tests come from BRACE’s two-step integer reference. Its affine coefficient and witness checks derive from the earlier `prepare.py` checker. [Checker](harness.py)
 
 **Geometry.** The viewer contains one matched pair from a 12-cart synthetic study. Undoing the arm rotation in Chromium supplied the reference endpoints. The Python verifier independently reconstructs them from squared distances. [Verifier](preview/verify.py)

@@ -1,0 +1,38 @@
+{
+  "id": "q01",
+  "requirements": {
+    "firstSegment": "Aster",
+    "policy": "minimum-delay-then-path"
+  },
+  "candidates": [
+    {
+      "id": "c0",
+      "source": "{\"text\":\"translate this mapping.\",\"source\":{\"httpRequest\":{\"method\":\"GET\",\"path\":\"/Aster/n9choice-q01/stone\"},\"httpResponse\":{\"statusCode\":200,\"body\":\"n9choice q01 c0 says \\\"level\\\"\",\"headers\":{\"Content-Type\":[\"text/plain; charset=utf-8\"]},\"delay\":{\"timeUnit\":\"MILLISECONDS\",\"value\":1873}}},\"serverSettings\":{\"mockServerVersion\":\"8.0.0\",\"wireMockVersion\":\"3.13.2\",\"mockServerMatchExactCase\":\"true\"}}",
+      "baseSourceSHA256": "006be3ac83575fbff28e76edb0538201ac92527446072b8d837e66a767540fbd",
+      "currentSourceSHA256": "006be3ac83575fbff28e76edb0538201ac92527446072b8d837e66a767540fbd"
+    },
+    {
+      "id": "c1",
+      "source": "{\"text\":\"translate this mapping.\",\"source\":{\"httpRequest\":{\"method\":\"GET\",\"path\":\"/aster/n9choice-q01/spark\"},\"httpResponse\":{\"statusCode\":200,\"body\":\"n9choice q01 c1 wrong case\",\"headers\":{\"Content-Type\":[\"text/plain; charset=utf-8\"]},\"delay\":{\"timeUnit\":\"MILLISECONDS\",\"value\":1}}},\"serverSettings\":{\"mockServerVersion\":\"8.0.0\",\"wireMockVersion\":\"3.13.2\",\"mockServerMatchExactCase\":\"true\"}}",
+      "baseSourceSHA256": "74712818079883bca63caddbb6bff0bb8a2a59b6a564c7171ae4268e40876c46",
+      "currentSourceSHA256": "74712818079883bca63caddbb6bff0bb8a2a59b6a564c7171ae4268e40876c46"
+    },
+    {
+      "id": "c2",
+      "source": "{\"text\":\"translate this mapping.\",\"source\":{\"httpRequest\":{\"method\":\"GET\",\"path\":\"/Aster/n9choice-q01/river\"},\"httpResponse\":{\"statusCode\":200,\"body\":\"n9choice q01 c2 two seconds\",\"headers\":{\"Content-Type\":[\"text/plain; charset=utf-8\"]},\"delay\":{\"timeUnit\":\"SECONDS\",\"value\":2}}},\"serverSettings\":{\"mockServerVersion\":\"8.0.0\",\"wireMockVersion\":\"3.13.2\",\"mockServerMatchExactCase\":\"true\"}}",
+      "baseSourceSHA256": "3e6a0fa888a21e7aee66920dbd42fed02052a42c9e82cc6f3dd75141fb6befc2",
+      "currentSourceSHA256": "3e6a0fa888a21e7aee66920dbd42fed02052a42c9e82cc6f3dd75141fb6befc2"
+    },
+    {
+      "id": "c3",
+      "source": "{\"text\":\"translate this mapping.\",\"source\":{\"httpRequest\":{\"method\":\"GET\",\"path\":\"/Aster2/n9choice-q01/ash\"},\"httpResponse\":{\"statusCode\":200,\"body\":\"n9choice q01 c3 prefix only\",\"headers\":{\"Content-Type\":[\"text/plain; charset=utf-8\"]},\"delay\":{\"timeUnit\":\"SECONDS\",\"value\":0}}},\"serverSettings\":{\"mockServerVersion\":\"8.0.0\",\"wireMockVersion\":\"3.13.2\",\"mockServerMatchExactCase\":\"true\"}}",
+      "baseSourceSHA256": "a54fc598f2a22cdff070a883746c6c430ab4871d7b2bb234f9ee03e396cd2b6e",
+      "currentSourceSHA256": "a54fc598f2a22cdff070a883746c6c430ab4871d7b2bb234f9ee03e396cd2b6e"
+    }
+  ],
+  "target": "{\"request\":{\"method\":\"SEARCH\",\"urlPath\":\"/Aster/n9choice-q01/stone\"},\"response\":{\"status\":200,\"body\":\"n9choice q01 c0 says \\\"level\\\"\",\"headers\":{\"Content-Type\":\"text/plain; charset=utf-8\"},\"fixedDelayMilliseconds\":1873}}",
+  "baseTargetSHA256": "d818f4c548a6311933a2dc1f2212214480e68853fef3967f0a7c3b75474841d9",
+  "currentTargetSHA256": "d818f4c548a6311933a2dc1f2212214480e68853fef3967f0a7c3b75474841d9",
+  "currentBundleSHA256": "c33cfbd830320d33a894e0a3d48019237a52fa6fe39796c7f638177a02043a69",
+  "baseBundleSHA256": "c33cfbd830320d33a894e0a3d48019237a52fa6fe39796c7f638177a02043a69"
+}
