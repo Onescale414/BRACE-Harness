@@ -1,5 +1,15 @@
 # Sources and measurements
 
+**Composition and accepted lessons.** Seven runtime modules were extracted
+byte-for-byte from the qualified active learning reader: session, bounded solver,
+arithmetic checker, snapshot archive, local store, contradiction detector and
+independent contradiction checker. [Hashes](domains/composition/provenance.json)
+pin those exact bytes; Git attributes preserve their line endings. The public CLI,
+synthetic teaching demo and public-entry tests are new packaging. No private
+lessons, user snapshots, model transcripts, paired launchers or migration tools
+are included. Existing acceptance-origin compatibility code is retained unchanged;
+it is not a public migration guarantee. [Scope and usage](domains/composition/README.md)
+
 **Connector selection and preview.** Four runtime files were extracted byte-for-byte
 from the qualified direct-selector candidate: selection, preview construction,
 mapping audit and BRACE's bundled subset checker. Their hashes and those of the

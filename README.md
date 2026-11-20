@@ -10,10 +10,11 @@ At an input of 2, `2 + 2` and `2 × 2` both give **4**. In the PAT example, a mi
 | --- | --- | --- |
 | Checked integer steps and bounded retries | `python -B demo.py --json` | Supported add-then-multiply instructions; host-owned release. |
 | Connector selection and repair preview | `python -I -S -B domains/connector/demo.py` | Four supplied mappings, explicit selection rule and a fixed MockServer-to-WireMock subset; read-only. |
+| Bounded composition and accepted lessons | `python -I -S -B domains/composition/demo.py` | Four-example integer plans; explicit host acceptance, checked reuse, reopening and rollback. |
 | Geometry reconstruction | `python -I -S -B preview/verify.py` | The supplied bracket measurements and listed alternatives. |
 | Learned local rules and informative observations | [Research replay commands](research/domain-induction/README.md#reproduce) | Finite hypothesis families; reports include errors when the true rule is missing. |
 
-The first three commands run offline with Python 3.12 or later and the standard
+The first four commands run offline with Python 3.12 or later and the standard
 library. No model download or account is required. Research replays also document
 their own assumptions and budgets; they are not a general reasoning guarantee.
 
@@ -25,6 +26,24 @@ no-matches and two refusals. It applies no changes.
 
 [Connector contract and runnable CLI](domains/connector/README.md) ·
 [How bounded domains fit together](docs/DOMAINS.md)
+
+## Propose, repair, accept and reuse
+
+The [composition example](domains/composition/README.md) supplies a wrong identity
+plan for four squaring examples. A full check rejects it; bounded deterministic
+repair finds `square` on the second check. A separate host action accepts that
+checked draft as `Fold`. After accepting `Nudge` as `add1`, the host can request
+`do Nudge then Fold`, check the ordered plan and explicitly save it as `Lift`.
+
+Reopening independently rechecks all saved lessons. Reusing `Lift` on fresh
+examples requires another check; reversing the named order is withheld without
+changing the lessons. The one-command demo also rehearses rollback and a bounded
+clarification. It uses disposable synthetic storage and no model calls.
+
+A checked lesson means the plan matches its supplied observations. Reuse requires
+new expected outputs; it does not establish an unrestricted learned rule or
+certify unknown predictions. The host owns acceptance, observations and storage.
+The CLI accepts structured events, not unrestricted chat.
 
 ## From conversation to checked arithmetic
 

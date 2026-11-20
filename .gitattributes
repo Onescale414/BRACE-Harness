@@ -6,3 +6,12 @@ domains/connector/wiremock_preview.py -text
 domains/connector/wiremock_audit.py -text
 domains/connector/vendor/tv4c.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 domains/connector/fixtures/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Accepted lessons bind exact runtime source bytes, including line endings.
+domains/composition/composition_checker.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+domains/composition/learning_session.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+domains/composition/learning_solver.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+domains/composition/lesson_archive.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+domains/composition/lesson_store.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+domains/composition/contradiction_checker.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+domains/composition/contradiction_gate.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

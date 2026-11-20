@@ -1,0 +1,18 @@
+{
+  "schema": "brace-composition-public-provenance-v1",
+  "publicAuthor": "Onescale414",
+  "license": "MIT (repository LICENSE)",
+  "publicPackagingDate": "2026-11-20",
+  "runtimeOrigin": "Seven unmodified modules from the qualified active learning reader. No launcher, private lessons or model transport copied.",
+  "exampleOrigin": "New synthetic demo and public-entry tests. Expected outputs are computed independently of the proposal search. Explicit acceptance is performed by the scripted host.",
+  "scope": "Four-example integer plans, bounded deterministic repair, explicit acceptance, named composition, checked reuse and all-or-nothing reopening. No claim of unrestricted learned meaning.",
+  "sha256": {
+    "composition_checker.py": "99645537426a6f94a6e040bc62573b4a5ca6a5d259c96ab14ddc3d501d65a675",
+    "learning_session.py": "5ab3767766387c2178374bdc047aa1df40c29e5f1736504e55365333380f61f8",
+    "learning_solver.py": "2c26be700905150f5c467ccfc45923876b2b8bc84332b592cb224de117305133",
+    "lesson_archive.py": "feefe0b1bab5ca84cf1b0478336d180fcdf4ce3e3a4ba531611fb17a8534a595",
+    "lesson_store.py": "7bff9ce0fe2056df822a2ac15ee5bc10227d413c80e42c1a44abe4bc63aa5537",
+    "contradiction_checker.py": "d68c429383865fe693f8721ca0a83839d554faaa9ee38274e0836bb1f77a4921",
+    "contradiction_gate.py": "a9c7ebfb404c1052af58f332439d27b8529147ba6e803bd5ad494be3609e430f"
+  }
+}

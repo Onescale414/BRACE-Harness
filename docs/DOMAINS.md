@@ -12,10 +12,11 @@ direct construction is the baseline when the contract already determines it.
 | --- | --- | --- |
 | [Integer harness](../README.md#run-the-harness) | Two ordered integer operations, optional proposer and receipts | The submitted operation/witness/result satisfies that supported instruction and chain contract. |
 | [Connector domain](../domains/connector/README.md) | Direct selection, source/target-bound handoff and minimal repair preview | The chosen one of four supplied mappings meets the declared rule and its complete translation fits the fixed subset. |
+| [Composition and lessons](../domains/composition/README.md) | Bounded plan repair, explicit acceptance, ordered lesson composition and persistent checked reuse | A plan matches four supplied examples; reopening rechecks saved evidence and reuse checks fresh examples. |
 | [Geometry example](../preview/bracket.html) | Local viewer and independent coordinate reconstruction | The supplied measurements distinguish the listed geometric alternatives in that example. |
 | [Domain-induction research](../research/domain-induction/README.md) | Replay finite-family learning, extra observations and exception repairs | Experimental performance under the documented hypothesis families and observation limits, including wrong predictions. |
 
-The integer and connector domains have different APIs. This repository does not
+The integer, connector and composition domains have different APIs. This repository does not
 yet expose a universal domain plugin interface or automatically generate reliable
 checkers from English. Research scripts are executable evidence, not a general
 verification guarantee for their learned hypotheses.
@@ -73,7 +74,8 @@ There is no demonstrated need to make the four-option connector selector depend
 on an LLM. Geometry and learned-domain research remain available as evidence for
 future designs, with their measured limits intact.
 
-Further public-packaging candidates include bounded program composition and
-explicitly accepted, independently rechecked lessons. Those require clean
-examples and public-interface qualification of their own; they are not features
-of the connector command shipped here. No private lesson store is included.
+Bounded program composition and explicitly accepted, independently rechecked
+lessons now have a separate public session entry and disposable teaching example.
+They do not add persistence or learned selection to the connector command. No
+private lesson store is included. Further domains still need explicit contracts,
+independent checks and examples that expose their failure boundaries.

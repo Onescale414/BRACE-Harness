@@ -1,2 +1,9 @@
 __pycache__/
 *.pyc
+
+# Local accepted-lesson stores are user data, never release fixtures.
+lessons.json
+lessons.previous.json
+lessons.lock
+lessons.json.next
+lessons.previous.json.next
